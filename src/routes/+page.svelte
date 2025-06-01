@@ -18,15 +18,15 @@ function openFullscreen() {
 
 function goToFirstSlide() {
 
- location.href = '/slides/first';
+ location.href = '/slides';
 }
 
 function start() {
-  openFullscreen();
+  //openFullscreen();
   goToFirstSlide();
 }
 
 </script>
 <div class="w-full h-full flex justify-center items-center">
-  <button onclick={start}>Inizia</button>
+  <button onclick={start}>Start</button>
 </div>

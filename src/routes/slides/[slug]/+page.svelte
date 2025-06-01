@@ -1,13 +1,11 @@
 <script lang="ts">
-  import { page } from "$app/state";
-  import { list, type SlideKeys } from "$lib/slides";
-  const currentPage: number = +page.params.slug;
-    
-  let Component = list[currentPage as SlideKeys];
+  import { slideStore, summary } from "$lib/slides.svelte";
   
-console.log(currentPage, Component, list)
+  let Component = summary[slideStore.currentSlideKey];
+  console.log(slideStore.currentSlideKey)
 </script>
 
+{slideStore.currentSlideKey}
 {#if Component}
   <Component></Component>
 {/if}

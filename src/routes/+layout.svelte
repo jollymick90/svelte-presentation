@@ -1,5 +1,5 @@
 <script lang="ts">
-	import bacaroLogo from "$lib/assets/BacaroLogo.png";
+	import bacaroLogo from "$lib/assets/img/BacaroLogo.png";
 	import '../app.css';
 	
 	let { children } = $props();
