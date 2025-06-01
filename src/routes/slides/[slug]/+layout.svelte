@@ -1,7 +1,7 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
   import { page } from "$app/state";
-  import { slidePages, slideStore } from "$lib/slides.svelte";
+  import { slidePages, slideStore, summary } from "$lib/slides.svelte";
   import { onMount } from "svelte";
 
   let { children } = $props();
@@ -9,12 +9,15 @@
   const next = () => {
     slideStore.currentIndex = Math.min(slideStore.currentIndex + 1, slidePages.length - 1);
     slideStore.currentSlideKey = slidePages[slideStore.currentIndex];
+    slideStore.currentComponent = summary[slideStore.currentSlideKey]
     goto(slideStore.currentSlideKey);
   };
   const prev = () => {
     
     slideStore.currentIndex = Math.max(slideStore.currentIndex - 1, 0);
     slideStore.currentSlideKey = slidePages[slideStore.currentIndex];
+    slideStore.currentComponent = summary[slideStore.currentSlideKey]
+
     
     goto(slideStore.currentSlideKey);
   };

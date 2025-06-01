@@ -1,10 +1,10 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
-  import { slideKeyList } from "$lib/slides.svelte";
+  import { slidePages } from "$lib/slides.svelte";
   let index = $state(0);
 
   const next = () => {
-    index = Math.min(index + 1, slideKeyList.length - 1);
+    index = Math.min(index + 1, slidePages.length - 1);
 
     goto(`slides/${index}`);
   };

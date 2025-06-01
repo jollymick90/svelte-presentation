@@ -1,11 +1,16 @@
 <script lang="ts">
-  import { slideStore, summary } from "$lib/slides.svelte";
-  
-  let Component = summary[slideStore.currentSlideKey];
+  import { slideStore } from "$lib/slides.svelte";
+
   console.log(slideStore.currentSlideKey)
 </script>
 
 {slideStore.currentSlideKey}
-{#if Component}
-  <Component></Component>
-{/if}
+<!-- {#if slideStore.currentComponent}
+{@const SC = slideStore.currentComponent}
+  <SC></SC>
+{/if} -->
+
+{#key slideStore.currentSlideKey}
+  {@const SC = slideStore.currentComponent}
+  <SC />
+{/key}
