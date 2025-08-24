@@ -28,10 +28,10 @@
       if (e.key === "ArrowLeft") prev();
     };
     window.addEventListener("keydown", handleKey);
-    window.addEventListener("click", next);
+    // window.addEventListener("click", next);
     return () => {
       window.removeEventListener("keydown", handleKey);
-      window.removeEventListener("click", next);
+      // window.removeEventListener("click", next);
     };
   });
 

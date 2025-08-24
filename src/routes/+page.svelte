@@ -1,32 +1,34 @@
 <script lang="ts">
-  import FullscreenBtn from "$lib/components/FullscreenBtn.svelte";
+  
+  import { browser } from "$app/environment";
+  if (browser) console.log("i'm running on browser");
+  else console.log("i'm running on server");
 
-const elem = document.documentElement;
+  function goToFirstSlide() {
+    location.href = "/slides";
+  }
 
-/* View in fullscreen */
-function openFullscreen() {
-    if (elem.requestFullscreen) {
+  function start() {
+      
+    const elem = document.documentElement;
+
+    /* View in fullscreen */
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
         elem.requestFullscreen();
-    } else if ((elem as any).webkitRequestFullscreen) {
+      } else if ((elem as any).webkitRequestFullscreen) {
         /* Safari */
         (elem as any).webkitRequestFullscreen();
-    } else if ((elem as any).msRequestFullscreen) {
+      } else if ((elem as any).msRequestFullscreen) {
         /* IE11 */
         (elem as any).msRequestFullscreen();
+      }
     }
-}
-
-function goToFirstSlide() {
-
- location.href = '/slides';
-}
-
-function start() {
-  //openFullscreen();
-  goToFirstSlide();
-}
-
+    //openFullscreen();
+    goToFirstSlide();
+  }
 </script>
+
 <div class="w-full h-full flex justify-center items-center">
   <button onclick={start}>Start</button>
 </div>
