@@ -9,7 +9,8 @@
   const next = () => {
     slideStore.currentIndex = Math.min(slideStore.currentIndex + 1, slidePages.length - 1);
     slideStore.currentSlideKey = slidePages[slideStore.currentIndex];
-    slideStore.currentComponent = summary[slideStore.currentSlideKey]
+    const v = summary[slideStore.currentSlideKey];
+    slideStore.currentComponent = v
     goto(slideStore.currentSlideKey);
   };
   const prev = () => {

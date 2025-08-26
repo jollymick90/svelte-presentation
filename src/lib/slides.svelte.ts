@@ -79,6 +79,6 @@ export let currentSlideIndex = $state(0);
 export let currentSlide = $state<SlideKeys>('title');
 export const slideStore = $state({
     currentIndex: 0,
-    currentSlideKey: '01' as SlideKeys,
+    currentSlideKey: 'title' as SlideKeys,
     currentComponent: Title
 })

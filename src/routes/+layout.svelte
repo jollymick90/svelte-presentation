@@ -10,7 +10,7 @@
     <div class="relative bg-slate-200 w-[95%] h-[95%] rounded-3xl shadow-xl border border-slate-400 overflow-hidden">
       
       <!-- Top bar -->
-      <div class="flex items-center justify-between bg-[#375b8d] h-10 rounded-t-3xl px-4">
+      <div class="absolute w-full h-10 z-[2] flex items-center justify-between bg-[#375b8d]  rounded-t-3xl px-4">
         <!-- Svelte logo top-left -->
         <div class="flex items-center space-x-2">
           <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" alt="Svelte" class="h-5 w-5" />
@@ -24,10 +24,10 @@
       </div>
 
       <!-- Main content area -->
-      <div class="p-4 h-full bg-slate-100 border border-slate-300 rounded-b-3xl overflow-auto">
+      <div class="absolute w-full h-full pt-12 p-4 bg-slate-100 border border-slate-300 rounded-b-3xl overflow-auto">
         <!-- You can insert any content here -->
-
-		{@render children()}
+        
+		    {@render children()}
       </div>
 
       <!-- Bottom left logo -->
