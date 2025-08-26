@@ -62,9 +62,10 @@ export type SlideKeys = keyof typeof summary;
 
 export const slidePages: SlideKeys[] = [
     'title',
+    'agenda',    
     'localrepl',
     'syntax',
-    'agenda',
+
     'aboutme',
     'letsstartedtitle',
     'whatis',
