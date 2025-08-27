@@ -10,6 +10,9 @@
    import 'reveal.js/plugin/highlight/monokai.css'
   import Title from "$lib/components/slides/intro/Title.svelte";
   import AboutMe from "$lib/components/slides/intro/AboutMe.svelte";
+  import RevSlide from "$lib/components/reveal/RevSlide.svelte";
+  import { Agenda } from "$lib/components/slides/intro";
+  import { OtherFrameworkComponent } from "$lib/components/slides/whatis";
   onMount(() => {
     const deck = new Reveal({
         autoAnimateEasing: 'ease',
@@ -27,12 +30,24 @@
 <div class="reveal">
     <div class="slides">
         
-        <section>
+        <RevSlide id={"one"} animate>
             <Title />
-        </section>
-        <section>
+        </RevSlide>
+        <RevSlide animate>
+            <Agenda />
+        </RevSlide>
+        <RevSlide>
+            <OtherFrameworkComponent></OtherFrameworkComponent>
+        </RevSlide>
+        <RevSlide id={"two"} animate>
             <AboutMe />
-        </section>
+        </RevSlide>
+        <RevSlide animate>
+            <div>Auto Animate</div>
+        </RevSlide>
+        <RevSlide animate>
+            <div class="text-red-600 mt-8">Auto Animate</div>
+        </RevSlide>
     </div>
 </div>
 
