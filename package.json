@@ -19,6 +19,8 @@
 		"@tailwindcss/forms": "^0.5.9",
 		"@tailwindcss/typography": "^0.5.15",
 		"@tailwindcss/vite": "^4.0.0",
+		"@types/reveal.js": "^5.2.0",
+		"reveal.js": "^5.2.1",
 		"svelte": "^5.0.0",
 		"svelte-check": "^4.0.0",
 		"svelte-reveal": "^1.1.0",
