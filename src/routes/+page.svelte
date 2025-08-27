@@ -1,34 +1,6 @@
-<script lang="ts">
-  
-  import { browser } from "$app/environment";
-  if (browser) console.log("i'm running on browser");
-  else console.log("i'm running on server");
-
-  function goToFirstSlide() {
-    location.href = "/slides";
-  }
-
-  function start() {
-      
-    const elem = document.documentElement;
-
-    /* View in fullscreen */
-    function openFullscreen() {
-      if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-      } else if ((elem as any).webkitRequestFullscreen) {
-        /* Safari */
-        (elem as any).webkitRequestFullscreen();
-      } else if ((elem as any).msRequestFullscreen) {
-        /* IE11 */
-        (elem as any).msRequestFullscreen();
-      }
-    }
-    //openFullscreen();
-    goToFirstSlide();
-  }
+<script>
+    import '../app.css';  
 </script>
-
 <div class="w-full h-full flex justify-center items-center">
-  <button onclick={start}>Start</button>
+  Hello!
 </div>

@@ -83,6 +83,14 @@ export const slidePages: SlideKeys[] = [
   'tutorial'
 ];
 
+export const listSlides = [
+  Title, 
+  Agenda,
+  AboutMe,
+  Bacarotech,
+  LetsStarted,
+]
+
 export let currentSlideIndex = $state(0);
 export let currentSlide = $state<SlideKeys>('title');
 
