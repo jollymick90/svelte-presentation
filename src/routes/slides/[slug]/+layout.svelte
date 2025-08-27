@@ -1,27 +1,44 @@
 <script lang="ts">
+  import { browser } from "$app/environment";
   import { goto } from "$app/navigation";
   import { page } from "$app/state";
   import { slidePages, slideStore, summary } from "$lib/slides.svelte";
   import { onMount } from "svelte";
 
+  if (browser) console.log("[slides] i'm running on browser");
+  else {
+    const slideParam = page.params.slug;
+    console.log(slideParam);
+    console.log("[layout slides] i'm running on server");
+  }
+
   let { children } = $props();
+  
+  const clampIndex = (i: number) =>
+    Math.max(0, Math.min(i, slidePages.length - 1));
 
-  const next = () => {
-    slideStore.currentIndex = Math.min(slideStore.currentIndex + 1, slidePages.length - 1);
-    slideStore.currentSlideKey = slidePages[slideStore.currentIndex];
-    const v = summary[slideStore.currentSlideKey];
-    slideStore.currentComponent = v
-    goto(slideStore.currentSlideKey);
+  const buildSlideState = (index: number) => {
+    const nextIndex = clampIndex(index);
+    const nextSlideKey = slidePages[nextIndex];
+    const nextComponent = summary[nextSlideKey];
+    return {
+      currentComponent: nextComponent,
+      currentIndex: nextIndex,
+      currentSlideKey: nextSlideKey,
+    } as const;
   };
-  const prev = () => {
-    
-    slideStore.currentIndex = Math.max(slideStore.currentIndex - 1, 0);
-    slideStore.currentSlideKey = slidePages[slideStore.currentIndex];
-    slideStore.currentComponent = summary[slideStore.currentSlideKey]
+  const setSlideByIndex = (index: number, navigate = true) => {
+    const state = buildSlideState(index);
+    slideStore.state = { ...state };
+    if (navigate) goto(state.currentSlideKey);
+  };
 
-    
-    goto(slideStore.currentSlideKey);
+  const navigateBy = (delta: number) => {
+    const current = slideStore.state?.currentIndex ?? 0;
+    setSlideByIndex(current + delta, true);
   };
+  const next = () => navigateBy(1);
+  const prev = () => navigateBy(-1);
 
   $effect(() => {
     const handleKey = (e: any) => {
@@ -37,13 +54,19 @@
   });
 
   onMount(() => {
+    console.log(page);
     const slideParam = page.params.slug;
 
     const slidePageIndex = slidePages.findIndex((p) => slideParam === p);
-   
     if (slidePageIndex > -1) {
-        slideStore.currentIndex = slidePageIndex;
-        slideStore.currentSlideKey = slidePages[slideStore.currentIndex];
+      const nextIndex = slidePageIndex;
+      const nextSlideKey = slidePages[nextIndex];
+      const nextComponent = summary[nextSlideKey];
+      slideStore.state = {
+        currentComponent: nextComponent,
+        currentIndex: nextIndex,
+        currentSlideKey: nextSlideKey,
+      };
     }
   });
 </script>
