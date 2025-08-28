@@ -13,10 +13,13 @@
   import RevSlide from "$lib/components/reveal/RevSlide.svelte";
   import { Agenda } from "$lib/components/slides/intro";
   import { OtherFrameworkComponent } from "$lib/components/slides/whatis";
+  import FrameworkComponent from "$lib/components/slides/rev/FrameworkComponent.svelte";
+  import DefinitionSvelte from "$lib/components/slides/rev/DefinitionSvelte.svelte";
   onMount(() => {
     const deck = new Reveal({
-        autoAnimateEasing: 'ease',
+        autoAnimateEasing: 'ease-out',
         autoAnimateDuration: 1,
+         autoAnimateUnmatched: false,
         hash: true,
         controls: true,
         progress: true
@@ -29,16 +32,20 @@
 
 <div class="reveal">
     <div class="slides">
-        
+        <section data-auto-animate>
+  <h1>Auto-Animate</h1>
+</section>
+<section data-auto-animate>
+  <h1 style="margin-top: 100px; color: red;">Auto-Animate</h1>
+</section>
         <RevSlide id={"one"} animate>
             <Title />
         </RevSlide>
         <RevSlide animate>
             <Agenda />
         </RevSlide>
-        <RevSlide>
-            <OtherFrameworkComponent></OtherFrameworkComponent>
-        </RevSlide>
+        <DefinitionSvelte />
+        <FrameworkComponent />
         <RevSlide id={"two"} animate>
             <AboutMe />
         </RevSlide>

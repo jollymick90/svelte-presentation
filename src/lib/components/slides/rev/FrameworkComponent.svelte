@@ -1,3 +1,34 @@
+<script lang="ts">
+  import RevCode from "$lib/components/reveal/RevCode.svelte";
+  import RevSlide from "$lib/components/reveal/RevSlide.svelte";
+</script>
+<RevSlide>
+  
+  <pre ><code data-trim data-noescape >
+    {`
+    const Counter = () => {
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={increment}>Increment</button>
+    </div>
+  );
+};
+    `}
+  </code>
+  </pre>
+</RevSlide>
+<style>
+  :root {
+        --r-main-font-size: 15px;
+    }
+</style>
 <!-- <script>
   import RevCode from "$lib/components/reveal/RevCode.svelte";
   import RevSlide from "$lib/components/reveal/RevSlide.svelte";
