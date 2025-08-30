@@ -43,20 +43,15 @@
   </aside>
 </section>
 <section data-background-color={defaultBackground}>
-  <h2>Cambia...</h2>
+  <h2>Cambia lavoro o progetto...</h2>
   <aside class="notes">
     Poi cambia
   </aside>
 </section>
 
-
-
-
-
-
 <section data-background-color={defaultBackground}>
   <pre><code data-trim data-noescape
-    data-line-numbers="3 | 15-23 | 6-12">
+    data-line-numbers="1 | 3-4 | 25-34 | 32 | 6-21">
     {`  
 @Component({
   selector: 'my-app',

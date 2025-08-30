@@ -87,7 +87,7 @@
 
 
   <pre><code data-trim data-noescape
-    data-line-numbers="1 | 3-6 | 8-11 | 13-16 | 18-21 | 23-25'"
+    data-line-numbers="1 | 3-6 | 8-11 | 13-16 | 18-21 | 23-25 | 28'"
     >
   {` class Bacarotech { 
 
