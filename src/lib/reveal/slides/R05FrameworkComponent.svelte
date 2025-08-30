@@ -99,11 +99,12 @@ export class AppComponent  {
     >
     scopre Angular, 
     si tranquillizza perché vede un file html 
-    ma si spaventa perché scopre i tipi
+    ma si spaventa perché scopre typescript
   </aside>
 </section>
-<section data-background-color={defaultBackground} data-auto-animate>
-  <h1 class="big-framework-title">Framework</h1>
+
+<!-- <section data-background-color={defaultBackground} data-auto-animate>
+  <h4 >Framework</h4>
   <aside class="notes">
     scopre i framework
     e gli arriva un coppino da dietro dal collega che dice
@@ -111,16 +112,14 @@ export class AppComponent  {
 </section>
 
 <section data-background-color={defaultBackground} data-auto-animate>
-  <h3 class="big-framework-title">React non è un Framework</h3>
+  <h4 >React non è un Framework</h4>
   <aside class="notes">
     e gli arriva un coppino da dietro dal collega che dice
   </aside>
-</section>
+</section> -->
 
 <style>
-  .big-framework-title {
-    font-size: 9rem;
-  }
+
   :root {
     /* --r-main-font-size: 15px; */
   }
