@@ -12,17 +12,17 @@
 </section>
 
 <section data-background-color={defaultBackground} data-auto-animate>
-  <h1>Getting Started with</h1>
+  <h3>Getting Started with</h3>
 </section>
 <section data-background-color={defaultBackground} data-auto-animate>
-  <h1>Getting Started with</h1>
-  <h1 class="svelte-color">Svelte</h1>
+  <h3>Getting Started with</h3>
+  <h3 class="svelte-color">Svelte</h3>
 </section>
 
 <section data-background-color={defaultBackground} data-auto-animate>
-  <h1>Getting Started with</h1>
-  <h1 class="svelte-color">Svelte</h1>
-  <h1>A Game-Changer for Web Developer</h1>
+  <h3>Getting Started with</h3>
+  <h3 class="svelte-color">Svelte</h3>
+  <h3>A Game-Changer for Web Developer</h3>
 </section>
 
 <style>

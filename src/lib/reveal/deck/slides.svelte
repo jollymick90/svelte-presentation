@@ -10,11 +10,14 @@
   import "reveal.js/plugin/highlight/monokai.css";
   
     
-  import FrameworkComponent from "$lib/reveal/slides/FrameworkComponent.svelte";
-  import WelcomeSlide from "../slides/WelcomeSlide.svelte";
-  import MollyStory from "../slides/MollyStory.svelte";
-  import IntroSlide from "../slides/IntroSlide.svelte";
-  import AgendaSlide from "../slides/AgendaSlide.svelte";
+  import R05FrameworkComponent from "$lib/reveal/slides/R05FrameworkComponent.svelte";
+  import R00WelcomeSlide from "../slides/R00WelcomeSlide.svelte";
+  import R01MollyStoryPart1 from "../slides/R01MollyStoryPart1.svelte";
+  import R04MollyStoryPart2 from "../slides/R04MollyStoryPart2.svelte";
+  import R06MollyStoryPart3 from "../slides/R06MollyStoryPart3.svelte";
+  import R03IntroSlide from "../slides/R03IntroSlide.svelte";
+  import R02AgendaSlide from "../slides/R02AgendaSlide.svelte";
+  import BaseDefinitions from "../slides/BaseDefinitions.svelte";
   onMount(() => {
     const deck = new Reveal({
       autoAnimateEasing: "ease-out",
@@ -32,10 +35,14 @@
 
 <div class="reveal">
   <div class="slides">
-    <WelcomeSlide />   
-    <MollyStory />
-    <FrameworkComponent />
-    <AgendaSlide />
-    <IntroSlide />
+    <R00WelcomeSlide />   
+    <R01MollyStoryPart1 />
+    <R02AgendaSlide />
+    <R03IntroSlide />
+    <R04MollyStoryPart2 />
+    <R05FrameworkComponent />
+    <R06MollyStoryPart3 />
+    <BaseDefinitions />
+
   </div>
 </div>
