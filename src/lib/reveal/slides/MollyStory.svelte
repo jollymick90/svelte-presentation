@@ -40,30 +40,31 @@
 <section data-background-color={defaultBackground} data-auto-animate>
     <p><Fa size="3x" icon={faDog}/></p>
     
-    <h4>HTML</h4>
+    <h2>HTML</h2>
     
 </section>
 <section data-background-color={defaultBackground} data-auto-animate>
     <p><Fa size="3x" icon={faDog}/></p>
     
-    <h4>HTML</h4>
-    <h4>CSS</h4>
+    <h2>HTML</h2>
+    <h2>CSS</h2>
     
-</section>
-
-<section data-background-color={defaultBackground} data-auto-animate>
-    <p><Fa size="3x" icon={faDog}/></p>
-    
-    <h4>HTML</h4>
-    <h4>CSS</h4>
-    <h4>JS</h4>
 </section>
 
 <section data-background-color={defaultBackground} data-auto-animate>
     <p><Fa size="3x" icon={faDog}/></p>
     
-    <h4>HTML</h4>
-    <h4>CSS</h4>
-    <h4>JS</h4>
-    <h4>Network/internet</h4>
+    <h2>HTML</h2>
+    <h2>CSS</h2>
+    <h2>JS</h2>
+</section>
+
+<section data-background-color={defaultBackground} data-auto-animate>
+    <p><Fa size="3x" icon={faDog}/></p>
+    
+    <h2>HTML</h2>
+    <h2>CSS</h2>
+    <h2>JS</h2>
+    <h2>Network/internet</h2>
+    <h2>...</h2>
 </section>

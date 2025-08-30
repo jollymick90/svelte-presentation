@@ -9,17 +9,12 @@
   import "reveal.js/dist/theme/black.css";
   import "reveal.js/plugin/highlight/monokai.css";
   
-  import AboutMe from "$lib/components/slides/intro/AboutMe.svelte";
-  import RevSlide from "$lib/components/reveal/RevSlide.svelte";
-  
-  import { OtherFrameworkComponent } from "$lib/components/slides/whatis";
+    
   import FrameworkComponent from "$lib/reveal/slides/FrameworkComponent.svelte";
-  import DefinitionSvelte from "$lib/reveal/slides/DefinitionSvelte.svelte";
-  import RAgenda from "../slides/RAgendaSlide.svelte";
-  import RTitleSlide from "../slides/RTitleSlide.svelte";
-  import TitleUi from "$lib/components/ui/TitleUI.svelte";
   import WelcomeSlide from "../slides/WelcomeSlide.svelte";
   import MollyStory from "../slides/MollyStory.svelte";
+  import IntroSlide from "../slides/IntroSlide.svelte";
+  import AgendaSlide from "../slides/AgendaSlide.svelte";
   onMount(() => {
     const deck = new Reveal({
       autoAnimateEasing: "ease-out",
@@ -39,7 +34,8 @@
   <div class="slides">
     <WelcomeSlide />   
     <MollyStory />
-
-    
+    <FrameworkComponent />
+    <AgendaSlide />
+    <IntroSlide />
   </div>
 </div>

@@ -1,5 +1,9 @@
+<script>
+  import { defaultBackground } from "../common.svelte";
+
+</script>
 <section data-auto-animate
-  data-background-color="darkslategray"
+  data-background-color={defaultBackground}
 >
   <div>
     <p>
@@ -10,7 +14,7 @@
 </section>
 
 <section data-auto-animate
-  data-background-color="darkslategray"
+  data-background-color={defaultBackground}
   >
   <div>
     <p>
@@ -22,14 +26,7 @@
 </section>
 
 <style>
-  div {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+
   p {
     font-size: var(--font-size-title-slide, 3rem);
     font-weight: bold;
