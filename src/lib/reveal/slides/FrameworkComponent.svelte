@@ -2,9 +2,9 @@
   import RevCode from "$lib/components/reveal/RevCode.svelte";
   import RevSlide from "$lib/components/reveal/RevSlide.svelte";
 </script>
+
 <RevSlide>
-  
-  <pre ><code data-trim data-noescape >
+  <pre><code data-trim data-noescape>
     {`
     const Counter = () => {
   const [count, setCount] = useState(0);
@@ -24,11 +24,6 @@
   </code>
   </pre>
 </RevSlide>
-<style>
-  :root {
-        --r-main-font-size: 15px;
-    }
-</style>
 <!-- <script>
   import RevCode from "$lib/components/reveal/RevCode.svelte";
   import RevSlide from "$lib/components/reveal/RevSlide.svelte";
@@ -70,3 +65,9 @@
 `}
 </RevCode>
 </RevSlide> -->
+
+<style>
+  :root {
+    --r-main-font-size: 15px;
+  }
+</style>

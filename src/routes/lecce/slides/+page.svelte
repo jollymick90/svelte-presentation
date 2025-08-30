@@ -3,6 +3,7 @@
   import { slidePages } from "$lib/slides.svelte";
   import { browser } from "$app/environment";
   import { onMount } from "svelte";
+  import './tw.css';
 
   if (browser) console.log("[slides] i'm running on browser");
   else console.log("[slides] i'm running on server");

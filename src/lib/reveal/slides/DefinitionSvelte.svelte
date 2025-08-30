@@ -1,6 +1,5 @@
 <script>
   import RevSlide from "$lib/components/reveal/RevSlide.svelte";
-
 </script>
 
 <section data-auto-animate>
@@ -10,12 +9,6 @@
   <h1 data-id="title" class="title-up">Implicit</h1>
   <h1 data-id="animation-word">Animation</h1>
 </section>
-
-<style>
-    .title-up {
-  transform: translateY(-50%); /* Sposta l'elemento in alto */
-}
-</style>
 <!-- <section data-auto-animate>
   <h1>
     Svelte is a UI framework that uses a compiler to let you write breathtakingly concise components
@@ -51,9 +44,6 @@
   </h1>
 </section> -->
 
-
-
-
 <!-- <div class="p-6 flex flex-col justify-center items-center h-full space-y-8">
   <p>
     Svelte is a UI framework that uses a compiler to let you write breathtakingly concise components that do minimal work in the browser, using languages you already know — HTML, CSS and JS (TS).It’s a love letter to web development.
@@ -73,3 +63,9 @@
   love letter
   </div>
 </div> -->
+
+<style>
+  .title-up {
+    transform: translateY(-50%); /* Sposta l'elemento in alto */
+  }
+</style>

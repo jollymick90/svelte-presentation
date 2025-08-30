@@ -1,17 +1,16 @@
-@import 'tailwindcss';
-@plugin '@tailwindcss/forms';
-@plugin '@tailwindcss/typography';
 
 
-/* :root {
+
+:root {
     --font-primary: 'Roboto', sans-serif;
     --font-secondary: 'Merriweather', serif;
 
     --font-size-base: clamp(1rem, 2.5vw, 1.125rem);
     --font-size-h1: clamp(2rem, 5vw, 3rem);
+    --font-size-p: clamp(1rem, 2.5vw, 1.125rem);
     --font-size-title-slide: clamp(2rem, 5vw, 3rem);
 }
 
 html {
     font-size: 100%;
-} */
+} 

@@ -1,5 +1,5 @@
 <script>
-  import Slide from "$lib/deck/slides.svelte";
+  import Slide from "$lib/reveal/deck/slides.svelte";
 
 </script>
 <Slide></Slide>
