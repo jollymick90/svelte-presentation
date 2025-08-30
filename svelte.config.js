@@ -1,19 +1,21 @@
-// import adapter from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-vercel';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
-// const config = {
-// 	preprocess: vitePreprocess(),
-// 	kit: { adapter: adapter() }
-// };
-
-import adapter from '@sveltejs/adapter-static';
 const config = {
 	preprocess: vitePreprocess(),
-	kit: { adapter: 
-		adapter({
-			fallback: '200.html' // may differ from host to host
+	kit: {
+		// adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
+		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
+		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
+		adapter: adapter({
+			fallback: '200.html', //null
+			pages: 'build',
+			assets: 'build',
+			precompress: false,
+			strict: false
 		})
-	 }
+
+	}
 };
 
 export default config;

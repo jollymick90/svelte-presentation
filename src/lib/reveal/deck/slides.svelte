@@ -17,8 +17,9 @@
   import R06MollyStoryPart3 from "../slides/R06MollyStoryPart3.svelte";
   import R03IntroSlide from "../slides/R03IntroSlide.svelte";
   import R02AgendaSlide from "../slides/R02AgendaSlide.svelte";
-  import R08BaseDefinitions from "../slides/R08BaseDefinitions.svelte";
+  import R0BaseDefinitions from "../slides/R0BaseDefinitions.svelte";
   import R07DefinitionSvelte from "../slides/R07DefinitionSvelte.svelte";
+  import RSvelteIntroduction from "../slides/RSvelteIntroduction.svelte";
   onMount(() => {
     const deck = new Reveal({
       autoAnimateEasing: "ease-out",
@@ -44,7 +45,8 @@
     <R05FrameworkComponent />
     <R06MollyStoryPart3 />
     <R07DefinitionSvelte />
-    <R08BaseDefinitions />
-
+    
+    <RSvelteIntroduction />
+    <R0BaseDefinitions />
   </div>
 </div>
