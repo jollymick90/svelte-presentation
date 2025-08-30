@@ -1,11 +1,11 @@
 <script>
-  import { bgSvelteRadial } from "../common.svelte";
+  
   const bg = "#eaf3ff";
 </script>
-
-<section data-auto-animate data-background-gradient={bg}>
   <!-- SLIDE 1: stato iniziale (oggetti fuori schermo) -->
 
+<!-- <section data-auto-animate data-background-color={bg}>
+    <h2>Svelte Part</h2>
   <div class="grid-2x2">
     <div class="card off-left" data-id="component">
       <h2>COMPONENT</h2>
@@ -25,10 +25,11 @@
       <p>and a philosophy of building web apps</p>
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- SLIDE 2: ingresso con auto-animate + fragments (stagger) -->
-<section data-auto-animate data-background-gradient={bg}>
+<section data-auto-animate data-background-color={bg}>
+    <h2>Svelte Part</h2>
   <div class="grid-2x2">
     <div class="card fragment" data-fragment-index="0" data-id="component">
       <h2>COMPONENT</h2>
@@ -51,7 +52,7 @@
 </section>
 
 <!-- SLIDE 3: focus su COMPONENT -->
-<section data-auto-animate data-background-gradient={bg}>
+<section data-auto-animate data-background-color={bg}>
   <div class="grid-2x2">
     <div class="card focus" data-id="component">
       <h2>COMPONENT</h2>
@@ -74,7 +75,7 @@
 </section>
 
 <!-- SLIDE 4: focus su COMPILER -->
-<section data-auto-animate data-background-gradient={bg}>
+<section data-auto-animate data-background-color={bg}>
   <div class="grid-2x2">
     <div class="card dimmed" data-id="component">
       <h2>COMPONENT</h2>
@@ -97,7 +98,7 @@
 </section>
 
 <!-- SLIDE 5: focus su META FRAMEWORK -->
-<section data-auto-animate data-background-gradient={bg}>
+<section data-auto-animate data-background-color={bg}>
   <div class="grid-2x2">
     <div class="card dimmed" data-id="component">
       <h2>COMPONENT</h2>
@@ -120,7 +121,7 @@
 </section>
 
 <!-- SLIDE 6: focus su DEVELOPMENT STYLE -->
-<section data-auto-animate data-background-gradient={bg}>
+<section data-auto-animate data-background-color={bg}>
   <div class="grid-2x2">
     <div class="card dimmed" data-id="component">
       <h2>COMPONENT</h2>
@@ -157,11 +158,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 2.2rem;
     align-items: stretch;
-  }
-  @media (max-width: 900px) {
-    .grid-2x2 {
-      grid-template-columns: 1fr;
-    }
   }
 
   /* card */
