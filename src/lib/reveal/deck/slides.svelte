@@ -7,8 +7,7 @@
 
   import "reveal.js/dist/reveal.css";
   import "reveal.js/dist/theme/black.css";
-  import "reveal.js/plugin/highlight/monokai.css";
-  
+  import "reveal.js/plugin/highlight/monokai.css";  
     
   import R05FrameworkComponent from "$lib/reveal/slides/R05FrameworkComponent.svelte";
   import R00WelcomeSlide from "../slides/R00WelcomeSlide.svelte";
@@ -19,7 +18,11 @@
   import R02AgendaSlide from "../slides/R02AgendaSlide.svelte";
   import R0BaseDefinitions from "../slides/R0BaseDefinitions.svelte";
   import R07DefinitionSvelte from "../slides/R07DefinitionSvelte.svelte";
-  import RSvelteIntroduction from "../slides/RSvelteIntroduction.svelte";
+  import R08SvelteIntroduction from "../slides/R08SvelteIntroduction.svelte";
+  import R09HistorySvelte from "../slides/R09HistorySvelte.svelte";
+  import RHowCompilerWorks from "../slides/RHowCompilerWorks.svelte";
+  import RFirstComponent from "../slides/RFirstComponent.svelte";
+
   onMount(() => {
     const deck = new Reveal({
       autoAnimateEasing: "ease-out",
@@ -45,8 +48,10 @@
     <R05FrameworkComponent />
     <R06MollyStoryPart3 />
     <R07DefinitionSvelte />
-    
-    <RSvelteIntroduction />
+    <R08SvelteIntroduction />
+    <R09HistorySvelte />
+    <RFirstComponent />
+    <RHowCompilerWorks />
     <R0BaseDefinitions />
   </div>
 </div>

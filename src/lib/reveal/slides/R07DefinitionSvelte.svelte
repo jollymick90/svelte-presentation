@@ -7,9 +7,7 @@
 </script>
 
 <section data-auto-animate data-background-gradient={bgSvelteRadial}>
-  <h1>
-    Svelte
-  </h1>
+  <h1>Svelte</h1>
 </section>
 <section data-auto-animate data-background-gradient={bgSvelteRadial}>
   <p>
@@ -78,13 +76,20 @@
 </section>
 
 <section>
-  <section
-   data-auto-animate 
-  data-background-gradient={bgSvelteRadial}
-  >
-<h4 class="focus">
-      Non si è mai visto...
+  <section data-auto-animate data-background-gradient={bgSvelteRadial}>
+    <h4 class="focus">
+      Non si è mai visto usare una parola come
+      <b style="color: #edfb73">breathtakingly</b>,
+      <b style="color: #edfb73">love letter</b> in una documentazione tecnica.
     </h4>
+  </section>
+  <section data-auto-animate data-background-gradient={bgSvelteRadial}>
+    <h4 class="focus">
+      Non si è mai visto usare una parola come
+      <b style="color: #edfb73">breathtakingly</b>,
+      <b style="color: #edfb73">love letter</b> in una documentazione tecnica.
+    </h4>
+    <p>Vediamo?</p>
   </section>
   <section
     data-auto-animate
@@ -155,25 +160,28 @@
   </section>
 </section>
 
-<section
-   data-auto-animate 
-  data-background-gradient={bgSvelteRadial}>
-    
+<!-- <section data-auto-animate data-background-gradient={bgSvelteRadial}>
+  <p>Svelte</p>
+  <h3>A Game-Changer for Web Developer</h3>
+</section> -->
+<section data-auto-animate data-background-gradient={bgSvelteRadial}>
   <p>
-   Svelte 
-  </p>
-   <h3>A Game-Changer for Web Developer</h3>
-</section>
-<section
-   data-auto-animate 
-  data-background-gradient={bgSvelteRadial}>
-    
-  <p>
-    Svelte is a UI framework that uses a 
-    <b style="color: #edfb73">compiler</b> to let you write
-    breathtakingly concise components that do minimal work in the browser, using languages you already know — HTML, CSS and JS. It's a love letter to web development.
+    <span style="color: #FFFFFF">Svelte is a UI framework that uses a</span>
+    <b style="color: #FFFFFF">compiler</b><span style="color: #FFFFFF"> to let you write breathtakingly concise
+    components that do minimal work in the browser, using languages you already know
+    — HTML, CSS and JS. It's a love letter to web development.</span>
   </p>
 </section>
+
+<section data-auto-animate data-background-gradient={bgSvelteRadial}>
+  <p>
+    <span style="color: #5E5D5D">Svelte is a UI framework that uses a</span>
+    <b style="color: #edfb73">compiler</b><span style="color: #5E5D5D"> to let you write breathtakingly concise
+    components that do minimal work in the browser, using languages you already know
+    — HTML, CSS and JS. It's a love letter to web development.</span>
+  </p>
+</section>
+
 <style>
   .angular-bg {
     background: radial-gradient(circle, #dd0031, #c3002f, #333 100%);
