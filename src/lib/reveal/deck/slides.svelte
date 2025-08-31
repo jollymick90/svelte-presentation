@@ -23,7 +23,7 @@
   import RHowCompilerWorks from "../slides/RHowCompilerWorks.svelte";
   import RFirstComponent from "../slides/RFirstComponent.svelte";
 
-  onMount(() => {
+  onMount(async () => {
     const deck = new Reveal({
       autoAnimateEasing: "ease-out",
       autoAnimateDuration: 1,
@@ -35,7 +35,7 @@
     deck.initialize({
       plugins: [Markdown, Highlight, Notes],
     });
-  });
+  });  
 </script>
 
 <div class="reveal">
@@ -50,7 +50,7 @@
     <R07DefinitionSvelte />
     <R08SvelteIntroduction />
     <R09HistorySvelte />
-    <RFirstComponent />
+    <RFirstComponent/>
     <RHowCompilerWorks />
     <R0BaseDefinitions />
   </div>
