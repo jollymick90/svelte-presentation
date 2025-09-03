@@ -1,4 +1,6 @@
 <script>
+  import RCardUi from "$lib/components/reveal/RCardUI.svelte";
+
   const bg = "#eaf3ff";
 </script>
 
@@ -101,10 +103,16 @@
   <!-- SLIDE 5: focus su META FRAMEWORK -->
   <section data-auto-animate data-background-color={bg}>
     <div class="grid-2x2">
-      <div class="card dimmed" data-id="component">
+      <RCardUi dataId="component" dimmed={true} >
+                
         <h2>COMPONENT</h2>
         <p>It's a component framework,</p>
-      </div>
+      </RCardUi>
+      <!-- <div class="card dimmed" data-id="component">
+        
+        <h2>COMPONENT</h2>
+        <p>It's a component framework,</p>
+      </div> -->
       <div class="card dimmed" data-id="compiler">
         <h2>COMPILER</h2>
         <p>but it's also a compiler,</p>

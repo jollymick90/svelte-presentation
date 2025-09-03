@@ -22,6 +22,9 @@
   import R09HistorySvelte from "../slides/R09HistorySvelte.svelte";
   import RHowCompilerWorks from "../slides/RHowCompilerWorks.svelte";
   import RFirstComponent from "../slides/RFirstComponent.svelte";
+  import DefinitionCompileRuntime from "../slides/DefinitionCompileRuntime.svelte";
+  import SvelteKitPresentation from "../slides/SvelteKitPresentation.svelte";
+  import RSvelteKitCreate from "../slides/RSvelteKitCreate.svelte";
 
   onMount(async () => {
     const deck = new Reveal({
@@ -53,5 +56,8 @@
     <RFirstComponent/>
     <RHowCompilerWorks />
     <R0BaseDefinitions />
+    <DefinitionCompileRuntime />
+    <SvelteKitPresentation />
+    <RSvelteKitCreate />
   </div>
 </div>
