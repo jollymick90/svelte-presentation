@@ -25,6 +25,7 @@
   import DefinitionCompileRuntime from "../slides/DefinitionCompileRuntime.svelte";
   import SvelteKitPresentation from "../slides/SvelteKitPresentation.svelte";
   import RSvelteKitCreate from "../slides/RSvelteKitCreate.svelte";
+  import RSvelteKitRouting from "../slides/RSvelteKitRouting.svelte";
 
   onMount(async () => {
     const deck = new Reveal({
@@ -45,11 +46,8 @@
   <div class="slides">
     <R00WelcomeSlide />   
     <R01MollyStoryPart1 />
-    <R02AgendaSlide />
     <R03IntroSlide />
-    <R04MollyStoryPart2 />
-    <R05FrameworkComponent />
-    <R06MollyStoryPart3 />
+    <R02AgendaSlide />    
     <R07DefinitionSvelte />
     <R08SvelteIntroduction />
     <R09HistorySvelte />
@@ -59,5 +57,6 @@
     <DefinitionCompileRuntime />
     <SvelteKitPresentation />
     <RSvelteKitCreate />
+    <RSvelteKitRouting />
   </div>
 </div>

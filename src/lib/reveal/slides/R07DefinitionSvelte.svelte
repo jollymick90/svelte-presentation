@@ -1,38 +1,15 @@
-<script>
+<script lang="ts">
   import { bgSvelteRadial } from "../common.svelte";
   import emozionante1 from "$lib/assets/img/emozionante1.jpg";
 
   import emozionante2 from "$lib/assets/img/emozionante2.webp";
   import emozionante3 from "$lib/assets/img/emozione-meme-1.gif";
+
 </script>
 
 <section data-auto-animate data-background-gradient={bgSvelteRadial}>
   <h1>Svelte</h1>
 </section>
-<section data-auto-animate data-background-gradient={bgSvelteRadial}>
-  <p>
-    Svelte is a UI framework that uses a compiler to let you write
-    breathtakingly concise components
-  </p>
-</section>
-
-<section data-auto-animate data-background-gradient={bgSvelteRadial}>
-  <p>
-    Svelte is a UI framework that uses a compiler to let you write
-    breathtakingly concise components
-  </p>
-  <p>that do minimal work in the browser, using languages you already know —</p>
-</section>
-
-<section data-auto-animate data-background-gradient={bgSvelteRadial}>
-  <p>
-    Svelte is a UI framework that uses a compiler to let you write
-    breathtakingly concise components
-  </p>
-  <p>that do minimal work in the browser, using languages you already know —</p>
-  <p>HTML, CSS and JS.</p>
-</section>
-
 <section data-auto-animate data-background-gradient={bgSvelteRadial}>
   <p>
     Svelte is a UI framework that uses a compiler to let you write
@@ -55,7 +32,25 @@
 
 <section data-auto-animate data-background-gradient={bgSvelteRadial}>
   <div>
-    <b style="color: #edfb73">breathtakingly</b>
+    <p><b style="color: #edfb73">breathtakingly</b></p>
+  </div>
+</section>
+<section data-auto-animate data-background-gradient={bgSvelteRadial}>
+  <div>
+    <p><b style="color: #edfb73">breathtakingly</b></p>
+    <p><b style="color: #edfb73">mozzafiato</b></p>
+  </div>
+</section>
+<section data-auto-animate data-background-gradient={bgSvelteRadial}>
+  <div>
+    <p><b style="color: #edfb73">breathtakingly</b>&rarr;</p>
+    <p><b style="color: #edfb73">mozzafiato</b>&rarr;</p>
+  </div>
+</section>
+<section data-auto-animate data-background-gradient={bgSvelteRadial}>
+  <div>
+    <p><b style="color: #edfb73">breathtakingly</b>&rarr;<span>in an astonishing or awe-inspiring way, so as to take one's breath away</span></p>
+    <p><b style="color: #edfb73">mozzafiato</b>&rarr;<span>Che lascia senza respiro, per impressione, meraviglia, ammirazione; emozionante</span></p>
   </div>
 </section>
 <section data-auto-animate data-background-image={emozionante1}>
