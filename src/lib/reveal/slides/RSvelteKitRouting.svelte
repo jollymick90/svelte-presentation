@@ -17,7 +17,7 @@
       </RCardUi>
     </div>
   </section>
-  <section>
+  <section data-background-color={bg}>
         <div class="layout-routing-slide">
       <h4>svelte kit is routing</h4>
       <RCardUi dataId="svelte-kit-routing">
@@ -26,6 +26,10 @@
         persistenti +server.js: endpoint API REST-like
       </RCardUi>
     </div>
+
+  </section>
+  <section data-background-color={bg}>
+     
     <div class="layout-routing-slide">
       <h4>layout</h4>
       <RCardUi dataId="svelte-kit-routing">

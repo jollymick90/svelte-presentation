@@ -62,6 +62,8 @@
 
     <div class="quote">
       <!--  -->
+      FRAMEWORKS  are not tools for organizing your code,  they are tools  for organizing  your mind
+
     </div>
   </div>
 </section>

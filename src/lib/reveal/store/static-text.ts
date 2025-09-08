@@ -23,3 +23,5 @@ export const firstCodeComponent =`
 </style>
             
 `;
+
+
