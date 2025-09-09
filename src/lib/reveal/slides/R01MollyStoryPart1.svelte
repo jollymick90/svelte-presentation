@@ -131,9 +131,8 @@
     <p><Fa size="3x" icon={faDog} /></p>
 
     <h4 class="shadow">HTML, CSS, JS, TS</h4>
-    <h3>Framework</h3>
-    <h3>Library</h3>
-    <h3>Web Component</h3>
+    <h3>Framework, Library</h3>
+    <h3>Component</h3>
     <aside class="notes">e dopo aver duramente imparato html, css</aside>
   </section>
 

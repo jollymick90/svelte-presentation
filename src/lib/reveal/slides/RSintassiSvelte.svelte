@@ -1,5 +1,6 @@
 <script>
-  import { defaultBackground } from "../common.svelte";
+    import {lightBackground as defaultBackground} from '../common.svelte';
+
   import {
     code01,
     code02,
@@ -9,6 +10,11 @@
 </script>
 
 <section>
+   <section data-auto-animate data-background-color={defaultBackground}>
+    <div class="myHeading">
+      <h3>HowToWrite.svelte</h3>
+    </div>
+   </section>
   <section data-auto-animate data-background-color={defaultBackground}>
     <div class="myHeading">
       <h3>HowToWrite.svelte</h3>

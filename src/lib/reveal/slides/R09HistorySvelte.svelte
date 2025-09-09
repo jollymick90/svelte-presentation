@@ -1,82 +1,332 @@
 <script>
-  const bg = "#dfeaf6";
+  import {lightBackground as bg} from '../common.svelte';
 </script>
 
-<section data-background-color={bg}>
-  <div class="slide">
-    <div class="timeline">
-      <!-- 2016 -->
-      <div class="year-col">
-        <div class="center">
-          <div class="chevron">2016</div>
-        </div>
-        <div class="center">
-          <div class="bubble b-2016">
-            <span>Svelte 1.0 </span>
-            <span class="accent">first release</span>
+<section>
+  <section data-auto-animate data-background-color={bg}>
+    <h2 class="title">The story of Svelte</h2>
+  </section>
+  <section data-auto-animate data-background-color={bg}>
+    <h2 class="title">The story of Svelte</h2>
+    <div class="slide">
+      <div class="timeline">
+        <!-- 2016 -->
+        <div class="year-col">
+          <div class="center">
+            <div class="chevron">2016</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2016">
+              <span>Svelte 1.0 </span>
+              <span class="accent">first release</span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- 2018 -->
-      <div class="year-col">
-        <div class="center">
-          <div class="chevron">2018</div>
-        </div>
-        <div class="center">
-          <div class="bubble b-2018">Svelte 2.0</div>
-        </div>
-      </div>
-
-      <div class="year-col">
-        <div class="center">
-          <div class="chevron">2019</div>
-        </div>
-        <div class="center">
-          <div class="bubble b-2019a">
-            Svelte 3.0 <span class="accent">compiler</span>
+        <!-- 2018 -->
+        <div class="year-col">
+          <div class="center">
+            <div class="chevron">2018</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2018">Svelte 2.0</div>
           </div>
         </div>
-      </div>
 
-      <div class="year-col">
-        <div class="center">
-          <div class="chevron">2023</div>
+        <div class="year-col">
+          <div class="center">
+            <div class="chevron">2019</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2019a">
+              Svelte 3.0 <span class="accent">compiler</span>
+            </div>
+          </div>
         </div>
-        <div class="center">
-          <div class="bubble b-2023">Svelte 4.0</div>
-        </div>
-      </div>
 
-      <div class="year-col">
-        <div class="center">
-          <div class="chevron">2024</div>
+        <div class="year-col">
+          <div class="center">
+            <div class="chevron">2023</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2023">Svelte 4.0</div>
+          </div>
         </div>
-        <div class="center">
-          <div class="bubble b-2024">
-            Svelte 5.0 <span class="accent">runes</span>
+
+        <div class="year-col">
+          <div class="center">
+            <div class="chevron">2024</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2024">
+              Svelte 5.0 <span class="accent">runes</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="quote">
-      <!--  -->
-      FRAMEWORKS  are not tools for organizing your code,  they are tools  for organizing  your mind
+  <section data-auto-animate data-background-color={bg}>
+    <h3 class="title">The story of Svelte</h3>
+    <div class="slide">
+      <div class="timeline">
+        <!-- 2016 -->
+        <div class="year-col focus">
+          <div class="center">
+            <div class="chevron">2016</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2016">
+              <span>Svelte 1.0 </span>
+              <span class="accent">first release</span>
+            </div>
+          </div>
+        </div>
 
+        <!-- 2018 -->
+        <div class="year-col unfocus">
+          <div class="center">
+            <div class="chevron">2018</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2018">Svelte 2.0</div>
+          </div>
+        </div>
+
+        <div class="year-col unfocus">
+          <div class="center">
+            <div class="chevron">2019</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2019a">
+              Svelte 3.0 <span class="accent">compiler</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="year-col unfocus">
+          <div class="center">
+            <div class="chevron">2023</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2023">Svelte 4.0</div>
+          </div>
+        </div>
+
+        <div class="year-col unfocus">
+          <div class="center">
+            <div class="chevron">2024</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2024">
+              Svelte 5.0 <span class="accent">runes</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <section data-auto-animate data-background-color={bg}>
+    <h2 class="title">The story of Svelte</h2>
+    <div class="slide">
+      <div class="timeline">
+        <!-- 2016 -->
+        <div class="year-col unfocus">
+          <div class="center">
+            <div class="chevron">2016</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2016">
+              <span>Svelte 1.0 </span>
+              <span class="accent">first release</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2018 -->
+        <div class="year-col unfocus">
+          <div class="center">
+            <div class="chevron">2018</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2018">Svelte 2.0</div>
+          </div>
+        </div>
+
+        <div class="year-col focus">
+          <div class="center">
+            <div class="chevron">2019</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2019a">
+              Svelte 3.0 <span class="accent">compiler</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="year-col unfocus">
+          <div class="center">
+            <div class="chevron">2023</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2023">Svelte 4.0</div>
+          </div>
+        </div>
+
+        <div class="year-col unfocus">
+          <div class="center">
+            <div class="chevron">2024</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2024">
+              Svelte 5.0 <span class="accent">runes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-auto-animate data-background-color={bg}>
+    <h2 class="title">The story of Svelte</h2>
+    <div class="slide">
+      <div class="timeline">
+        <!-- 2016 -->
+        <div class="year-col unfocus">
+          <div class="center">
+            <div class="chevron">2016</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2016">
+              <span>Svelte 1.0 </span>
+              <span class="accent">first release</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2018 -->
+        <div class="year-col unfocus">
+          <div class="center">
+            <div class="chevron">2018</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2018">Svelte 2.0</div>
+          </div>
+        </div>
+
+        <div class="year-col unfocus">
+          <div class="center">
+            <div class="chevron">2019</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2019a">
+              Svelte 3.0 <span class="accent">compiler</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="year-col unfocus">
+          <div class="center">
+            <div class="chevron">2023</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2023">Svelte 4.0</div>
+          </div>
+        </div>
+
+        <div class="year-col focus">
+          <div class="center">
+            <div class="chevron">2024</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2024">
+              Svelte 5.0 <span class="accent">runes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section data-auto-animate data-background-color={bg}>
+    <h2 class="title">The story of Svelte</h2>
+    <div class="slide">
+      <div class="timeline">
+        <!-- 2016 -->
+        <div class="year-col">
+          <div class="center">
+            <div class="chevron">2016</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2016">
+              <span>Svelte 1.0 </span>
+              <span class="accent">first release</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2018 -->
+        <div class="year-col">
+          <div class="center">
+            <div class="chevron">2018</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2018">Svelte 2.0</div>
+          </div>
+        </div>
+
+        <div class="year-col">
+          <div class="center">
+            <div class="chevron">2019</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2019a">
+              Svelte 3.0 <span class="accent">compiler</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="year-col">
+          <div class="center">
+            <div class="chevron">2023</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2023">Svelte 4.0</div>
+          </div>
+        </div>
+
+        <div class="year-col">
+          <div class="center">
+            <div class="chevron">2024</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2024">
+              Svelte 5.0 <span class="accent">runes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="quote">
+        <i>"Frameworks are not tools for organizing your code, <br>they are tools for organizing
+        your mind"</i>
+      </div>
+    </div>
+  </section>
 </section>
 
 <style>
   :root {
-    --bg: #dfeaf6;
     --chev: #6e93c5;
     --chev-dark: #4e6f9e;
     --text: #0f2a47;
     --bubble-bg: #f6fbff;
     --bubble-bd: #8fb3df;
     --accent: #2b66c3;
+  }
+
+  .title {
+    color: var(--text);
   }
   section {
     margin: 0;
@@ -88,7 +338,6 @@
       Arial,
       sans-serif;
     color: var(--text);
-    background: var(--bg);
   }
 
   .timeline {
@@ -157,6 +406,7 @@
     font-weight: 800;
     letter-spacing: 0.2px;
     box-shadow: 0 3px 0 rgba(0, 0, 0, 0.08);
+    font-size: 2rem;
   }
 
   /* Small helper for center alignment inside each column */
@@ -164,5 +414,14 @@
     margin-top: 20px;
     display: flex;
     justify-content: center;
+  }
+
+  .focus {
+    font-size: 1.5rem;
+  }
+  .unfocus {
+    opacity: 0.5;
+    font-size: 0.9rem;
+    color: #3f3f3f6e;
   }
 </style>

@@ -1,12 +1,14 @@
 <script>
   import ReplEmbed from "$lib/components/tools/ReplEmbed.svelte";
+  import { lightBackground } from "../common.svelte";
 </script>
 
 <section>
-  <section>
-    <h3>La pratica rende maestri</h3>
+  <section data-background-color="{lightBackground}">
+    <h3>Learning by Doing</h3>
   </section>
-  <section>
+  <section data-background-color="{lightBackground}">
+    <h5>Playground</h5>
     <ReplEmbed
       gistId="hello-world"
       file="App.svelte"

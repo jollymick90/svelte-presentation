@@ -1,10 +1,16 @@
+<script>
+  import { lightBackground } from "../common.svelte";
+</script>
+
 <section>
-  <section data-background-color="#EFABC1">
+  <section data-background-color={lightBackground}>
     <h1>Come funzione il compilatore</h1>
   </section>
-  <section data-auto-animate 
-  data-background-color="#eaf3ff"
-  class="svelte-compiler-slide">
+  <section
+    data-auto-animate
+    data-background-color="#eaf3ff"
+    class="svelte-compiler-slide"
+  >
     <div class="diagram">
       <!-- Riga TOP: Model -->
       <div class="model node">Model</div>
@@ -20,16 +26,20 @@
       <div class="ast node">AST</div>
 
       <!-- Connettori -->
-       <div class="h-connector start-connector"></div>
+      <div class="h-connector start-connector"></div>
       <div class="v-connector ast-connector"></div>
       <div class="h-connector parse-analyze-connector"></div>
-      <div class="v-connector model-connector"></div>      
-      
+      <div class="v-connector model-connector"></div>
+
       <div class="h-connector analyze-transform-connector"></div>
       <div class="h-connector end-connector"></div>
     </div>
   </section>
-<section data-auto-animate class="svelte-compiler-slide">
+  <section
+    data-auto-animate
+    data-background-color={lightBackground}
+    class="svelte-compiler-slide"
+  >
     <div class="diagram">
       <!-- Riga TOP: Model -->
       <div class="model node defocus">Model</div>
@@ -45,16 +55,20 @@
       <div class="ast node defocus">AST</div>
 
       <!-- Connettori -->
-       <div class="h-connector start-connector"></div>
+      <div class="h-connector start-connector"></div>
       <div class="v-connector ast-connector"></div>
       <div class="h-connector parse-analyze-connector"></div>
-      <div class="v-connector model-connector"></div>      
-      
+      <div class="v-connector model-connector"></div>
+
       <div class="h-connector analyze-transform-connector"></div>
       <div class="h-connector end-connector"></div>
     </div>
   </section>
-  <section data-auto-animate class="svelte-compiler-slide">
+  <section
+    data-auto-animate
+    data-background-color={lightBackground}
+    class="svelte-compiler-slide"
+  >
     <div class="diagram">
       <!-- Riga TOP: Model -->
       <div class="model node defocus">Model</div>
@@ -70,16 +84,20 @@
       <div class="ast node defocus">AST</div>
 
       <!-- Connettori -->
-       <div class="h-connector start-connector"></div>
+      <div class="h-connector start-connector"></div>
       <div class="v-connector ast-connector"></div>
       <div class="h-connector parse-analyze-connector"></div>
-      <div class="v-connector model-connector"></div>      
-      
+      <div class="v-connector model-connector"></div>
+
       <div class="h-connector analyze-transform-connector"></div>
       <div class="h-connector end-connector"></div>
     </div>
   </section>
-    <section data-auto-animate class="svelte-compiler-slide">
+  <section
+    data-auto-animate
+    data-background-color={lightBackground}
+    class="svelte-compiler-slide"
+  >
     <div class="diagram">
       <!-- Riga TOP: Model -->
       <div class="model node defocus">Model</div>
@@ -95,16 +113,20 @@
       <div class="ast node defocus">AST</div>
 
       <!-- Connettori -->
-       <div class="h-connector start-connector"></div>
+      <div class="h-connector start-connector"></div>
       <div class="v-connector ast-connector"></div>
       <div class="h-connector parse-analyze-connector"></div>
-      <div class="v-connector model-connector"></div>      
-      
+      <div class="v-connector model-connector"></div>
+
       <div class="h-connector analyze-transform-connector"></div>
       <div class="h-connector end-connector"></div>
     </div>
   </section>
-      <section data-auto-animate class="svelte-compiler-slide">
+  <section
+    data-auto-animate
+    data-background-color={lightBackground}
+    class="svelte-compiler-slide"
+  >
     <div class="diagram">
       <!-- Riga TOP: Model -->
       <div class="model node defocus">Model</div>
@@ -120,16 +142,20 @@
       <div class="ast node focus">AST</div>
 
       <!-- Connettori -->
-       <div class="h-connector start-connector"></div>
+      <div class="h-connector start-connector"></div>
       <div class="v-connector ast-connector"></div>
       <div class="h-connector parse-analyze-connector"></div>
-      <div class="v-connector model-connector"></div>      
-      
+      <div class="v-connector model-connector"></div>
+
       <div class="h-connector analyze-transform-connector"></div>
       <div class="h-connector end-connector"></div>
     </div>
   </section>
-        <section data-auto-animate class="svelte-compiler-slide">
+  <section
+    data-auto-animate
+    data-background-color={lightBackground}
+    class="svelte-compiler-slide"
+  >
     <div class="diagram">
       <!-- Riga TOP: Model -->
       <div class="model node defocus">Model</div>
@@ -145,16 +171,20 @@
       <div class="ast node focus">AST</div>
 
       <!-- Connettori -->
-       <div class="h-connector start-connector"></div>
+      <div class="h-connector start-connector"></div>
       <div class="v-connector ast-connector"></div>
       <div class="h-connector parse-analyze-connector"></div>
-      <div class="v-connector model-connector"></div>      
-      
+      <div class="v-connector model-connector"></div>
+
       <div class="h-connector analyze-transform-connector"></div>
       <div class="h-connector end-connector"></div>
     </div>
   </section>
-          <section data-auto-animate class="svelte-compiler-slide">
+  <section
+    data-auto-animate
+    data-background-color={lightBackground}
+    class="svelte-compiler-slide"
+  >
     <div class="diagram">
       <!-- Riga TOP: Model -->
       <div class="model node focus">Model</div>
@@ -170,16 +200,20 @@
       <div class="ast node focus">AST</div>
 
       <!-- Connettori -->
-       <div class="h-connector start-connector"></div>
+      <div class="h-connector start-connector"></div>
       <div class="v-connector ast-connector"></div>
       <div class="h-connector parse-analyze-connector"></div>
-      <div class="v-connector model-connector"></div>      
-      
+      <div class="v-connector model-connector"></div>
+
       <div class="h-connector analyze-transform-connector"></div>
       <div class="h-connector end-connector"></div>
     </div>
   </section>
-            <section data-auto-animate class="svelte-compiler-slide">
+  <section
+    data-auto-animate
+    data-background-color={lightBackground}
+    class="svelte-compiler-slide"
+  >
     <div class="diagram">
       <!-- Riga TOP: Model -->
       <div class="model node focus">Model</div>
@@ -195,16 +229,20 @@
       <div class="ast node focus">AST</div>
 
       <!-- Connettori -->
-       <div class="h-connector start-connector"></div>
+      <div class="h-connector start-connector"></div>
       <div class="v-connector ast-connector"></div>
       <div class="h-connector parse-analyze-connector"></div>
-      <div class="v-connector model-connector"></div>      
-      
+      <div class="v-connector model-connector"></div>
+
       <div class="h-connector analyze-transform-connector"></div>
       <div class="h-connector end-connector"></div>
     </div>
   </section>
-              <section data-auto-animate class="svelte-compiler-slide">
+  <section
+    data-auto-animate
+    data-background-color={lightBackground}
+    class="svelte-compiler-slide"
+  >
     <div class="diagram">
       <!-- Riga TOP: Model -->
       <div class="model node focus">Model</div>
@@ -220,11 +258,11 @@
       <div class="ast node focus">AST</div>
 
       <!-- Connettori -->
-       <div class="h-connector start-connector"></div>
+      <div class="h-connector start-connector"></div>
       <div class="v-connector ast-connector"></div>
       <div class="h-connector parse-analyze-connector"></div>
-      <div class="v-connector model-connector"></div>      
-      
+      <div class="v-connector model-connector"></div>
+
       <div class="h-connector analyze-transform-connector"></div>
       <div class="h-connector end-connector"></div>
     </div>
@@ -234,7 +272,6 @@
 <style>
   /* Scopo tutto alla singola slide */
   .svelte-compiler-slide {
-    
     --blue: #5e88be; /* frecce */
     --blue-dark: #39669f; /* bordi */
     --box: #e6f0ff; /* box chiari */
@@ -309,7 +346,7 @@
     color: #fff;
     border: 4px solid var(--blue-dark);
     border-left-width: 4px;
-    
+
     padding: 18px 20px;
     border-radius: 12px;
     font-size: clamp(18px, 2.1vw, 34px);
@@ -368,7 +405,7 @@
   .svelte-compiler-slide .ast-connector {
     width: 10px;
     border-radius: 5px;
-    left: calc(260px); 
+    left: calc(260px);
     top: calc(230px); /* parte dalla metà della riga 2 */
     height: 120px; /* fino alla riga 3 */
     transform: translateX(-50%);
@@ -392,7 +429,7 @@
     right: 400px;
     top: calc(120px + 75px);
     width: 60px;
-    z-index: -1;    
+    z-index: -1;
   }
   .svelte-compiler-slide .end-connector {
     height: 10px;
@@ -400,7 +437,7 @@
     right: 170px;
     top: calc(120px + 75px);
     width: 60px;
-    z-index: -1;    
+    z-index: -1;
   }
   /* input from svelte box to parse box (orizzontale corto) */
   .svelte-compiler-slide .start-connector {
@@ -409,16 +446,16 @@
     left: 160px;
     top: calc(120px + 75px);
     width: 60px;
-    z-index: -1; 
+    z-index: -1;
   }
- /* input from svelte box to parse box (orizzontale corto) */
+  /* input from svelte box to parse box (orizzontale corto) */
   .svelte-compiler-slide .parse-analyze-connector {
     height: 10px;
     border-radius: 5px;
     left: 300px;
     top: calc(120px + 75px);
     width: 60px;
-    z-index: -1; 
+    z-index: -1;
   }
 
   .focus {
@@ -427,5 +464,4 @@
   .defocus {
     opacity: 30%;
   }
-
 </style>

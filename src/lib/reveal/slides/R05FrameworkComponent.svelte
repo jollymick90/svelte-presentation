@@ -15,9 +15,10 @@
 </section>
 
 
-<section data-background-color={defaultBackground}>
+<section data-auto-animate data-background-color={defaultBackground}>
+  <h5>React</h5>
   <pre><code data-trim data-noescape
-    data-line-numbers="1 | 2-6 | 8-11"
+    data-line-numbers="1-14 | 2-6 | 8-13"
     >
     {`
   const Counter = () => {
@@ -42,16 +43,17 @@
     e vede javascript e html, mescolato.... 
   </aside>
 </section>
-<section data-background-color={defaultBackground}>
+<section data-auto-animate data-background-color={defaultBackground}>
   <h2>Cambia lavoro o progetto...</h2>
   <aside class="notes">
     Poi cambia
   </aside>
 </section>
 
-<section data-background-color={defaultBackground}>
+<section data-auto-animate data-background-color={defaultBackground}>
+  <h5>Angular</h5>
   <pre><code data-trim data-noescape
-    data-line-numbers="1 | 3-4 | 25-34 | 32 | 6-21">
+    data-line-numbers="1-14 | 3-4 | 25-34 | 32 | 6-21">
     {`  
 @Component({
   selector: 'my-app',
@@ -98,27 +100,3 @@ export class AppComponent  {
   </aside>
 </section>
 
-<!-- <section data-background-color={defaultBackground} data-auto-animate>
-  <h4 >Framework</h4>
-  <aside class="notes">
-    scopre i framework
-    e gli arriva un coppino da dietro dal collega che dice
-  </aside>
-</section>
-
-<section data-background-color={defaultBackground} data-auto-animate>
-  <h4 >React non è un Framework</h4>
-  <aside class="notes">
-    e gli arriva un coppino da dietro dal collega che dice
-  </aside>
-</section> -->
-
-<style>
-
-  :root {
-    /* --r-main-font-size: 15px; */
-  }
-  /* code {
-   font-size: large;
-  } */
-</style>
