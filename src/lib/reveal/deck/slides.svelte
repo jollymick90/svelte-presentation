@@ -27,6 +27,9 @@
   import RSvelteKitCreate from "../slides/RSvelteKitCreate.svelte";
   import RSvelteKitRouting from "../slides/RSvelteKitRouting.svelte";
   import RSintassiSvelte from "../slides/RSintassiSvelte.svelte";
+  import RSintax from "../slides/RSintax.svelte";
+  import RReactivity from "../slides/RReactivity.svelte";
+  import RScopedStyle from "../slides/RScopedStyle.svelte";
 
   onMount(async () => {
     const deck = new Reveal({
@@ -53,11 +56,14 @@
     <R08SvelteIntroduction />
     <R09HistorySvelte />
     <RSintassiSvelte />
+    <RScopedStyle></RScopedStyle>
+    <RReactivity></RReactivity>
+    <RSintax></RSintax>
     <RHowCompilerWorks />
-    <R0BaseDefinitions />
-    <DefinitionCompileRuntime />
     <SvelteKitPresentation />
     <RSvelteKitCreate />
     <RSvelteKitRouting />
+    <R0BaseDefinitions />
+    <DefinitionCompileRuntime />
   </div>
 </div>

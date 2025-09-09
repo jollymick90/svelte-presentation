@@ -1,4 +1,5 @@
 export const defaultBackground = "darkslategray";
+export const defaultBackgroundLight = "#f39090";
 export const defaultSvelteColor = "#d43008";
 export const defaultSvelteBackground = "#DA6F54";
 export const defaultAngularBackground = "#DA6F54";
