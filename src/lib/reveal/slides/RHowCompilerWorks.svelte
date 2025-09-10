@@ -6,6 +6,13 @@
   <section data-background-color={lightBackground}>
     <h1>Come funzione il compilatore</h1>
   </section>
+    <section data-background-color={lightBackground}>
+    <h1>Come funzione il compilatore</h1>
+    <p>
+      Le performance di svelte sono strabilianti
+
+    </p>
+  </section>
   <section
     data-auto-animate
     data-background-color="#eaf3ff"

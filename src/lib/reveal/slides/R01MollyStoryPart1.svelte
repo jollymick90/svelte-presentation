@@ -69,22 +69,16 @@
     <div class="molly-go-to-work">
       <span><Fa size="3x" icon={faDog} /></span>
     </div>
-    <aside class="notes">poi che succede? va a lavoro</aside>
+    <aside class="notes">poi che succede?</aside>
   </section>
-  <section data-background-color={defaultBackground} data-auto-animate>
-    <div class="molly-go-to-work">
-      <span><Fa size="3x" icon={faDog} /></span>
-      <span><Fa size="3x" icon={faArrowRight} /></span>
-    </div>
-    <aside class="notes">poi che succede? va a lavoro</aside>
-  </section>
+
   <section data-background-color={defaultBackground} data-auto-animate>
     <div class="molly-go-to-work">
       <span><Fa size="3x" icon={faDog} /></span>
       <span><Fa size="3x" icon={faArrowRight} /></span>
       <span><Fa size="3x" icon={faBriefcase} /></span>
     </div>
-    <aside class="notes">poi che succede? va a lavoro</aside>
+    <aside class="notes">Molly va a lavoro, mette in pratica... </aside>
   </section>
   <R05FrameworkComponent></R05FrameworkComponent>
   <section data-background-color={defaultBackground} data-auto-animate>

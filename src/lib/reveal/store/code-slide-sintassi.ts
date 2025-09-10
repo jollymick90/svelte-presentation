@@ -108,6 +108,17 @@ export const codeReactivity02 = `
 
 export const codeStyle01 = `
 <h1>Hello Svelte</h1>
+<style>
+  h1 {
+    color: hotpink;
+  }
+</style>
+
+`;
+
+export const codeStyle01Nested = `
+<h1>Hello Svelte</h1>
+<Nested></Nested>
 
 <style>
   h1 {

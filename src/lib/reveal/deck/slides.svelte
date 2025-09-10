@@ -31,7 +31,9 @@
   import RReactivity from "../slides/RReactivity.svelte";
   import RScopedStyle from "../slides/RScopedStyle.svelte";
   import SvelteKitFeatures from "../slides/SvelteKitFeatures.svelte";
-
+  
+  const { showNotes = false } = $props();
+  
   onMount(async () => {
     const deck = new Reveal({
       autoAnimateEasing: "ease-out",
@@ -40,7 +42,9 @@
       hash: true,
       controls: true,
       progress: true,
+      showNotes: 'separate-page'
     });
+    // Reveal.configure({ showNotes: true });
     deck.initialize({
       plugins: [Markdown, Highlight, Notes],
     });

@@ -9,7 +9,7 @@
     <span><Fa size="3x" icon={faBriefcase}/></span>
     
     <aside class="notes">
-    Solo che a lavoro, si ritrova questo!
+   e cosa scopre a lavoro?
   </aside>
   
 </section>
@@ -41,12 +41,43 @@
   <aside class="notes">
     Scopre React, 
     e vede javascript e html, mescolato.... 
+    Per sbaglio lo chiama 'Framework'
+  
+  </aside>
+</section>
+<section data-auto-animate data-background-color={defaultBackground}>
+  <h5>React</h5>
+  <p>Libreria!</p>
+  <pre><code data-trim data-noescape
+    data-line-numbers="1-14 | 2-6 | 8-13"
+    >
+    {`
+  const Counter = () => {
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={increment}>Increment</button>
+    </div>
+  );
+};
+    `}
+  </code>
+  </pre>
+  <aside class="notes">
+   
+   e arriva il puntuale "react non è un framework è una libreria"
   </aside>
 </section>
 <section data-auto-animate data-background-color={defaultBackground}>
   <h2>Cambia lavoro o progetto...</h2>
   <aside class="notes">
-    Poi cambia
+   dopo questa batosta e aver ingrovigliato il codice a sufficenza
   </aside>
 </section>
 
