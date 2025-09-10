@@ -182,3 +182,22 @@ export const codeBindingDirective01 = `
 {/if}
 `;
 
+export const svelteKitLoadData01 = `
+// src/routes/blog/+page.server.js
+import { error } from '@sveltejs/kit';
+
+export function load() {
+  const posts = [ /*... dati fittizi... */ ];
+  if (!posts) {
+    error(404, 'Post non trovati');
+  }
+  return {
+    summaries: posts.map((post) => ({
+      slug: post.slug,
+      title: post.title,
+    }))
+  };
+}
+`;
+
+
