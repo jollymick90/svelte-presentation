@@ -33,6 +33,7 @@
   import SvelteKitFeatures from "../slides/SvelteKitFeatures.svelte";
   import RBindingDirective from "../slides/RBindingDirective.svelte";
   import RKitDataLoading from "../slides/RKitDataLoading.svelte";
+  import RConclusion from "../slides/RConclusion.svelte";
   
   const { showNotes = false } = $props();
   
@@ -75,6 +76,6 @@
     <RSvelteKitRouting />
     <RKitDataLoading />
     <SvelteKitFeatures />
-   
+   <RConclusion />
   </div>
 </div>
