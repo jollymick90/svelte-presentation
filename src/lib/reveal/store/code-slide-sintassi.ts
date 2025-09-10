@@ -1,23 +1,33 @@
 export const code01 = `
 <script>
-  let name = $state("Michele");
+    import { $state } from 'svelte/state';
+    let name = $state('Molly');
+    let count = $state(0);
 </script>
 
 <h1>Hello {name}!</h1>
 
+<button onclick={() => count++}>
+    clicks: {count}
+</button>
+
 <style>
-  h1 {
-    color: tomato;
-  }
+    h1 { color: tomato; }
 </style>
 `;
 
 export const code02 = `
 <script>
-  let name = $state("Michele");
+    import { $state } from 'svelte/state';
+    let name = $state('Molly');
+    let count = $state(0);
 </script>
 
 <h1>Hello {name}!</h1>
+
+<button onclick={() => count++}>
+    clicks: {count}
+</button>
 
 `;
 
@@ -28,12 +38,6 @@ export const code03 = `
 
 `;
 
-export const code04 = `
-<script>
-  let name = $state("Michele");
-</script>
-
-`;
 
 
 export const codeReacttivityReact = `
@@ -106,6 +110,26 @@ export const codeReactivity02 = `
 	clicks: {count}
 </button>`;
 
+export const codeReactivityDeep03 = `
+<script>
+    import { $state, $derived } from 'svelte/state';
+
+    let numbers = $state([1, 2, 3, 4]);
+    let total = $derived(numbers.reduce((t, n) => t + n, 0));
+
+    function addNumber() {
+        numbers.push(numbers.length + 1);
+    }
+</script>
+
+<p>I numeri sono: {numbers.join(' + ')}</p>
+<p>Il totale è: {total}</p>
+
+<button onclick={addNumber}>
+    Aggiungi un numero
+</button>
+`;
+
 export const codeStyle01 = `
 <h1>Hello Svelte</h1>
 <style>
@@ -137,3 +161,24 @@ export const codeStyle02 = `
 </style>
 
 `;
+
+
+export const codeBindingDirective01 = `
+<script>
+    import { $state } from 'svelte/state';
+
+    let name = $state('Molly');
+</script>
+
+<h1>Benvenuta, {name}!</h1>
+
+<p>Inserisci il nome:</p>
+<input bind:value={name} />
+
+{#if name === 'Molly'}
+    <p>Sei tornata!</p>
+{:else}
+    <p>Ciao, {name}!</p>
+{/if}
+`;
+

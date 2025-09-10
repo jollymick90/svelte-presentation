@@ -22,14 +22,17 @@
     <p><Fa size="3x" icon={faDog} /></p>
     <h2>Molly</h2>
 
-    <aside class="notes">è Molly!</aside>
+    <aside class="notes">
+      è Molly!
+      In questa presentazione, non parleremo solo di Svelte,
+    </aside>
   </section>
   <section data-background-color={defaultBackground} data-auto-animate>
     <p><Fa size="3x" icon={faDog} /></p>
     <h2>Molly</h2>
     <h4>Web Site - Frontend developer</h4>
     <aside class="notes">
-      e Vuole creare un sito web e diventare frontend developer
+       ma seguiremo il viaggio di Molly, una giovane sviluppatrice che affronta le sfide del mondo frontend
     </aside>
   </section>
 
@@ -38,7 +41,12 @@
     <h2>Molly</h2>
     <h4>Web Site - Frontend developer</h4>
     <h3>What should Molly learn first??</h3>
-    <aside class="notes">Cosa dovrebbe imparare?</aside>
+    <aside class="notes">
+      Cosa dovrebbe imparare?
+      
+      Se c'è qualcuno in sala con qualche primavera alle spalle,
+      provi a pensare a quali tasselli fondamentali dovrebbe conoscere.
+    </aside>
   </section>
   <section data-background-color={defaultBackground} data-auto-animate>
     <p><Fa size="3x" icon={faDog} /></p>
@@ -52,8 +60,8 @@
     <h2>HTML</h2>
     <h2>CSS</h2>
     <aside class="notes">
-      CSS anche, essenziale a meno che non vuoi fare per tutta la vita delle
-      slide come le mie
+      CSS, essenziale a meno che non vogliate fare per tutta la vita delle
+      slide come queste
     </aside>
   </section>
   <section data-background-color={defaultBackground} data-auto-animate>
@@ -62,14 +70,17 @@
     <h2>HTML</h2>
     <h2>CSS</h2>
     <h2>JS</h2>
-    <aside class="notes">e lui, javascript</aside>
+    <aside class="notes">javascript - l'elefante nella stanza</aside>
   </section>
 
   <section data-background-color={defaultBackground} data-auto-animate>
     <div class="molly-go-to-work">
       <span><Fa size="3x" icon={faDog} /></span>
     </div>
-    <aside class="notes">poi che succede?</aside>
+    <aside class="notes">
+      poi che succede?
+      Il percorso di Molly inizia dalle fondamenta del web. Ma dopo averle imparate, si trova di fronte a una domanda cruciale: qual è il prossimo passo?
+    </aside>
   </section>
 
   <section data-background-color={defaultBackground} data-auto-animate>
@@ -133,17 +144,10 @@
   <section data-background-color={defaultBackground} data-auto-animate>
     <div class="molly-go-to-work">
       <span><Fa size="3x" icon={faDog} /></span>
-    </div>
-
-    <aside class="notes">e per finire</aside>
-  </section>
-  <section data-background-color={defaultBackground} data-auto-animate>
-    <div class="molly-go-to-work">
-      <span><Fa size="3x" icon={faDog} /></span>
       <span><Fa size="3x" icon={faBriefcase} /></span>
     </div>
 
-    <aside class="notes">sempre a lavoro</aside>
+    <aside class="notes">Torna a lavoro sempre a lavoro</aside>
   </section>
   <section data-background-color={defaultBackground} data-auto-animate>
     <div class="molly-go-to-work">
@@ -159,12 +163,14 @@
       </div>
     </div>
 
-    <aside class="notes">incontra un collega</aside>
+    <aside class="notes">Torna a lavoro sempre a lavoro, incontra un collega</aside>
   </section>
   <section data-background-color={defaultBackground} data-auto-animate>
     <div class="molly-go-to-work">
       <span><Fa size="3x" icon={faDog} /></span>
       <span><Fa size="3x" icon={faBriefcase} /></span>
+          
+
       <div class="me-overlap">
         <span class="user">
           <Fa size="3x" icon={faUser} />
@@ -176,14 +182,28 @@
       
     </div>
 
-    <aside class="notes">incontra un collega</aside>
+    <aside class="notes">
+      incontra un collega che gli dice 
+       E se ci fosse una via più semplice? Uno strumento che non aggiunge complessità, ma la rimuove?
+    </aside>
+  </section>
+  <section data-background-color={defaultSvelteBackground} data-auto-animate>
+    <div class="molly-go-to-work">
+      <h2>Change your frontend developer life</h2>
+    </div>
+
+    <aside class="notes">
+     
+      che gli suggerisce di studiare svelte</aside>
   </section>
   <section data-background-color={defaultSvelteBackground} data-auto-animate>
     <div class="molly-go-to-work">
       <img src={svelteLogoBig} alt="logo svelte" />
     </div>
 
-    <aside class="notes">che gli suggerisce di studiare svelte</aside>
+    <aside class="notes">
+     
+      che gli suggerisce di studiare svelte</aside>
   </section>
 </section>
 

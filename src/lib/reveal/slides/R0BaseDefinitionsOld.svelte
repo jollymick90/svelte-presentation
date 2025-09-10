@@ -3,10 +3,8 @@
   import Fa from "svelte-fa";
 
   import { faGraduationCap} from "@fortawesome/free-solid-svg-icons";
-  import RSlideFrameworkLibraryCompar from "./RSlideFrameworkLibraryCompar.svelte";
 
 </script>
-<section>
 <section 
   data-background-gradient={bgSvelteRadial}
   data-auto-animate
@@ -15,6 +13,46 @@
   
 </section>
 
+<section 
+  data-background-gradient={bgSvelteRadial}
+  data-auto-animate
+>
+  <span><Fa size="3x" icon={faGraduationCap}/></span>
+  <h2>Library</h2>  
+</section>
+
+<section 
+  data-background-gradient={bgSvelteRadial}
+  data-auto-animate
+>
+  <span><Fa size="3x" icon={faGraduationCap}/></span>
+  <h3>Library</h3>
+  <p >
+    A library is a <u>collection</u> of code, data, or tools created to be <u>reused</u> by
+    different programs, instead of <u>rewriting</u> the same functionality from
+    scratch.
+  </p>
+</section>
+
+<section 
+  data-background-gradient={bgSvelteRadial}
+  data-auto-animate
+>
+  <span><Fa size="3x" icon={faGraduationCap}/></span>
+
+  <h3>Library</h3>
+  <p class="definition">
+     <u>collection</u>  <u>reusable</u> <u>rewriting</u> 
+  </p>
+
+  <h3>Framework</h3>
+  <p >
+    <i>A reusable <u>structure</u> for software development. A framework is a predesigned
+    structure that provides a foundation for building applications. It defines
+    how different components should interact, offering reusable patterns and
+    conventions.</i>
+  </p>
+</section>
 
 <section 
   data-background-gradient={bgSvelteRadial}
@@ -62,12 +100,8 @@
     developer's code (and, if needed, specific libraries). (“Hollywood
     Principle” (“Don't call us, we'll call you”).</span>
     </p>
-    <aside class="notes">
-      Con una libreria, sei tu a chiamare il codice. Hai il controllo. Con un framework, è il framework che ha il controllo e chiama il tuo codice. Questo è il 'Principio di Hollywood'
-    </aside>
 </section>
-<RSlideFrameworkLibraryCompar />
-</section>
+
 
 <style>
   

@@ -1,5 +1,6 @@
 <script>
   import { lightBackground } from "../common.svelte";
+  import DefinitionCompileRuntime from "./DefinitionCompileRuntime.svelte";
 </script>
 
 <section>
@@ -275,6 +276,7 @@
     </div>
   </section>
 </section>
+ <DefinitionCompileRuntime />
 
 <style>
   /* Scopo tutto alla singola slide */

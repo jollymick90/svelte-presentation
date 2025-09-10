@@ -31,6 +31,7 @@
   import RReactivity from "../slides/RReactivity.svelte";
   import RScopedStyle from "../slides/RScopedStyle.svelte";
   import SvelteKitFeatures from "../slides/SvelteKitFeatures.svelte";
+  import RBindingDirective from "../slides/RBindingDirective.svelte";
   
   const { showNotes = false } = $props();
   
@@ -42,7 +43,7 @@
       hash: true,
       controls: true,
       progress: true,
-      showNotes: 'separate-page'
+      showNotes: showNotes ? 'separate-page' : false
     });
     // Reveal.configure({ showNotes: true });
     deck.initialize({
@@ -58,18 +59,20 @@
     <R03IntroSlide />
     <R02AgendaSlide />    
     <R07DefinitionSvelte />
+    
     <R08SvelteIntroduction />
+    <R0BaseDefinitions />
     <R09HistorySvelte />
     <RSintassiSvelte />
     <RScopedStyle />
     <RReactivity />
+    <RBindingDirective />
     <RSintax />
     <RHowCompilerWorks />
     <SvelteKitPresentation />
     <RSvelteKitCreate />
     <RSvelteKitRouting />
     <SvelteKitFeatures />
-    <R0BaseDefinitions />
-    <DefinitionCompileRuntime />
+   
   </div>
 </div>

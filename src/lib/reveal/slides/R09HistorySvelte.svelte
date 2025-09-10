@@ -1,5 +1,6 @@
 <script>
   import {lightBackground as bg} from '../common.svelte';
+  import creatorSvelte from '$lib/assets/img/rich-harris.jpeg';
 </script>
 
 <section>
@@ -80,6 +81,10 @@
             <div class="bubble b-2016">
               <span>Svelte 1.0 </span>
               <span class="accent">first release</span>
+              <img class="iconrich" src={creatorSvelte} alt="creatorsvelte"/>
+              <span>Rich Harris</span>
+              <span>Graphic Designer</span>
+              <span>Guardian / New York Times</span>
             </div>
           </div>
         </div>
@@ -254,7 +259,7 @@
     <div class="slide">
       <div class="timeline">
         <!-- 2016 -->
-        <div class="year-col">
+        <div class="year-col unfocus">
           <div class="center">
             <div class="chevron">2016</div>
           </div>
@@ -267,7 +272,7 @@
         </div>
 
         <!-- 2018 -->
-        <div class="year-col">
+        <div class="year-col unfocus">
           <div class="center">
             <div class="chevron">2018</div>
           </div>
@@ -276,18 +281,21 @@
           </div>
         </div>
 
-        <div class="year-col">
+        <div class="year-col focus">
           <div class="center">
             <div class="chevron">2019</div>
           </div>
           <div class="center">
             <div class="bubble b-2019a">
               Svelte 3.0 <span class="accent">compiler</span>
+              <span>
+                Rethinking reactivity
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="year-col">
+        <div class="year-col unfocus">
           <div class="center">
             <div class="chevron">2023</div>
           </div>
@@ -296,7 +304,70 @@
           </div>
         </div>
 
-        <div class="year-col">
+        <div class="year-col unfocus">
+          <div class="center">
+            <div class="chevron">2024</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2024">
+              Svelte 5.0 <span class="accent">runes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section data-auto-animate data-background-color={bg}>
+    <h2 class="title">The story of Svelte</h2>
+    <div class="slide">
+      <div class="timeline">
+        <!-- 2016 -->
+        <div class="year-col unfocus">
+          <div class="center">
+            <div class="chevron">2016</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2016">
+              <span>Svelte 1.0 </span>
+              <span class="accent">first release</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2018 -->
+        <div class="year-col unfocus">
+          <div class="center">
+            <div class="chevron">2018</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2018">Svelte 2.0</div>
+          </div>
+        </div>
+
+        <div class="year-col unfocus">
+          <div class="center">
+            <div class="chevron">2019</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2019a">
+              Svelte 3.0 <span class="accent">compiler</span>
+              <span>
+                Rethinking reactivity
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="year-col unfocus">
+          <div class="center">
+            <div class="chevron">2023</div>
+          </div>
+          <div class="center">
+            <div class="bubble b-2023">Svelte 4.0</div>
+          </div>
+        </div>
+
+        <div class="year-col unfocus">
           <div class="center">
             <div class="chevron">2024</div>
           </div>
@@ -381,6 +452,7 @@
   .bubble {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background: var(--bubble-bg);
     border: 3px solid var(--bubble-bd);
     border-radius: 12px;
@@ -423,5 +495,9 @@
     opacity: 0.5;
     font-size: 0.9rem;
     color: #3f3f3f6e;
+  }
+  .iconrich {
+    width: 50%
+    
   }
 </style>

@@ -5,6 +5,7 @@
   import {
     codeReactivity01,
     codeReactivity02,
+    codeReactivityDeep03,
     codeReactivitySolid,
     codeReacttivityReact,
     codeReacttivitySignal,
@@ -184,6 +185,15 @@
       senso conoscerla solo per - quel poco che c'è di codice legacy - codice
       generato da AI spesso è automaticamente in svelte 3
     </aside>
+  </section>
+  <section data-background-color={lightBackground}>
+<h3>Svelte 5 - Deep Reactivity</h3>
+     <pre><code data-trim data-noescape data-line-numbers="1-11">
+  {codeReactivityDeep03}
+  </code></pre>
+  <aside class="notes">
+    Con la rune $derived, possiamo creare un valore che dipende da altre variabili reattive. Il totale si aggiorna automaticamente ogni volta che l'array numbers cambia, anche se la modifica avviene con un metodo come push.
+  </aside>
   </section>
 </section>
 
