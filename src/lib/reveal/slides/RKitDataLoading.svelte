@@ -9,12 +9,12 @@
 
 <section>
   <section data-auto-animate data-background-color={lightBackground}>
-    <h3>Binding & Directive</h3>
+    <h3>Svelte Kit Data Loading</h3>
   </section>
 
 
   <section data-auto-animate data-background-color={lightBackground}>
-   <h3>Binding & Directive</h3>
+  <h3>Svelte Kit Data Loading</h3>
 
     <pre><code data-trim data-noescape data-line-numbers="1-5 | 5-16">
   {svelteKitLoadData01}
