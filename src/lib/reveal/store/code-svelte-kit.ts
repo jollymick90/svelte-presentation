@@ -24,6 +24,27 @@ Build your API REST-like
 
 `;
 
+export const routingDirectoryFolder = `
+src/
+├── app.css
+├── app.html
+├── lib/
+│   ├── components/
+│   │   └── Header.svelte
+│   └── utils/
+│       └── helpers.js
+└── routes/
+    ├── about/
+    │   └── +page.svelte
+    ├── products/
+    │   ├── [id]/
+    │   │   └── +page.svelte
+    │   └── +page.svelte
+    ├── +layout.svelte
+    ├── +page.server.js
+    └── +page.svelte
+`;
+
 export const pageConfiguration = `
  // +page.ts Hybrid Rendering
  export const ssr = true;

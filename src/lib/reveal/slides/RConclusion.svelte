@@ -1,32 +1,49 @@
 <script>
-  import { bglightBackgroundRadial } from "../common.svelte";
+  import { bgSvelteLinear } from "../common.svelte";
 
 </script>
 
 <section>
   <section
     data-auto-animate
-    data-background-gradient="{bglightBackgroundRadial}"
+    data-background-gradient="{bgSvelteLinear}"
   >
-    <h2 style="color:#0b2a4a">Key Points</h2>
+    <h2 style="color:#0b2a4a">Conclusions</h2>
     <div class="grid-2x2">
       <div class="card fragment" data-fragment-index="0" data-id="component">
-        <h2>Key Point 1</h2>
-        <p>KeyPoint1</p>
+        <h2>Svelte VS Other</h2>
+        <p class="fragment">NextJS/NuxtJS</p>
+        <p class="fragment">Angular</p>
       </div>
       <div class="card fragment" data-fragment-index="1" data-id="compiler">
-        <h2>Key Point 1</h2>
-        <p>KeyPoint1</p>
+        <h2>Ecosystem</h2>
+        <p class="fragment">UI Component Library</p>
+        <p class="fragment">State Managment</p>
+        <p class="fragment">Styling</p>
       </div>
       <div class="card fragment" data-fragment-index="2" data-id="meta">
-        <h2>Key Point 1</h2>
-        <p>KeyPoint1</p>
+        <h2>Not IF but WHEN</h2>
+        <p class="fragment">Enterprise</p>
+        <p class="fragment">???</p>
       </div>
-      <div class="card fragment" data-fragment-index="3" data-id="devstyle">
-        <h2>Key Point 1</h2>
-        <p>KeyPoint1</p>
+      <div class="card fragment"  data-id="devstyle">
+        <h2>It's time to try it out.</h2>
+       
       </div>
+
     </div>
+
+    <aside class="notes">
+      Qui affrontiamo la domanda più grande. La scelta tra Svelte e Next.js è una scelta di filosofia. Svelte agisce come un compilatore: fa tutto il lavoro in anticipo, prima che il codice arrivi al browser. Il risultato è un codice leggero e super-veloce che non ha overhead a runtime. Next.js, invece, è costruito su React. Usa un Virtual DOM per gestire gli aggiornamenti, il che lo rende molto potente ma introduce un    
+
+runtime e un bundle iniziale più grande. La sua forza non è la velocità intrinseca, ma la vastità dell'ecosistema che ha creato".
+
+
+https://hackmd.io/@roguegpu/r1RKQMdt3
+
+L'ecosistema è un fattore cruciale. Next.js, grazie alla sua base su React, ha un vantaggio enorme in termini di risorse. Se ti serve una soluzione per un problema specifico, quasi certamente esiste già un pacchetto pronto all'uso. Svelte ha una comunità più piccola, ma non è una debolezza. SvelteKit è una soluzione 'con le batterie incluse': molte delle funzionalità per cui React ha bisogno di librerie esterne, come il routing o la gestione dello stato, sono già integrate in Svelte. Questo elimina la 'fatica decisionale' e ti permette di concentrarti subito sulla creazione del prodotto, riducendo anche le dipendenze esterne
+
+    </aside>
   </section>
 </section>
 
