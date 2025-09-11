@@ -1,5 +1,5 @@
 <script>
-  import { lightBackground } from "../common.svelte";
+  import { bglightBackgroundRadial } from "../common.svelte";
 
   import {
   svelteKitLoadData01,
@@ -8,12 +8,12 @@
 </script>
 
 <section>
-  <section data-auto-animate data-background-color={lightBackground}>
+  <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
     <h3>Svelte Kit Data Loading</h3>
   </section>
 
 
-  <section data-auto-animate data-background-color={lightBackground}>
+  <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
   <h3>Svelte Kit Data Loading</h3>
 
     <pre><code data-trim data-noescape data-line-numbers="1-5 | 5-16">

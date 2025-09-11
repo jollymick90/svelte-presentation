@@ -9,24 +9,20 @@
   import "reveal.js/dist/theme/black.css";
   import "reveal.js/plugin/highlight/monokai.css";  
     
-  import R05FrameworkComponent from "$lib/reveal/slides/R05FrameworkComponent.svelte";
   import R00WelcomeSlide from "../slides/R00WelcomeSlide.svelte";
   import R01MollyStoryPart1 from "../slides/R01MollyStoryPart1.svelte";
-  import R04MollyStoryPart2 from "../slides/R04MollyStoryPart2.svelte";
-  import R06MollyStoryPart3 from "../slides/R06MollyStoryPart3.svelte";
-  import R03IntroSlide from "../slides/R03IntroSlide.svelte";
-  import R02AgendaSlide from "../slides/R02AgendaSlide.svelte";
-  import R0BaseDefinitions from "../slides/R0BaseDefinitions.svelte";
-  import R07DefinitionSvelte from "../slides/R07DefinitionSvelte.svelte";
-  import R08FourkeyPointsSvelte from "../slides/R08FourkeyPointsSvelte.svelte";
+  
+  import R02IntroSlide from "../slides/R02IntroSlide.svelte";
+  import R03AgendaSlide from "../slides/R03AgendaSlide.svelte";
+  import R06BaseDefinitions from "../slides/R06BaseDefinitions.svelte";
+  import R04DefinitionSvelte from "../slides/R04DefinitionSvelte.svelte";
+  import R05FourkeyPointsSvelte from "../slides/R05FourkeyPointsSvelte.svelte";
   import R09HistorySvelte from "../slides/R09HistorySvelte.svelte";
   import RHowCompilerWorks from "../slides/RHowCompilerWorks.svelte";
-  import RFirstComponent from "../slides/RFirstComponent.svelte";
-  import DefinitionCompileRuntime from "../slides/DefinitionCompileRuntime.svelte";
   import SvelteKitPresentation from "../slides/SvelteKitPresentation.svelte";
   import RSvelteKitCreate from "../slides/RSvelteKitCreate.svelte";
   import RSvelteKitRouting from "../slides/RSvelteKitRouting.svelte";
-  import RSintassiSvelte from "../slides/RSintassiSvelte.svelte";
+  import RHowToWrite from "../slides/RHowToWrite.svelte";
   import RSintax from "../slides/RSintax.svelte";
   import RReactivity from "../slides/RReactivity.svelte";
   import RScopedStyle from "../slides/RScopedStyle.svelte";
@@ -59,21 +55,20 @@
   <div class="slides">
     <R00WelcomeSlide />   
     <R01MollyStoryPart1 />
-    <R03IntroSlide />
-    <R02AgendaSlide />    
-    <R07DefinitionSvelte />
-    
-    <R08FourkeyPointsSvelte />
-    <R0BaseDefinitions />
-    <RSlideFrameworkLibraryCompar />
-    <RHowCompilerWorks />
+    <R02IntroSlide />
+    <R03AgendaSlide />    
+    <R04DefinitionSvelte />
+    <R05FourkeyPointsSvelte />
+    <R06BaseDefinitions />
     <R09HistorySvelte />
-    <RSintassiSvelte />
+    <RHowToWrite />
     <RScopedStyle />
     <RReactivity />
     <RBindingDirective />
     <RSintax />
+        
     
+    <RHowCompilerWorks />
     <SvelteKitPresentation />
     <RSvelteKitCreate />
     <RSvelteKitRouting />

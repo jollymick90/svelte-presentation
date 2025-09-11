@@ -6,12 +6,12 @@
   import svelte from "$lib/assets/img/svelte.png";
   import vue from "$lib/assets/img/vue.png";
   import react from "$lib/assets/img/react.png";
-  import { defaultBackground } from "../common.svelte";
+  import { bglightBackgroundRadial, bacaroBackground } from "../common.svelte";
   import bacarologo from "$lib/assets/img/BacaroLogo.png";
 </script>
 
 <section>
-  <section data-auto-animate data-background-color={defaultBackground}>
+  <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
     <div class="c-flex">
       <div class="">
         <img src={aboutme} alt="micheleimg" />
@@ -19,7 +19,7 @@
     </div>
     <aside class="notes">io</aside>
   </section>
-  <section data-auto-animate data-background-color={defaultBackground}>
+  <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
     <div class="c-flex">
       <div class="">
         <img src={aboutme} alt="micheleimg" />
@@ -30,7 +30,7 @@
     </div>
     <aside class="notes">sono michele</aside>
   </section>
-  <section data-auto-animate data-background-color={defaultBackground}>
+  <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
     <div class="c-flex">
       <div class="">
         <img src={aboutme} alt="micheleimg" />
@@ -42,7 +42,7 @@
     </div>
     <aside class="notes">Software Engineer e sviluppatore web</aside>
   </section>
-  <section data-auto-animate data-background-color={defaultBackground}>
+  <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
     <div class="c-flex">
       <div class="">
         <img src={aboutme} alt="micheleimg" />
@@ -62,19 +62,20 @@
     </div>
     <aside class="notes">sono appassionato del mondo web e non solo</aside>
   </section>
-  <section data-auto-animate data-background-color={defaultBackground}>
+  <section data-auto-animate data-background-color={bacaroBackground}>
     <div class="myHeading">
-      <h1>Bacaro Tech</h1>
-      <img class="bacaroicon" src={bacarologo} alt="bacarologo" />
+      <h1>BacaroTech</h1>
+      
     </div>
+    <img class="bacaroicon" src={bacarologo} alt="bacarologo" />
     <aside class="notes">
       Inoltre, Ho aiutato a fondare e faccio parte di Bacarotech
     </aside>
   </section>
 
-  <section data-auto-animate data-background-color={defaultBackground}>
+  <section data-auto-animate data-background-color={bacaroBackground}>
     <div class="myHeading">
-      <h1>Bacaro Tech</h1>
+      <h1>BacaroTech</h1>
       <img class="bacaroicon" src={bacarologo} alt="bacarologo" />
     </div>
 
@@ -85,13 +86,13 @@
   {` class Bacarotech { 
 
       team = [
-      "Giorgio", "Michele", "Moreno",
+      "Giorgio", "Michele", "Moreno", "Vittorio",
       "Lorenzo", "Davide", "Danilo", "Antonio"
       ]
 
       techologies = [
-       'frontend', 'backend', 'DotNet',  
-       'AI', 'DevOps', 'kotlin', '...'
+       'Frontend', 'Backend', 'DotNet', 'Data Eng',  
+       'AI', 'DevOps', 'Kotlin', '...'
       ] 
 
       social = [
@@ -107,8 +108,6 @@
       giveMeSomethings() {
        return {"Spritz", "Polpetta"}
       }
-
-
      }
    `}
   </code></pre>
@@ -145,17 +144,20 @@
   }
 
   .bacaroicon {
-    height: 100px;
+    height: 200px;
     margin-top: 0px;
   }
   .h-10 {
-    height: calc(var(--spacing) * 10) /* 2.5rem = 40px */;
+    height: calc(var(--spacing) * 10);
   }
   .p-2 {
-    padding: calc(var(--spacing) * 2) /* 0.5rem = 8px */;
+    padding: calc(var(--spacing) * 2);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
   }
   .gap-5 {
-    gap: calc(var(--spacing) * 5) /* 1.25rem = 20px */;
+    gap: calc(var(--spacing) * 5);
   }
   .w-auto {
     width: auto;

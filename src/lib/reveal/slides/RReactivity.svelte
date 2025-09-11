@@ -1,6 +1,5 @@
 <script>
-  // import {  defaultBackgroundLight } from "../common.svelte";
-  import { lightBackground } from "../common.svelte";
+  import { bglightBackgroundRadial } from "../common.svelte";
 
   import {
     codeReactivity01,
@@ -15,17 +14,17 @@
 </script>
 
 <section>
-  <section data-auto-animate data-background-color={lightBackground}>
+  <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
     <h3>Reactivity</h3>
   </section>
-  <section data-auto-animate data-background-color={lightBackground}>
+  <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
     <h3>Reactivity</h3>
     <div class="blackboard">
       <p></p>
     </div>
     <aside class="notes">Immagina di avere una lavagna</aside>
   </section>
-  <section data-auto-animate data-background-color={lightBackground}>
+  <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
     <h3>Reactivity</h3>
     <div class="blackboard">
       <p>var numero1 = 10</p>
@@ -33,7 +32,7 @@
     </div>
     <aside class="notes">con dei numeri,</aside>
   </section>
-  <section data-auto-animate data-background-color={lightBackground}>
+  <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
     <h3>Reactivity</h3>
     <div class="blackboard">
       <p>var numero1 = 10</p>
@@ -46,7 +45,7 @@
       Se scrivi un'equazione, ad esempio "somma = numero1 + numero2",
     </aside>
   </section>
-  <section data-auto-animate data-background-color={lightBackground}>
+  <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
     <h3>Reactivity</h3>
     <div class="blackboard">
       <p>var numero1 = 10</p>
@@ -57,7 +56,7 @@
       la lavagna non si aggiorna da sola se cambi il valore di numero1.
     </aside>
   </section>
-  <section data-auto-animate data-background-color={lightBackground}>
+  <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
     <h3>Reactivity</h3>
     <div class="blackboard">
       <p>var numero1 = 10</p>
@@ -68,7 +67,7 @@
       Devi cancellare e riscrivere l'intera equazione.
     </aside>
   </section>
-  <section data-auto-animate data-background-color={lightBackground}>
+  <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
     <h3>Reactivity</h3>
     <div class="blackboard">
       <p>var numero1 = 10</p>
@@ -79,7 +78,7 @@
       Devi cancellare e riscrivere l'intera equazione.
     </aside>
   </section>
-  <section data-auto-animate data-background-color={lightBackground}>
+  <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
     <h3>Reactivity</h3>
     <div class="blackboard">
       <p>var numero1 = 10</p>
@@ -93,12 +92,12 @@
 </section>
 
 <section>
-  <section data-auto-animate data-background-color={lightBackground}>
+  <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
     <h3>Reactivity nei framework</h3>
   </section>
   <!-- framework tradizionali -->
 
-  <section data-auto-animate data-background-color={lightBackground}>
+  <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
     <h3>React Vue Angular</h3>
     <pre><code data-trim data-noescape data-line-numbers="1-11">
   {codeReacttivityReact}
@@ -118,7 +117,7 @@
     </aside>
   </section>
 
-  <section data-auto-animate data-background-color={lightBackground}>
+  <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
     <h3>SOLID PREACT</h3>
     <pre><code data-trim data-noescape data-line-numbers="1-11">
   {codeReactivitySolid}
@@ -133,7 +132,7 @@
     </aside>
   </section>
 
-  <section data-auto-animate data-background-color={lightBackground}>
+  <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
     <div class="myHeading">
       <h3>Reactivity.svelte</h3>
       <h5>Svelte 3</h5>
@@ -155,7 +154,7 @@
     </aside>
   </section>
 
-  <section data-auto-animate data-background-color={lightBackground}>
+  <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
     <div class="myHeading">
       <h3>Reactivity.svelte</h3>
       <h5>Svelte 5 - runes</h5>
@@ -177,7 +176,7 @@
       SolidJS, che permette aggiornamenti molto più efficienti e "granulari".
     </aside>
   </section>
-  <section data-background-color={lightBackground}>
+  <section data-background-gradient={bglightBackgroundRadial}>
     <h3>Svelte 5 - Runes</h3>
 
     <aside class="notes">
@@ -186,7 +185,7 @@
       generato da AI spesso è automaticamente in svelte 3
     </aside>
   </section>
-  <section data-background-color={lightBackground}>
+  <section data-background-gradient={bglightBackgroundRadial}>
 <h3>Svelte 5 - Deep Reactivity</h3>
      <pre><code data-trim data-noescape data-line-numbers="1-11">
   {codeReactivityDeep03}

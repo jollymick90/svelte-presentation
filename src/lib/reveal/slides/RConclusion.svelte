@@ -1,10 +1,13 @@
 <script>
+  import { bglightBackgroundRadial } from "../common.svelte";
 
-  const bg = "#eaf3ff";
 </script>
 
 <section>
-  <section data-auto-animate data-background-color={bg}>
+  <section
+    data-auto-animate
+    data-background-gradient="{bglightBackgroundRadial}"
+  >
     <h2 style="color:#0b2a4a">Key Points</h2>
     <div class="grid-2x2">
       <div class="card fragment" data-fragment-index="0" data-id="component">
@@ -12,20 +15,19 @@
         <p>KeyPoint1</p>
       </div>
       <div class="card fragment" data-fragment-index="1" data-id="compiler">
-     <h2>Key Point 1</h2>
+        <h2>Key Point 1</h2>
         <p>KeyPoint1</p>
       </div>
       <div class="card fragment" data-fragment-index="2" data-id="meta">
-  <h2>Key Point 1</h2>
+        <h2>Key Point 1</h2>
         <p>KeyPoint1</p>
       </div>
       <div class="card fragment" data-fragment-index="3" data-id="devstyle">
- <h2>Key Point 1</h2>
+        <h2>Key Point 1</h2>
         <p>KeyPoint1</p>
       </div>
     </div>
   </section>
-
 </section>
 
 <style>
@@ -71,5 +73,4 @@
     font-size: clamp(1rem, 2vw, 1.4rem);
     color: var(--muted);
   }
-
 </style>

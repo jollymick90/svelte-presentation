@@ -1,0 +1,80 @@
+/* ===== Balloon base ===== */
+.balloon {
+  --bg: #ffffff;
+  --fg: #111111;
+  --shadow: 0 8px 20px rgba(0,0,0,.15);
+
+  max-width: min(42ch, 90vw);
+  padding: .9rem 1.1rem;
+  background: var(--bg);
+  color: var(--fg);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  position: relative;
+  line-height: 1.35;
+  font-size: clamp(16px, 2.2vw, 22px);
+}
+
+.balloon > *:first-child { margin-top: 0; }
+.balloon > *:last-child  { margin-bottom: 0; }
+
+/* Code della nuvoletta */
+.balloon.tail-left::after,
+.balloon.tail-right::after,
+.balloon.tail-top::after,
+.balloon.tail-bottom::after {
+  content: "";
+  position: absolute;
+  width: 0; height: 0;
+  border: 14px solid transparent;
+}
+.balloon.tail-left::after   { border-right-color: var(--bg); left: -14px; top: 22px; }
+.balloon.tail-right::after  { border-left-color:  var(--bg); right: -14px; top: 22px; }
+.balloon.tail-top::after    { border-bottom-color:var(--bg); top: -14px; left: 28px; }
+.balloon.tail-bottom::after { border-top-color:   var(--bg); bottom: -14px; left: 28px; }
+
+/* Tema scuro automatico (opzionale) */
+@media (prefers-color-scheme: dark) {
+  .balloon {
+    --bg: #1f2937;
+    --fg: #f7fafc;
+    --shadow: 0 8px 24px rgba(0,0,0,.35);
+  }
+}
+
+/* ===== Posizionamento nella tua slide ===== */
+/* Contenitore principale già esistente */
+.molly-go-to-work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;         /* serve per ancorare il balloon */
+  margin-top: 32px;           /* spazio sotto il balloon */
+}
+
+/* Balloon “sospeso” sopra le icone */
+.balloon-pos {
+  position: absolute;
+  top: -20px;                 /* alza/abbassa il balloon */
+  left: 50%;
+  transform: translate(-50%, -100%); /* centrato rispetto al gruppo icone */
+  z-index: 5;
+}
+
+/* Piccola entrata morbida quando la slide diventa 'present' */
+:global(.reveal .slides section.present) .balloon-pos {
+  animation: balloon-in s ease-out both;
+}
+@keyframes balloon-in {
+  from { opacity: 0; transform: translate(-50%, -110%) scale(.98); }
+  to   { opacity: 1; transform: translate(-50%, -100%) scale(1); }
+}
+
+/* ===== Le tue classi esistenti (leggero ritocco) ===== */
+.me-overlap { position: relative; width: 100px; height: 100px; }
+.me-overlap .user { position: absolute; z-index: 1; left: -8px; top: -8px; }
+.me-overlap .aboutmeicon {
+  height: 100px; width: 100px; margin: 0;
+  position: absolute; z-index: 3; left: 0; top: 0;
+}

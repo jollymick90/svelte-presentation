@@ -1,11 +1,11 @@
 <script>
-  import { lightBackground as defaultBackground } from "../common.svelte";
+  import { bglightBackgroundRadial } from "../common.svelte";
 
   import { codeStyle01, codeStyle02, codeStyle01Nested } from "../store/code-slide-sintassi";
 </script>
 
 <section>
-  <section data-background-color={defaultBackground}>
+  <section data-background-gradient={bglightBackgroundRadial}>
     <h3>Style</h3>
     <pre><code data-trim data-noescape data-line-numbers="1-11">
   {codeStyle01}
@@ -17,8 +17,8 @@
     </aside>
   </section>
 
-  <section data-background-color={defaultBackground}>
-    <h3>Style</h3>
+  <section data-background-gradient={bglightBackgroundRadial}>
+    <h3>Style & Nested</h3>
     <p>App.svelte</p>
     <pre><code data-trim data-noescape data-line-numbers="2">
   {codeStyle01Nested}

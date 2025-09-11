@@ -1,15 +1,15 @@
 <script>
   import RCardUi from "$lib/components/reveal/RCardUI.svelte";
   import svelteRoutingImg from "$lib/assets/img/svelte-routing-lib.png";
+  import { bgSvelteLinear } from "../common.svelte";
 
-  const bg = "#eaf3ff";
 </script>
 
 <section>
-  <section data-auto-animate data-background-color={bg}>
+  <section data-auto-animate data-background-gradient={bgSvelteLinear}>
     <h2>Svelte Routing</h2>
   </section>
-  <section data-auto-animate data-background-color={bg}>
+  <section data-auto-animate data-background-gradient={bgSvelteLinear}>
     <div class="layout-routing-slide">
       <h4>svelte routing library</h4>
       <RCardUi dataId="svelte-routing">
@@ -17,7 +17,7 @@
       </RCardUi>
     </div>
   </section>
-  <section data-background-color={bg}>
+  <section data-background-gradient={bgSvelteLinear}>
         <div class="layout-routing-slide">
       <h4>svelte kit is routing</h4>
       <RCardUi dataId="svelte-kit-routing">
@@ -28,7 +28,7 @@
     </div>
 
   </section>
-  <section data-background-color={bg}>
+  <section data-background-gradient={bgSvelteLinear}>
      
     <div class="layout-routing-slide">
       <h4>layout</h4>

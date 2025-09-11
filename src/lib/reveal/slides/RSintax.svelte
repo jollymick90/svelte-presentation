@@ -1,13 +1,13 @@
 <script>
   import ReplEmbed from "$lib/components/tools/ReplEmbed.svelte";
-  import { lightBackground } from "../common.svelte";
+  import { bgSvelteLinear } from "../common.svelte";
 </script>
 
 <section>
-  <section data-background-color="{lightBackground}">
+  <section data-background-gradient="{bgSvelteLinear}">
     <h3>Learning by Doing</h3>
   </section>
-  <section data-background-color="{lightBackground}">
+  <section data-background-gradient="{bgSvelteLinear}">
     <h5>Playground</h5>
     <ReplEmbed
       gistId="hello-world"

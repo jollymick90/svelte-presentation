@@ -1,15 +1,15 @@
 <script>
-  import { defaultSvelteBackground } from "../common.svelte";
+  import { bgSvelteLinear } from "../common.svelte";
 </script>
 
 <section>
-  <section data-auto-animate data-background-color={defaultSvelteBackground}>
+  <section data-auto-animate data-background-gradient={bgSvelteLinear}>
     <h3>Agenda</h3>
 
     <aside class="notes"></aside>
   </section>
 
-  <section data-auto-animate data-background-color={defaultSvelteBackground}>
+  <section data-auto-animate data-background-gradient={bgSvelteLinear}>
     <div>
       <h3>Agenda</h3>
       <p>
@@ -20,7 +20,7 @@
     <aside class="notes">che cos'è svelte e svelte kit</aside>
   </section>
 
-  <section data-auto-animate data-background-color={defaultSvelteBackground}>
+  <section data-auto-animate data-background-gradient={bgSvelteLinear}>
     <div>
       <h3>Agenda</h3>
       <p>
@@ -33,7 +33,7 @@
       e come si scrive un componente svelte e un applicazione sveltekit
     </aside>
   </section>
-  <section data-auto-animate data-background-color={defaultSvelteBackground}>
+  <section data-auto-animate data-background-gradient={bgSvelteLinear}>
     <div>
       <h3>Agenda</h3>
       <p>

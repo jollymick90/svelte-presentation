@@ -1,5 +1,5 @@
 <script>
-  import { lightBackground } from "../common.svelte";
+  import { bglightBackgroundRadial } from "../common.svelte";
 </script>
 <section>
 <section>
@@ -10,7 +10,7 @@
   </aside>
 </section>
 
-<section data-background-color={lightBackground}>
+<section data-background-gradient={bglightBackgroundRadial}>
   <table class="tech-table">
     <thead>
       <tr>

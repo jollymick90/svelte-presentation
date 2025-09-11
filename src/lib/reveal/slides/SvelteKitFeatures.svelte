@@ -1,14 +1,15 @@
 <script>
   import RCardUi from "$lib/components/reveal/RCardUI.svelte";
-  const bg = "#eaf3ff";
+  import { bgSvelteLinear } from "../common.svelte";
+
 </script>
 
 <section>
-<section data-auto-animate data-background-color={bg}>
+<section data-auto-animate data-background-gradient={bgSvelteLinear}>
   <h2>Svelte Kit</h2>
 </section>
 
-<section data-auto-animate data-background-color={bg}>
+<section data-auto-animate data-background-gradient={bgSvelteLinear}>
   <h3>Svelte Kit</h3>
   <h2>Features</h2>
   <div class="grid-layout">

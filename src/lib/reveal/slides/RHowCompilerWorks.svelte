@@ -1,20 +1,13 @@
 <script>
-  import { lightBackground } from "../common.svelte";
-  import DefinitionCompileRuntime from "./DefinitionCompileRuntime.svelte";
+  import { bglightBackgroundRadial } from "../common.svelte";
+  import DefinitionCompileRuntime from "./RDefinitionCompileRuntime.svelte";
 </script>
 
 <section>
-  
-  <section data-background-color={lightBackground}>
+  <section data-background-gradient={bglightBackgroundRadial}>
     <h1>Come funzione il compilatore</h1>
   </section>
-    <section data-background-color={lightBackground}>
-    <h1>Come funzione il compilatore</h1>
-    <p>
-      Le performance di svelte sono strabilianti
-
-    </p>
-  </section>
+  <DefinitionCompileRuntime />
   <section
     data-auto-animate
     data-background-color="#eaf3ff"
@@ -46,7 +39,7 @@
   </section>
   <section
     data-auto-animate
-    data-background-color={lightBackground}
+    data-background-gradient={bglightBackgroundRadial}
     class="svelte-compiler-slide"
   >
     <div class="diagram">
@@ -75,7 +68,7 @@
   </section>
   <section
     data-auto-animate
-    data-background-color={lightBackground}
+    data-background-gradient={bglightBackgroundRadial}
     class="svelte-compiler-slide"
   >
     <div class="diagram">
@@ -104,7 +97,7 @@
   </section>
   <section
     data-auto-animate
-    data-background-color={lightBackground}
+    data-background-gradient={bglightBackgroundRadial}
     class="svelte-compiler-slide"
   >
     <div class="diagram">
@@ -133,7 +126,7 @@
   </section>
   <section
     data-auto-animate
-    data-background-color={lightBackground}
+    data-background-gradient={bglightBackgroundRadial}
     class="svelte-compiler-slide"
   >
     <div class="diagram">
@@ -162,7 +155,7 @@
   </section>
   <section
     data-auto-animate
-    data-background-color={lightBackground}
+    data-background-gradient={bglightBackgroundRadial}
     class="svelte-compiler-slide"
   >
     <div class="diagram">
@@ -191,7 +184,7 @@
   </section>
   <section
     data-auto-animate
-    data-background-color={lightBackground}
+    data-background-gradient={bglightBackgroundRadial}
     class="svelte-compiler-slide"
   >
     <div class="diagram">
@@ -220,7 +213,7 @@
   </section>
   <section
     data-auto-animate
-    data-background-color={lightBackground}
+    data-background-gradient={bglightBackgroundRadial}
     class="svelte-compiler-slide"
   >
     <div class="diagram">
@@ -249,7 +242,7 @@
   </section>
   <section
     data-auto-animate
-    data-background-color={lightBackground}
+    data-background-gradient={bglightBackgroundRadial}
     class="svelte-compiler-slide"
   >
     <div class="diagram">

@@ -1,13 +1,13 @@
 <script>
-  import {lightBackground as bg} from '../common.svelte';
-  import creatorSvelte from '$lib/assets/img/rich-harris.jpeg';
+  import { bgSvelteLinear } from "../common.svelte";
+  import creatorSvelte from "$lib/assets/img/rich-harris.jpeg";
 </script>
 
 <section>
-  <section data-auto-animate data-background-color={bg}>
+  <section data-auto-animate data-background-gradient={bgSvelteLinear}>
     <h2 class="title">The story of Svelte</h2>
   </section>
-  <section data-auto-animate data-background-color={bg}>
+  <section data-auto-animate data-background-gradient={bgSvelteLinear}>
     <h2 class="title">The story of Svelte</h2>
     <div class="slide">
       <div class="timeline">
@@ -68,7 +68,7 @@
     </div>
   </section>
 
-  <section data-auto-animate data-background-color={bg}>
+  <section data-auto-animate data-background-gradient={bgSvelteLinear}>
     <h3 class="title">The story of Svelte</h3>
     <div class="slide">
       <div class="timeline">
@@ -81,7 +81,7 @@
             <div class="bubble b-2016">
               <span>Svelte 1.0 </span>
               <span class="accent">first release</span>
-              <img class="iconrich" src={creatorSvelte} alt="creatorsvelte"/>
+              <img class="iconrich" src={creatorSvelte} alt="creatorsvelte" />
               <span>Rich Harris</span>
               <span>Graphic Designer</span>
               <span>Guardian / New York Times</span>
@@ -133,7 +133,7 @@
     </div>
   </section>
 
-  <section data-auto-animate data-background-color={bg}>
+  <section data-auto-animate data-background-gradient={bgSvelteLinear}>
     <h2 class="title">The story of Svelte</h2>
     <div class="slide">
       <div class="timeline">
@@ -194,7 +194,7 @@
     </div>
   </section>
 
-  <section data-auto-animate data-background-color={bg}>
+  <section data-auto-animate data-background-gradient={bgSvelteLinear}>
     <h2 class="title">The story of Svelte</h2>
     <div class="slide">
       <div class="timeline">
@@ -254,7 +254,7 @@
       </div>
     </div>
   </section>
-  <section data-auto-animate data-background-color={bg}>
+  <section data-auto-animate data-background-gradient={bgSvelteLinear}>
     <h2 class="title">The story of Svelte</h2>
     <div class="slide">
       <div class="timeline">
@@ -288,9 +288,7 @@
           <div class="center">
             <div class="bubble b-2019a">
               Svelte 3.0 <span class="accent">compiler</span>
-              <span>
-                Rethinking reactivity
-              </span>
+              <span> Rethinking reactivity </span>
             </div>
           </div>
         </div>
@@ -317,7 +315,7 @@
       </div>
     </div>
   </section>
-  <section data-auto-animate data-background-color={bg}>
+  <section data-auto-animate data-background-gradient={bgSvelteLinear}>
     <h2 class="title">The story of Svelte</h2>
     <div class="slide">
       <div class="timeline">
@@ -351,9 +349,7 @@
           <div class="center">
             <div class="bubble b-2019a">
               Svelte 3.0 <span class="accent">compiler</span>
-              <span>
-                Rethinking reactivity
-              </span>
+              <span> Rethinking reactivity </span>
             </div>
           </div>
         </div>
@@ -379,8 +375,10 @@
         </div>
       </div>
       <div class="quote">
-        <i>"Frameworks are not tools for organizing your code, <br>they are tools for organizing
-        your mind"</i>
+        <i
+          >"Frameworks are not tools for organizing your code, <br />they are
+          tools for organizing your mind"</i
+        >
       </div>
     </div>
   </section>
@@ -497,7 +495,6 @@
     color: #3f3f3f6e;
   }
   .iconrich {
-    width: 50%
-    
+    width: 50%;
   }
 </style>

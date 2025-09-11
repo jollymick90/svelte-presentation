@@ -3,9 +3,9 @@
   import react from "$lib/assets/img/react.png";
   import vue from "$lib/assets/img/vue.png";
   import { bgSvelteRadial } from "../common.svelte";
+  
   import emozionante1 from "$lib/assets/img/emozionante1.jpg";
-
-  import emozionante2 from "$lib/assets/img/emozionante2.webp";
+  import emozionante2 from "$lib/assets/img/love-letter.png";
   import emozionante3 from "$lib/assets/img/emozione-meme-1.gif";
 </script>
 
@@ -23,6 +23,10 @@
     </p>
     <p>HTML, CSS and JS.</p>
     <p>It's a love letter to web development.</p>
+    <aside class="notes">
+      che utilizza un compilatore per permetterti di scrivere componenti incredibilmente concisi che svolgono un lavoro minimo nel browser, usando linguaggi che già conosci
+      HTML, CSS e JS. È una lettera d'amore allo sviluppo web.
+    </aside>
   </section>
 
   <section data-auto-animate data-background-gradient={bgSvelteRadial}>
@@ -39,56 +43,22 @@
 
   <section data-auto-animate data-background-gradient={bgSvelteRadial}>
     <div>
-      <p><b style="color: #edfb73">breathtakingly</b></p>
+      <p><b style="color: #edfb73">breathtakingly / love letter</b></p>
     </div>
   </section>
-  <section data-auto-animate data-background-gradient={bgSvelteRadial}>
-    <div>
-      <p><b style="color: #edfb73">breathtakingly</b></p>
-      <p><b style="color: #edfb73">mozzafiato</b></p>
-    </div>
-  </section>
-  <section data-auto-animate data-background-gradient={bgSvelteRadial}>
-    <div>
-      <p><b style="color: #edfb73">breathtakingly</b>&rarr;</p>
-      <p><b style="color: #edfb73">mozzafiato</b>&rarr;</p>
-    </div>
-  </section>
-  <section data-auto-animate data-background-gradient={bgSvelteRadial}>
-    <div>
-      <p>
-        <b style="color: #edfb73">breathtakingly</b>&rarr;<span
-          >in an astonishing or awe-inspiring way, so as to take one's breath
-          away</span
-        >
-      </p>
-      <p>
-        <b style="color: #edfb73">mozzafiato</b>&rarr;<span
-          >Che lascia senza respiro, per impressione, meraviglia, ammirazione;
-          emozionante</span
-        >
-      </p>
-    </div>
-  </section>
+  
   <section data-auto-animate data-background-image={emozionante1}>
-    <h3 style="color: #edfb73">breathtakingly</h3>
 
-    <h3>vista mozzafiato 1</h3>
   </section>
   <section data-auto-animate data-background-image={emozionante2}>
-    <h3 style="color: #edfb73">breathtakingly</h3>
 
-    <h3>vista mozzafiato 2</h3>
   </section>
 
   <section data-auto-animate data-background-image={emozionante3}>
-    <h3 style="color: #edfb73">breathtakingly</h3>
 
-    <h3>Rilascio in produzione il venerdì</h3>
+    <h3>A Friday production release!</h3>
   </section>
-</section>
 
-<section>
   <section data-auto-animate data-background-gradient={bgSvelteRadial}>
     <h4 class="focus">
       Have you ever seen words like <b style="color: #edfb73">breathtakingly</b>
@@ -182,8 +152,8 @@
     </p>
     <aside class="notes">
       Compilatore.
-      e se di solito fate 
-      npm run build
+      e non è una semplice build. 
+      
 
     </aside>
   </section>
