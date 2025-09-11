@@ -1,10 +1,14 @@
 <script lang="ts">
   import type { Snippet } from "svelte";
 
-    const props: { dataId: string; dimmed?: boolean, focus?: boolean, children: Snippet} = $props() 
-    const { dataId, dimmed, focus, children } = props;
+    const props: { dataId: string;
+       dimmed?: boolean, focus?: boolean,
+        children: Snippet;
+        className?: string
+      } = $props() 
+    const { dataId, dimmed, focus, children, className } = props;
 </script>
-<div class="card {dimmed ? 'dimmed' : ''} {focus ? 'focus' : ''}" 
+<div class="{className} card {dimmed ? 'dimmed' : ''} {focus ? 'focus' : ''}" 
     data-id={dataId}>
     {@render children()}
 </div>
@@ -16,12 +20,12 @@
     border: 2px solid var(--card-border);
     border-radius: 22px;
     box-shadow: 0 8px 16px var(--card-shadow);
-    padding: 2rem 2.2rem;
-    min-height: 8rem;
+    padding: 1rem 1.2rem;
+    min-height: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 0.6rem;
+
     transform-origin: center;
   }
  
