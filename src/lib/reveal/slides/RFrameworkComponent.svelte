@@ -1,16 +1,15 @@
 <script lang="ts">
   import { bglightBackgroundRadial } from "../common.svelte";
-  import angular from "$lib/assets/img/angular.png";
-  import react from "$lib/assets/img/react.png";
+  import angular from "$lib/assets/img/angular.webp";
+  import react from "$lib/assets/img/react.webp";
   import Fa from "svelte-fa";
-  import spaghetticode from "$lib/assets/img/react-spaghetti-code.png";
+  import spaghetticode from "$lib/assets/img/react-spaghetti-code.webp";
 
   import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
   import {
     counterAngularCode,
     counterReactCode,
   } from "../store/code-slide-sintassi";
-  import { onMount } from "svelte";
   let visible = $state(false);
   let hammer = $state(false);
   let libraryVisible = $state(false);

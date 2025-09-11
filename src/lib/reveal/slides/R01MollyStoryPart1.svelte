@@ -8,8 +8,8 @@
     faUser,
   } from "@fortawesome/free-solid-svg-icons";
   import R05FrameworkComponent from "./RFrameworkComponent.svelte";
-  import svelteLogoBig from "$lib/assets/img/svelte-logo-big.png";
-  import aboutme from "$lib/assets/img/aboutme.png";
+  import svelteLogoBig from "$lib/assets/img/svelte-logo-big.webp";
+  import aboutme from "$lib/assets/img/aboutme.webp";
 </script>
 
 <section>

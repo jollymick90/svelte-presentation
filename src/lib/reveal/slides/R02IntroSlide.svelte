@@ -1,13 +1,13 @@
 <script lang="ts">
-  import aboutme from "$lib/assets/img/aboutme.png";
-  import angular from "$lib/assets/img/angular.png";
-  import java from "$lib/assets/img/java.png";
-  import js from "$lib/assets/img/js.png";
-  import svelte from "$lib/assets/img/svelte.png";
-  import vue from "$lib/assets/img/vue.png";
-  import react from "$lib/assets/img/react.png";
+  import aboutme from "$lib/assets/img/aboutme.webp";
+  import angular from "$lib/assets/img/angular.webp";
+  import java from "$lib/assets/img/java.webp";
+  import js from "$lib/assets/img/js.webp";
+  import svelte from "$lib/assets/img/svelte.webp";
+  import vue from "$lib/assets/img/vue.webp";
+  import react from "$lib/assets/img/react.webp";
   import { bglightBackgroundRadial, bacaroBackground } from "../common.svelte";
-  import bacarologo from "$lib/assets/img/BacaroLogo.png";
+  import bacarologo from "$lib/assets/img/BacaroLogo.webp";
 </script>
 
 <section>

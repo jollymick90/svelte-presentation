@@ -1,6 +1,6 @@
 <script>
   import CenterUi from "$lib/components/ui/CenterUI.svelte";
-     import bacarologo from "$lib/assets/img/BacaroLogo.png";
+     import bacarologo from "$lib/assets/img/BacaroLogo.webp";
 </script>
 <CenterUi>
 

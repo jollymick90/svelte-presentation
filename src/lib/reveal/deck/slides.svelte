@@ -31,6 +31,7 @@
   import RKitDataLoading from "../slides/RKitDataLoading.svelte";
   import RConclusion from "../slides/RConclusion.svelte";
   import RSlideFrameworkLibraryCompar from "../slides/RSlideFrameworkLibraryCompar.svelte";
+  import RKitPageConfiguration from "../slides/RKitPageConfiguration.svelte";
   
   const { showNotes = false } = $props();
   
@@ -70,6 +71,7 @@
     <SvelteKitPresentation />
     <RSvelteKitCreate />
     <RSvelteKitRouting />
+    <RKitPageConfiguration />
     <RKitDataLoading />
     <SvelteKitFeatures />
    <RConclusion />

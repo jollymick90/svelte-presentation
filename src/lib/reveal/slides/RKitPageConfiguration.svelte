@@ -5,26 +5,23 @@
   svelteKitLoadData01,
     
   } from "$lib/reveal/store/code-slide-sintassi";
+  import { pageConfiguration } from "../store/code-svelte-kit";
 </script>
 
 <section>
   <section data-auto-animate data-background-gradient={bgSvelteLinear}>
-    <h3>Svelte Kit Data Loading</h3>
+    <h3>Svelte Kit Page Configuration</h3>
   </section>
 
 
   <section data-auto-animate data-background-gradient={bgSvelteLinear}>
-  <h3>Svelte Kit Data Loading</h3>
+  <h3>Svelte Kit Page Configuration</h3>
 
     <pre><code data-trim data-noescape data-line-numbers="1-5 | 5-16">
-  {svelteKitLoadData01}
+  {pageConfiguration}
   </code></pre>
     <aside class="notes">
-      Il file +page.server.js viene eseguito solo sul server.
-       Qui puoi caricare dati da un database o da un'API privata in modo sicuro, senza esporli al client. La funzione    
-
-load restituisce un oggetto che viene automaticamente passato come prop alla tua pagina Svelte.</aside>
-  </section>
+     </section>
 
   
 </section>

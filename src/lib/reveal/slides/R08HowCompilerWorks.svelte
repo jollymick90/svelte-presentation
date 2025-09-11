@@ -1,11 +1,11 @@
 <script>
   import { bgSvelteLinear } from "../common.svelte";
-  import jsBenchImgDemo from "$lib/assets/img/js-framefork-benchmark-github-demo.png";
-  import jsBenchImg from "$lib/assets/img/js-framefork-benchmark-github.png";
-  import jsBenchComp from "$lib/assets/img/benchmark-svelte-solid-vue-angular-react.png";
-  import jsBenchCompMem from "$lib/assets/img/benchmark-svelte-solid-vue-angular-react-mem.png";
-  import jsBenchCompSize from "$lib/assets/img/benchmark-svelte-solid-vue-angular-react-size.png";
-  import svelteLogoBig from "$lib/assets/img/svelte-logo-big.png";
+  import jsBenchImgDemo from "$lib/assets/img/js-framefork-benchmark-github-demo.webp";
+  import jsBenchImg from "$lib/assets/img/js-framefork-benchmark-github.webp";
+  import jsBenchComp from "$lib/assets/img/benchmark-svelte-solid-vue-angular-react.webp";
+  import jsBenchCompMem from "$lib/assets/img/benchmark-svelte-solid-vue-angular-react-mem.webp";
+  import jsBenchCompSize from "$lib/assets/img/benchmark-svelte-solid-vue-angular-react-size.webp";
+  import svelteLogoBig from "$lib/assets/img/svelte-logo-big.webp";
 
   import DefinitionCompileRuntime from "./RDefinitionCompileRuntime.svelte";
 </script>

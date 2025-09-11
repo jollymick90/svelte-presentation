@@ -1,11 +1,11 @@
 <script lang="ts">
-  import angular from "$lib/assets/img/angular.png";
-  import react from "$lib/assets/img/react.png";
-  import vue from "$lib/assets/img/vue.png";
+  import angular from "$lib/assets/img/angular.webp";
+  import react from "$lib/assets/img/react.webp";
+  import vue from "$lib/assets/img/vue.webp";
   import { bgSvelteRadial } from "../common.svelte";
   
-  import emozionante1 from "$lib/assets/img/emozionante1.jpg";
-  import emozionante2 from "$lib/assets/img/love-letter.png";
+  import emozionante1 from "$lib/assets/img/emozionante1.webp";
+  import emozionante2 from "$lib/assets/img/love-letter.webp";
   import emozionante3 from "$lib/assets/img/emozione-meme-1.gif";
 </script>
 

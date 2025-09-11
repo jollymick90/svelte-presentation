@@ -1,6 +1,6 @@
 <script>
   import { bgSvelteLinear } from "../common.svelte";
-  import creatorSvelte from "$lib/assets/img/rich-harris.jpeg";
+  import creatorSvelte from "$lib/assets/img/rich-harris.webp";
 </script>
 
 <section>
