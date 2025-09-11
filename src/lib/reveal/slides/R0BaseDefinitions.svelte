@@ -1,23 +1,45 @@
 <script>
-  import { bgSvelteRadial, defaultSvelteBackground } from "../common.svelte";
+  import { defaultSvelteBackground, lightBackground } from "../common.svelte";
   import Fa from "svelte-fa";
 
-  import { faGraduationCap} from "@fortawesome/free-solid-svg-icons";
+  import { faDog, faGraduationCap} from "@fortawesome/free-solid-svg-icons";
   import RSlideFrameworkLibraryCompar from "./RSlideFrameworkLibraryCompar.svelte";
+  import DefinitionCompileRuntime from "./DefinitionCompileRuntime.svelte";
 
 </script>
 <section>
 <section 
-  data-background-gradient={bgSvelteRadial}
+  data-background-color={lightBackground}
+  data-auto-animate
+>
+  <p><Fa size="3x" icon={faGraduationCap}/></p>
+  <p><Fa size="3x" icon={faDog} /></p>
+  <aside class="notes">
+    Abbiamo parecchia carne al fuoco in questo momento
+    e per Molly è giunto il momento di fare un piccolo inciso.
+
+    Spero che anche per voi possa tornare utile
+
+  </aside>
+</section>
+
+<section 
+ data-background-color={lightBackground}
   data-auto-animate
 >
   <span><Fa size="3x" icon={faGraduationCap}/></span>
+
+  <h5>Library ?</h5>
+ 
+  <h5>Framework ?</h5>
   
+  <aside class="notes">
+    Cos'è una libreria?
+    e che cos'è un framework? 
+  </aside>
 </section>
-
-
 <section 
-  data-background-gradient={bgSvelteRadial}
+data-background-color={lightBackground}
   data-auto-animate
 >
   <span><Fa size="3x" icon={faGraduationCap}/></span>
@@ -35,38 +57,43 @@
     how different components should interact, offering reusable patterns and
     conventions.</i>
   </p>
+  <aside class="notes">
+    Una libreria è una collezione di codice, dati, tools, etc, creati per essere riusati
+  in diversi programmi, al posto di riscrivere le stesse funzionalità
+
+  un framework ha sempre lo scopo di farci evitare di rifare certi passaggi.
+  ma è una struttura più complessa ed è il framework che ha preso delle decisioni 
+  per noi e in generale definisce come usare gli strumenti a nostra disposizione
+  </aside>
 </section>
 
 <section 
-  data-background-gradient={bgSvelteRadial}
+data-background-color={lightBackground}
   data-auto-animate
 >
   <span><Fa size="3x" icon={faGraduationCap}/></span>
   <h3>Library vs Framework</h3>
-    <p >
-    <u>Library</u> <b>→</b> <b>Developer CALL library</b>
-      <br>
-    <span class="small">
+    <p> <u>Library</u> <b>→ Developer CALL library</b></p>
+    <p>
+    <u>Framework</u> <b>→ Don't call us, we'll call you</b> 
+    <br><span class="small">Hollywood Principle</span>
+    </p>
+    <aside class="notes">
+      Con una libreria, sei tu a chiamare il codice. Tu sviluppatore hai il controllo.
+      Con un framework, è il framework che ha il controllo e chiama il tuo codice. Questo è il 'Principio di Hollywood'
+
+      altro:
       A library provides optional, plug-and-play functionality. The
       developer stays in control and decides when and how to call the library's
       functions. 
-    </span>
 
-    </p>
-    <p>
-    <u>Framework</u> <b>→</b> <b>Don't call us, we'll call you</b>
-    <br>
-    <span class="small">
-    A framework defines the overall structure and flow of
+      A framework defines the overall structure and flow of
     an application. It is in control, and decides when and how to call the
-    developer's code (and, if needed, specific libraries). (“Hollywood
-    Principle” (“Don't call us, we'll call you”).</span>
-    </p>
-    <aside class="notes">
-      Con una libreria, sei tu a chiamare il codice. Hai il controllo. Con un framework, è il framework che ha il controllo e chiama il tuo codice. Questo è il 'Principio di Hollywood'
+    developer's code (and, if needed, specific libraries)
     </aside>
 </section>
-<RSlideFrameworkLibraryCompar />
+<DefinitionCompileRuntime />
+
 </section>
 
 <style>

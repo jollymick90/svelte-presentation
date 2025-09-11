@@ -6,6 +6,7 @@ export const defaultAngularBackground = "#DA6F54";
 export const defaultReactBackground = "#DA6F54";
 export const defaultVueBackground = "#DA6F54";
 export const lightBackground = "#dfeaf6";
+export const textSlide = "#0b2a4a";
 
 export const bgSvelteRadial = "radial-gradient(circle, #ff3e00, #b32b00)";
 export const bgSvelteLinear = "linear-gradient(45deg, #ff3e00, #ff6a00)";

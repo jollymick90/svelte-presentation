@@ -184,6 +184,27 @@
 
     <aside class="notes">
       incontra un collega che gli dice 
+    </aside>
+  </section>
+  <section data-background-color={defaultBackground} data-auto-animate>
+    <div class="molly-go-to-work">
+      <span><Fa size="3x" icon={faDog} /></span>
+      <span><Fa size="3x" icon={faBriefcase} /></span>
+          
+
+      <div class="me-overlap">
+        <span class="user">
+          <Fa size="3x" icon={faUser} />
+        </span>
+        <div class="aboutmeicon">
+          <img class="" src={aboutme} alt="me"/>
+        </div>
+      </div>
+     
+    </div>
+   <h4>Try a new framework!</h4>
+    <aside class="notes">
+      incontra un collega che gli dice 
        E se ci fosse una via più semplice? Uno strumento che non aggiunge complessità, ma la rimuove?
     </aside>
   </section>
@@ -222,10 +243,6 @@
   }
   .me-overlap .hidden {
     opacity: 0;
-  }
-  .me-overlap .show {
-    position: absolute;
-    z-index: 3;
   }
   .me-overlap .aboutmeicon {
     height: 100px;

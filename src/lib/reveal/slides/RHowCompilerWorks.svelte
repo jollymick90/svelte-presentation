@@ -4,6 +4,7 @@
 </script>
 
 <section>
+  
   <section data-background-color={lightBackground}>
     <h1>Come funzione il compilatore</h1>
   </section>
@@ -276,7 +277,7 @@
     </div>
   </section>
 </section>
- <DefinitionCompileRuntime />
+ 
 
 <style>
   /* Scopo tutto alla singola slide */

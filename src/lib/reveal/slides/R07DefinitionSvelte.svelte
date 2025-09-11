@@ -91,19 +91,14 @@
 <section>
   <section data-auto-animate data-background-gradient={bgSvelteRadial}>
     <h4 class="focus">
-      Non si è mai visto usare una parola come
-      <b style="color: #edfb73">breathtakingly</b>,
-      <b style="color: #edfb73">love letter</b> in una documentazione tecnica.
+      Have you ever seen words like <b style="color: #edfb73">breathtakingly</b>
+       or <b style="color: #edfb73">love letter</b> used in technical documentation?     
     </h4>
+    <aside class="notes">
+      avete mai visto usare le parole 'mozzafiato' o 'lettera d'amore' in una documentazione tecnica?
+    </aside>
   </section>
-  <section data-auto-animate data-background-gradient={bgSvelteRadial}>
-    <h4 class="focus">
-      Non si è mai visto usare una parola come
-      <b style="color: #edfb73">breathtakingly</b>,
-      <b style="color: #edfb73">love letter</b> in una documentazione tecnica.
-    </h4>
-    <p>Vediamo?</p>
-  </section>
+  
   <section
     data-auto-animate
     data-background-gradient="radial-gradient(circle, #dd0031, #c3002f, #333 100%)"
@@ -170,7 +165,7 @@
       </span>
     </p>
     <aside class="notes">
-      la vera parola che introduce una novità nel panorama del dei framework per
+      la vera parola che introduce una novità nel panorama dei framework per
       interfacce grafiche è
     </aside>
   </section>
@@ -178,13 +173,19 @@
   <section data-auto-animate data-background-gradient={bgSvelteRadial}>
     <p>
       <span style="color: #5E5D5D"> Svelte is a UI framework that uses a </span>
-      <b style="color: #edfb73">compiler </b>
+      <b style="color: #edfb73; font-size: 4rem">compiler </b>
       <span style="color: #5E5D5D">
         to let you write breathtakingly concise components that do minimal work
         in the browser, using languages you already know — HTML, CSS and JS.
         It's a love letter to web development.</span
       >
     </p>
+    <aside class="notes">
+      Compilatore.
+      e se di solito fate 
+      npm run build
+
+    </aside>
   </section>
 </section>
 

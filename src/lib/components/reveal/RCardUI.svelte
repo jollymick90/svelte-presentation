@@ -24,44 +24,14 @@
     gap: 0.6rem;
     transform-origin: center;
   }
-  .card h2 {
-    margin: 0;
-    font-size: clamp(1.6rem, 3.2vw, 2.8rem);
-    color: var(--text);
-    letter-spacing: 0.02em;
-  }
-  .card p {
-    margin: 0;
-    font-style: italic;
-    font-size: clamp(1rem, 2vw, 1.4rem);
-    color: var(--muted);
-  }
-
+ 
   /* stato "dim" per le slide di focus */
   .dimmed {
     opacity: 0.25;
     filter: saturate(0.6);
   }
 
-  /* posizioni iniziali per auto-animate (slide 1) */
-  .off-left {
-    transform: translateX(-120px);
-    opacity: 0;
-  }
-  .off-right {
-    transform: translateX(120px);
-    opacity: 0;
-  }
-  .off-top {
-    transform: translateY(-120px);
-    opacity: 0;
-  }
-  .off-bottom {
-    transform: translateY(120px);
-    opacity: 0;
-  }
-
-  /* highlight animato (slide di focus) */
+  
   .focus {
     transform: scale(1.06);
     box-shadow: 0 16px 28px rgba(0, 0, 0, 0.18);

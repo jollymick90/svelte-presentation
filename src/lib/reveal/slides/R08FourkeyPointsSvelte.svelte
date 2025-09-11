@@ -1,11 +1,10 @@
 <script>
-
-  const bg = "#eaf3ff";
+import { bgSvelteRadial } from "../common.svelte";
 </script>
 
-<section>
-  <section data-auto-animate data-background-color={bg}>
-    <h2 style="color:#0b2a4a">Key Points</h2>
+
+  <section data-auto-animate data-background-gradient={bgSvelteRadial}>
+    <h2 style="color:#FFF">Svelte in 4 key ideas</h2>
     <div class="grid-2x2">
       <div class="card fragment" data-fragment-index="0" data-id="component">
         <h2>COMPONENT</h2>
@@ -25,13 +24,21 @@
         <p>and a philosophy of building web apps</p>
       </div>
     </div>
+    <aside class="notes">
+      Possiamo dire che Svelte è:
+      - un framework a componenti
+      - ma è anche un compilatore
+      - è anche un kit per creare un'applicazione, con tutto ciò che ti serve
+      - ed è anche una nuova filosofia di sviluppo web
+    </aside>
+
   </section>
 
-</section>
+
 
 <style>
   :root {
-    --bg: #eaf3ff;
+    /* --bg: #eaf3ff; */
     --card-bg: #f7fbff;
     --card-border: #6aa4e0;
     --card-shadow: rgba(0, 0, 0, 0.12);

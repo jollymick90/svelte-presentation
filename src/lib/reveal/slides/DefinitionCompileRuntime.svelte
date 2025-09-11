@@ -1,8 +1,8 @@
 <script>
-  import { lightBackground } from "../common.svelte";
+  import { bgSvelteRadial, lightBackground } from "../common.svelte";
 
 </script>
-<section data-background-color={lightBackground}>
+<section  data-background-color={lightBackground}>
     <div class="layout">
         <span class="word">Compile Time</span>
         <span class="definition">The moment when the source code is <b>transformed</b> into another form (eg, TS - JS)</span>

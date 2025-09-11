@@ -18,7 +18,7 @@
   import R02AgendaSlide from "../slides/R02AgendaSlide.svelte";
   import R0BaseDefinitions from "../slides/R0BaseDefinitions.svelte";
   import R07DefinitionSvelte from "../slides/R07DefinitionSvelte.svelte";
-  import R08SvelteIntroduction from "../slides/R08SvelteIntroduction.svelte";
+  import R08FourkeyPointsSvelte from "../slides/R08FourkeyPointsSvelte.svelte";
   import R09HistorySvelte from "../slides/R09HistorySvelte.svelte";
   import RHowCompilerWorks from "../slides/RHowCompilerWorks.svelte";
   import RFirstComponent from "../slides/RFirstComponent.svelte";
@@ -34,6 +34,7 @@
   import RBindingDirective from "../slides/RBindingDirective.svelte";
   import RKitDataLoading from "../slides/RKitDataLoading.svelte";
   import RConclusion from "../slides/RConclusion.svelte";
+  import RSlideFrameworkLibraryCompar from "../slides/RSlideFrameworkLibraryCompar.svelte";
   
   const { showNotes = false } = $props();
   
@@ -62,15 +63,17 @@
     <R02AgendaSlide />    
     <R07DefinitionSvelte />
     
-    <R08SvelteIntroduction />
+    <R08FourkeyPointsSvelte />
     <R0BaseDefinitions />
+    <RSlideFrameworkLibraryCompar />
+    <RHowCompilerWorks />
     <R09HistorySvelte />
     <RSintassiSvelte />
     <RScopedStyle />
     <RReactivity />
     <RBindingDirective />
     <RSintax />
-    <RHowCompilerWorks />
+    
     <SvelteKitPresentation />
     <RSvelteKitCreate />
     <RSvelteKitRouting />
