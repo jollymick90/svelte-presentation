@@ -170,6 +170,7 @@ export const codeReactivityDeep03 = `
     let total = $derived(numbers.reduce((t, n) => t + n, 0));
 
     function addNumber() {
+      // numbers = [...numbers, numbers.length + 1]
         numbers.push(numbers.length + 1);
     }
 </script>
@@ -215,7 +216,7 @@ export const codeStyle02 = `
 `;
 
 
-export const codeBindingDirective01 = `
+export const codeBinding = `
 <script>
     import { $state } from 'svelte/state';
 
@@ -227,12 +228,9 @@ export const codeBindingDirective01 = `
 <p>Inserisci il nome:</p>
 <input bind:value={name} />
 
-{#if name === 'Molly'}
-    <p>Sei tornata!</p>
-{:else}
-    <p>Ciao, {name}!</p>
-{/if}
 `;
+
+
 
 export const svelteKitLoadData01 = `
 // src/routes/blog/+page.server.js

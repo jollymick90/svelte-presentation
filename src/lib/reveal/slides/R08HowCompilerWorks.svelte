@@ -52,10 +52,18 @@
   </section>
 
   <DefinitionCompileRuntime />
+  <section data-background-gradient={bgSvelteLinear}>
+    <h1>Compiler</h1>
 
+    <aside class="notes">
+     Visti questi elementi ora possiamo andare
+      a vedere com'è fatto il compilatore
+      per togliere questo effetto magico.
+    </aside>
+  </section>
   <section
     data-auto-animate
-    data-background-color="#eaf3ff"
+    data-background-gradient={bgSvelteLinear}
     class="svelte-compiler-slide"
   >
     <div class="diagram">
@@ -176,7 +184,7 @@
       <div class="h-connector analyze-transform-connector"></div>
       <div class="h-connector end-connector"></div>
     </div>
-    <aside class="notes">la funzione di parsing</aside>
+    <aside class="notes"> parsing</aside>
   </section>
   <section
     data-auto-animate
@@ -207,7 +215,13 @@
       <div class="h-connector end-connector"></div>
     </div>
     <aside class="notes">
-      genera l'AST - HTML, JS e CSS sono separati ma integrati in un unica
+      il parsing 
+      genera l'AST (Abstract syntax tree) 
+      rappresentazione ad albero della struttura sintattica astratta del testo codice sorgente scritto in un linguaggio formale. Ogni nodo dell'albero denota un costrutto che si verifica nel codice.
+
+      La progettazione di un AST è spesso strettamente collegata alla progettazione di un compilatore e alle sue caratteristiche.
+      
+      in svelte quello che abbiamo HTML, JS e CSS sono separati ma integrati in un unica
       struttura
     </aside>
   </section>

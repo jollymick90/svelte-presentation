@@ -12,7 +12,9 @@
   } from "../store/code-slide-sintassi";
   import { onMount } from "svelte";
   let visible = $state(false);
-  
+  let hammer = $state(false);
+  let libraryVisible = $state(false);
+   let reactIconEl: HTMLImageElement;
   function typewriter(node: any, { speed = 1 }: { speed?: number }) {
     const valid =
       node.childNodes.length === 1 &&
@@ -35,6 +37,11 @@
         node.textContent = text.slice(0, i);
         if (i == 8) {
           visible = false;
+          hammer = false;
+          requestAnimationFrame(() => {
+            hammer = true;
+            libraryVisible = true;
+          });
         }
       },
     };
@@ -92,20 +99,29 @@
   use:revealPresent={(v) => (visible = v)}
   data-auto-animate
 >
-  <h3><img class="w-auto" src={react} alt="reacticon" /></h3>
+  <h3>
+     <img
+      bind:this={reactIconEl}
+      class="w-auto react-icon"
+      class:hammer-drop={hammer}
+      src={react}
+      alt="reacticon"
+      style="--drop: 240px" 
+    />
+  </h3>
 
   {#if visible}
     <p in:typewriter={{ speed: 0.5 }}>Framework</p>
   {/if}
-  <aside class="notes">
-    Non fa in tempo a chiamarlo Framework, che gli arriva il sonoro
-  </aside>
-</section>
-<section data-background-gradient={bglightBackgroundRadial} data-auto-animate>
-  <h3><img class="w-auto" src={react} alt="reacticon" /></h3>
+  {#if libraryVisible} 
+
   <h3>React is a LIBRARY</h3>
 
-  <aside class="notes">è una libreria"</aside>
+  {/if}
+  <aside class="notes">
+    Non fa in tempo a chiamarlo Framework, che gli arriva il sonoro
+    è una libreria
+  </aside>
 </section>
 
 <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
@@ -135,4 +151,31 @@
   .w-auto {
     width: auto;
   }
+  .react-icon {
+  display: inline-block;
+  transform-origin: 50% 0%; /* per lo “schiacciamento” sull’impatto */
+  will-change: transform, filter;
+}
+  /* attiva l’animazione quando hammer=true */
+.hammer-drop {
+  animation: hammer-drop 700ms cubic-bezier(.2,.9,.35,1.2) both;
+}
+
+/* distanza customizzabile via --drop */
+@keyframes hammer-drop {
+  0%   { transform: translateY(-60px) rotate(0deg)   scaleY(1);    filter: none; }
+  60%  { transform: translateY(calc(var(--drop, 220px) - 20px)) rotate(0) scaleY(.9); }
+  /* impatto: schiaccio + piccolo bagliore */
+  70%  { transform: translateY(var(--drop, 220px)) rotate(0) scaleY(.8);
+         filter: drop-shadow(0 6px 10px rgba(0,0,0,.3)); }
+  /* rimbalzo */
+  80%  { transform: translateY(calc(var(--drop, 220px) - 18px)) rotate(-3deg) scaleY(1.05); }
+  92%  { transform: translateY(calc(var(--drop, 220px) - 6px))  rotate(1deg)  scaleY(.98); }
+  100% { transform: translateY(var(--drop, 220px)) rotate(0deg) scaleY(1);    filter: none; }
+}
+
+/* opzionale: riduci motion se richiesto dall’utente */
+@media (prefers-reduced-motion: reduce) {
+  .hammer-drop { animation: none; }
+}
 </style>

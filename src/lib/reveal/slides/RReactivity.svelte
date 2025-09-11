@@ -97,7 +97,7 @@
   </section>
   
   <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
-    <h3>React Vue Angular</h3>
+    <h3>React - Vue - Angular</h3>
     <pre><code data-trim data-noescape data-line-numbers="1-11">
   {codeReacttivityReact}
   </code></pre>
@@ -117,7 +117,7 @@
   </section>
 
   <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
-    <h3>SOLID PREACT</h3>
+    <h3>SOLID - PREACT</h3>
     <pre><code data-trim data-noescape data-line-numbers="1-11">
   {codeReactivitySolid}
   </code></pre>
@@ -177,7 +177,7 @@
   </section>
   <section data-background-gradient={bgSvelteLinear}>
     <h3>Svelte 5 - Runes</h3>
-
+ 
     <aside class="notes">
       da adesso farò sempre riferimento a svelte 5. La sintassi di svelte 3 ha
       senso conoscerla solo per - quel poco che c'è di codice legacy - codice
@@ -186,7 +186,7 @@
   </section>
   <section data-background-gradient={bgSvelteLinear}>
 <h3>Svelte 5 - Deep Reactivity</h3>
-     <pre><code data-trim data-noescape data-line-numbers="1-11 | 11-17">
+     <pre><code data-trim data-noescape data-line-numbers="1-12 | 12-17">
   {codeReactivityDeep03}
   </code></pre>
   <aside class="notes">
