@@ -1,13 +1,58 @@
 <script>
-  import { bglightBackgroundRadial } from "../common.svelte";
+  import { bgSvelteLinear } from "../common.svelte";
+  import jsBenchImgDemo from "$lib/assets/img/js-framefork-benchmark-github-demo.png";
+  import jsBenchImg from "$lib/assets/img/js-framefork-benchmark-github.png";
+  import jsBenchComp from "$lib/assets/img/benchmark-svelte-solid-vue-angular-react.png";
+  import jsBenchCompMem from "$lib/assets/img/benchmark-svelte-solid-vue-angular-react-mem.png";
+  import jsBenchCompSize from "$lib/assets/img/benchmark-svelte-solid-vue-angular-react-size.png";
+  import svelteLogoBig from "$lib/assets/img/svelte-logo-big.png";
+
   import DefinitionCompileRuntime from "./RDefinitionCompileRuntime.svelte";
 </script>
 
 <section>
-  <section data-background-gradient={bglightBackgroundRadial}>
-    <h1>Come funzione il compilatore</h1>
+  <section data-auto-animate data-background-gradient={bgSvelteLinear}>
+    <img src={svelteLogoBig} alt="svelte logo" />
+    <h1 class="fragment" data-fragment-index="0" data-id="performance">
+      Performance
+    </h1>
+    <h1 class="fragment" data-fragment-index="1" data-id="devex">
+      Dev Experience
+    </h1>
+
+    <aside class="notes">
+      Svelte si pone di migliorare due elementi: le performance la dev
+      experience
+    </aside>
   </section>
+
+  <section data-auto-animate data-background-gradient={bgSvelteLinear}>
+    <h2 data-id="performance">Performance</h2>
+    <h3 class="fragment" data-fragment-index="0" data-id="how">How?</h3>
+    <p class="fragment" data-fragment-index="1" data-id="overhead">
+      No Overhead
+    </p>
+    <p class="fragment" data-fragment-index="2" data-id="runtime">No Runtime</p>
+    <p class="fragment" data-fragment-index="3" data-id="vanilla">
+      Component PURE JS
+    </p>
+    <aside class="notes">
+      Vediamo le performance. Come fa? qual è il cuore che sta alla base di
+      performance migliori? IMPORTANTE: Se lo chiedete a un AI o girate in
+      qualche Forum troverete questo: - no Overhead - no runtime - componenti
+      puri js
+    </aside>
+  </section>
+  <section data-background-gradient={bgSvelteLinear}>
+    <h1>HOW?</h1>
+
+    <aside class="notes">
+      Ho capito, ma come? Come fa a non avere overhead? e non runtime?
+    </aside>
+  </section>
+
   <DefinitionCompileRuntime />
+
   <section
     data-auto-animate
     data-background-color="#eaf3ff"
@@ -36,10 +81,14 @@
       <div class="h-connector analyze-transform-connector"></div>
       <div class="h-connector end-connector"></div>
     </div>
+    <aside class="notes">
+      Questi sono i passaggi che trasformano il file App.svelte in due file:
+      App.js e App.css
+    </aside>
   </section>
   <section
     data-auto-animate
-    data-background-gradient={bglightBackgroundRadial}
+    data-background-gradient={bgSvelteLinear}
     class="svelte-compiler-slide"
   >
     <div class="diagram">
@@ -65,10 +114,13 @@
       <div class="h-connector analyze-transform-connector"></div>
       <div class="h-connector end-connector"></div>
     </div>
+    <aside class="notes">
+      i passaggi fondamentali sono - parsing - analisi - trasformazione
+    </aside>
   </section>
   <section
     data-auto-animate
-    data-background-gradient={bglightBackgroundRadial}
+    data-background-gradient={bgSvelteLinear}
     class="svelte-compiler-slide"
   >
     <div class="diagram">
@@ -94,10 +146,11 @@
       <div class="h-connector analyze-transform-connector"></div>
       <div class="h-connector end-connector"></div>
     </div>
+    <aside class="notes">si parte dal file con estensione .svelte</aside>
   </section>
   <section
     data-auto-animate
-    data-background-gradient={bglightBackgroundRadial}
+    data-background-gradient={bgSvelteLinear}
     class="svelte-compiler-slide"
   >
     <div class="diagram">
@@ -123,10 +176,11 @@
       <div class="h-connector analyze-transform-connector"></div>
       <div class="h-connector end-connector"></div>
     </div>
+    <aside class="notes">la funzione di parsing</aside>
   </section>
   <section
     data-auto-animate
-    data-background-gradient={bglightBackgroundRadial}
+    data-background-gradient={bgSvelteLinear}
     class="svelte-compiler-slide"
   >
     <div class="diagram">
@@ -152,10 +206,14 @@
       <div class="h-connector analyze-transform-connector"></div>
       <div class="h-connector end-connector"></div>
     </div>
+    <aside class="notes">
+      genera l'AST - HTML, JS e CSS sono separati ma integrati in un unica
+      struttura
+    </aside>
   </section>
   <section
     data-auto-animate
-    data-background-gradient={bglightBackgroundRadial}
+    data-background-gradient={bgSvelteLinear}
     class="svelte-compiler-slide"
   >
     <div class="diagram">
@@ -181,10 +239,11 @@
       <div class="h-connector analyze-transform-connector"></div>
       <div class="h-connector end-connector"></div>
     </div>
+    <aside class="notes">segue la fase di analisi</aside>
   </section>
   <section
     data-auto-animate
-    data-background-gradient={bglightBackgroundRadial}
+    data-background-gradient={bgSvelteLinear}
     class="svelte-compiler-slide"
   >
     <div class="diagram">
@@ -210,10 +269,15 @@
       <div class="h-connector analyze-transform-connector"></div>
       <div class="h-connector end-connector"></div>
     </div>
+    <aside class="notes">
+      che genera un modello - The compiler extracts: - Reactive Variables -
+      Local/global Scope - Scoped CSS (with hash `.svelte-xyz`) - A complete
+      model of the component is built to prepare for transformation
+    </aside>
   </section>
   <section
     data-auto-animate
-    data-background-gradient={bglightBackgroundRadial}
+    data-background-gradient={bgSvelteLinear}
     class="svelte-compiler-slide"
   >
     <div class="diagram">
@@ -239,10 +303,11 @@
       <div class="h-connector analyze-transform-connector"></div>
       <div class="h-connector end-connector"></div>
     </div>
+    <aside class="notes">infine c'è la parte di trasformazione</aside>
   </section>
   <section
     data-auto-animate
-    data-background-gradient={bglightBackgroundRadial}
+    data-background-gradient={bgSvelteLinear}
     class="svelte-compiler-slide"
   >
     <div class="diagram">
@@ -268,9 +333,33 @@
       <div class="h-connector analyze-transform-connector"></div>
       <div class="h-connector end-connector"></div>
     </div>
+    <aside class="notes">
+      - Generates code for Client-Side Rendering (CSR) o Server-Side Rendering
+      (SSR). - Output: - App.js: minimal and efficient Javascript code -
+      App.css: only the necessary styles, hashed to avoid conflicts - No virtual
+      DOM → direct operations on the real DOM.
+    </aside>
   </section>
+  <section data-background-gradient={bgSvelteLinear}>
+    <h1>Vediamo i risultati?</h1>
+  </section>
+
+  <section data-background-image={jsBenchImg}>
+    <h2>js-framework-benchmark</h2>
+  </section>
+
+  <section data-background-image={jsBenchImgDemo}></section>
+  <section data-background-image={jsBenchComp}></section>
+
+  <section
+    data-background-image={jsBenchCompMem}
+    data-background-size="1200px"
+  ></section>
+  <section
+    data-background-image={jsBenchCompSize}
+    data-background-size="1200px"
+  ></section>
 </section>
- 
 
 <style>
   /* Scopo tutto alla singola slide */
@@ -280,11 +369,6 @@
     --box: #e6f0ff; /* box chiari */
     --text: #0c1829;
     --line: #3b6aa7;
-
-    /* Reveal di solito centra: uso padding per respiro e bg tenue */
-    /* background: var(--bg); */
-    /* padding: 1.5rem 1rem; */
-    /* border-radius: 0.75rem; */
   }
 
   /* Griglia a 3 righe: TOP (model), MIDDLE (pipeline), BOTTOM (AST) */
@@ -359,34 +443,6 @@
       inset 0 0 0 2px rgba(255, 255, 255, 0.25);
   }
 
-  /* punta a destra */
-  /* .svelte-compiler-slide .chevron::after {
-    content: "";
-    position: absolute;
-    top: -4px;
-    right: -60px;
-    width: 0;
-    height: 0;
-    border-top: calc(50% + 4px) solid transparent;
-    border-bottom: calc(50% + 4px) solid transparent;
-    border-left: 60px solid var(--blue);
-    filter: drop-shadow(-2px 0 0 var(--blue-dark));
-  } */
-
-  /* bordo superiore/inferiore della punta */
-  /* .svelte-compiler-slide .chevron::before {
-    content: "";
-    position: absolute;
-    right: -64px;
-    top: -4px;
-    width: 0;
-    height: 0;
-    border-top: calc(50% + 4px) solid transparent;
-    border-bottom: calc(50% + 4px) solid transparent;
-    border-left: 64px solid transparent; 
-  } */
-
-  /* posizioni delle tre frecce */
   .svelte-compiler-slide .chevron.parse {
     grid-column: 2;
   }
@@ -397,14 +453,12 @@
     grid-column: 4;
   }
 
-  /* Connettori (linee) */
   .svelte-compiler-slide .v-connector,
   .svelte-compiler-slide .h-connector {
     position: absolute;
     background: var(--line);
   }
 
-  /* parse -> AST (verticale) */
   .svelte-compiler-slide .ast-connector {
     width: 10px;
     border-radius: 5px;

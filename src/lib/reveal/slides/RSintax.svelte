@@ -1,6 +1,7 @@
 <script>
   import ReplEmbed from "$lib/components/tools/ReplEmbed.svelte";
   import { bgSvelteLinear } from "../common.svelte";
+  import { codeReactivityDeep03 } from "../store/code-slide-sintassi";
 </script>
 
 <section>
@@ -15,5 +16,13 @@
       theme="dark"
       height={560}
     />
+    <aside class="notes">
+    con il playground possiamo provare direttamente
+    svelte e vedere anche come vengono trasformati i componenti
+
+    
+    {codeReactivityDeep03}
+  </aside>
   </section>
+  
 </section>

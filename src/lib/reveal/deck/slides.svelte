@@ -17,8 +17,8 @@
   import R06BaseDefinitions from "../slides/R06BaseDefinitions.svelte";
   import R04DefinitionSvelte from "../slides/R04DefinitionSvelte.svelte";
   import R05FourkeyPointsSvelte from "../slides/R05FourkeyPointsSvelte.svelte";
-  import R09HistorySvelte from "../slides/R09HistorySvelte.svelte";
-  import RHowCompilerWorks from "../slides/RHowCompilerWorks.svelte";
+  import R07HistorySvelte from "../slides/R07HistorySvelte.svelte";
+  import R08HowCompilerWorks from "../slides/R08HowCompilerWorks.svelte";
   import SvelteKitPresentation from "../slides/SvelteKitPresentation.svelte";
   import RSvelteKitCreate from "../slides/RSvelteKitCreate.svelte";
   import RSvelteKitRouting from "../slides/RSvelteKitRouting.svelte";
@@ -60,15 +60,13 @@
     <R04DefinitionSvelte />
     <R05FourkeyPointsSvelte />
     <R06BaseDefinitions />
-    <R09HistorySvelte />
+    <R07HistorySvelte />
+    <R08HowCompilerWorks />
     <RHowToWrite />
     <RScopedStyle />
     <RReactivity />
     <RBindingDirective />
     <RSintax />
-        
-    
-    <RHowCompilerWorks />
     <SvelteKitPresentation />
     <RSvelteKitCreate />
     <RSvelteKitRouting />

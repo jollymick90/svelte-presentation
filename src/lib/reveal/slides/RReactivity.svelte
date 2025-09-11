@@ -1,5 +1,5 @@
 <script>
-  import { bglightBackgroundRadial } from "../common.svelte";
+  import { bgSvelteLinear, bglightBackgroundRadial } from "../common.svelte";
 
   import {
     codeReactivity01,
@@ -93,10 +93,9 @@
 
 <section>
   <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
-    <h3>Reactivity nei framework</h3>
+    <h3>Reactivity other frameworks</h3>
   </section>
-  <!-- framework tradizionali -->
-
+  
   <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
     <h3>React Vue Angular</h3>
     <pre><code data-trim data-noescape data-line-numbers="1-11">
@@ -132,7 +131,7 @@
     </aside>
   </section>
 
-  <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
+  <section data-auto-animate data-background-gradient={bgSvelteLinear}>
     <div class="myHeading">
       <h3>Reactivity.svelte</h3>
       <h5>Svelte 3</h5>
@@ -154,7 +153,7 @@
     </aside>
   </section>
 
-  <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
+  <section data-auto-animate data-background-gradient={bgSvelteLinear}>
     <div class="myHeading">
       <h3>Reactivity.svelte</h3>
       <h5>Svelte 5 - runes</h5>
@@ -176,7 +175,7 @@
       SolidJS, che permette aggiornamenti molto più efficienti e "granulari".
     </aside>
   </section>
-  <section data-background-gradient={bglightBackgroundRadial}>
+  <section data-background-gradient={bgSvelteLinear}>
     <h3>Svelte 5 - Runes</h3>
 
     <aside class="notes">
@@ -185,9 +184,9 @@
       generato da AI spesso è automaticamente in svelte 3
     </aside>
   </section>
-  <section data-background-gradient={bglightBackgroundRadial}>
+  <section data-background-gradient={bgSvelteLinear}>
 <h3>Svelte 5 - Deep Reactivity</h3>
-     <pre><code data-trim data-noescape data-line-numbers="1-11">
+     <pre><code data-trim data-noescape data-line-numbers="1-11 | 11-17">
   {codeReactivityDeep03}
   </code></pre>
   <aside class="notes">
