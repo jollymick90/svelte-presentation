@@ -9,7 +9,7 @@ export const lightBackground = "#dfeaf6";
 export const textSlide = "#0b2a4a";
 export const bacaroBackground = "#32325b";
 
-export const bglightBackgroundRadial = "linear-gradient(to bottom, #dfeaf6, #5fa0d1)";
+export const bglightBackgroundRadial = "linear-gradient(to bottom, #5fa0d1, #dfeaf6)";
 export const bgSvelteRadial = "linear-gradient(to bottom, #ff3e00, #ffe9d3)";
 export const bgSvelteRadialLight = "radial-gradient(circle, #ff3e00, #b32b00)";
 export const bgSvelteLinear = "linear-gradient(to bottom, #ff3e00, #ffe9d3)";

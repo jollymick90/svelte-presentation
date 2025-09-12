@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { qr } from "@svelte-put/qr/svg";
+
   import aboutme from "$lib/assets/img/aboutme.webp";
   import angular from "$lib/assets/img/angular.webp";
   import java from "$lib/assets/img/java.webp";
@@ -65,7 +67,6 @@
   <section data-auto-animate data-background-color={bacaroBackground}>
     <div class="myHeading">
       <h1>BacaroTech</h1>
-      
     </div>
     <img class="bacaroicon" src={bacarologo} alt="bacarologo" />
     <aside class="notes">
@@ -119,6 +120,19 @@
       una particolare osteria del veneziano dove vengono serviti 'ombre' (vino)
       e 'cichetti' (cibo)
     </aside>
+  </section>
+  <section data-background-color={bacaroBackground}>
+    <div class="myHeading">
+      <h2>BacaroTech - Follow Us</h2>
+    </div>
+    <svg
+      width="400"
+      use:qr={{
+        data: "https://bacarotech.github.io/",
+        logo: bacarologo,
+        shape: "circle",
+      }}
+    />
   </section>
 </section>
 
