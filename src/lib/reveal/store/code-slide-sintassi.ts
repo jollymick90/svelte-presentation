@@ -222,9 +222,9 @@ export const codeBinding = `
 
     let name = $state('Molly');
 </script>
-
+//From parent to child
 <h1>Benvenuta, {name}!</h1>
-
+//From child to parent
 <p>Inserisci il nome:</p>
 <input bind:value={name} />
 

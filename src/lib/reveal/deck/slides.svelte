@@ -32,6 +32,8 @@
   import RConclusion from "../slides/RConclusion.svelte";
   import RSlideFrameworkLibraryCompar from "../slides/RSlideFrameworkLibraryCompar.svelte";
   import RKitPageConfiguration from "../slides/RKitPageConfiguration.svelte";
+  import RThanksIntro from "../slides/RThanksIntro.svelte";
+  import RThanksOut from "../slides/RThanksOut.svelte";
   
   const { showNotes = false } = $props();
   
@@ -54,6 +56,7 @@
 
 <div class="reveal">
   <div class="slides">
+    
     <R00WelcomeSlide />   
     <R01MollyStoryPart1 />
     <R02IntroSlide />
@@ -75,5 +78,6 @@
     <RKitDataLoading />
     <SvelteKitFeatures />
    <RConclusion />
+   <RThanksOut />
   </div>
 </div>

@@ -8,11 +8,12 @@
     data-auto-animate
     data-background-gradient="{bgSvelteLinear}"
   >
-    <h2 style="color:#0b2a4a">Conclusions</h2>
+    <h2 style="color:#0b2a4a">Final Thoughts</h2>
     <div class="grid-2x2">
       <div class="card fragment" data-fragment-index="0" data-id="component">
         <h2>Svelte VS Other</h2>
-        <p class="fragment">NextJS/NuxtJS</p>
+        <p class="fragment">NextJS</p>
+        <p class="fragment">NuxtJS</p>
         <p class="fragment">Angular</p>
       </div>
       <div class="card fragment" data-fragment-index="1" data-id="compiler">
@@ -22,7 +23,7 @@
         <p class="fragment">Styling</p>
       </div>
       <div class="card fragment" data-fragment-index="2" data-id="meta">
-        <h2>Not IF but WHEN</h2>
+        <h2>Production</h2>
         <p class="fragment">Enterprise</p>
         <p class="fragment">???</p>
       </div>
@@ -70,7 +71,7 @@ L'ecosistema è un fattore cruciale. Next.js, grazie alla sua base su React, ha 
     border: 2px solid var(--card-border);
     border-radius: 22px;
     box-shadow: 0 8px 16px var(--card-shadow);
-    padding: 2rem 2.2rem;
+    padding: 0.9rem 1.1rem;
     min-height: 8rem;
     display: flex;
     flex-direction: column;
@@ -80,14 +81,14 @@ L'ecosistema è un fattore cruciale. Next.js, grazie alla sua base su React, ha 
   }
   .card h2 {
     margin: 0;
-    font-size: clamp(1.6rem, 3.2vw, 2.8rem);
+    font-size: 2.8rem;  /*clamp(1.6rem, 3.2vw, 2.8rem);*/
     color: var(--text);
     letter-spacing: 0.02em;
   }
   .card p {
     margin: 0;
     font-style: italic;
-    font-size: clamp(1rem, 2vw, 1.4rem);
+    font-size: 1.9rem; /*clamp(1rem, 4vw, 1.9rem);*/
     color: var(--muted);
   }
 </style>

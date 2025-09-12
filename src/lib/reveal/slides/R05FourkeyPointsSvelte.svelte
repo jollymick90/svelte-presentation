@@ -59,7 +59,7 @@ import { bgSvelteRadial } from "../common.svelte";
     border: 2px solid var(--card-border);
     border-radius: 22px;
     box-shadow: 0 8px 16px var(--card-shadow);
-    padding: 2rem 2.2rem;
+    padding: 0.9rem 1.1rem;
     min-height: 8rem;
     display: flex;
     flex-direction: column;
@@ -69,14 +69,14 @@ import { bgSvelteRadial } from "../common.svelte";
   }
   .card h2 {
     margin: 0;
-    font-size: clamp(1.6rem, 3.2vw, 2.8rem);
+    font-size: 2.8rem;  /*clamp(1.6rem, 3.2vw, 2.8rem);*/
     color: var(--text);
     letter-spacing: 0.02em;
   }
   .card p {
     margin: 0;
     font-style: italic;
-    font-size: clamp(1rem, 2vw, 1.4rem);
+    font-size: 1.9rem; /*clamp(1rem, 4vw, 1.9rem);*/
     color: var(--muted);
   }
 

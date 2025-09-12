@@ -6,6 +6,7 @@
   import jsBenchCompMem from "$lib/assets/img/benchmark-svelte-solid-vue-angular-react-mem.webp";
   import jsBenchCompSize from "$lib/assets/img/benchmark-svelte-solid-vue-angular-react-size.webp";
   import svelteLogoBig from "$lib/assets/img/svelte-logo-big.webp";
+  import { qr } from "@svelte-put/qr/svg";
 
   import DefinitionCompileRuntime from "./RDefinitionCompileRuntime.svelte";
 </script>
@@ -362,6 +363,17 @@
     <h2>js-framework-benchmark</h2>
   </section>
 
+    <section data-background-image={jsBenchImg}>
+    <h2>js-framework-benchmark</h2>
+      <svg
+      width="400"
+      style="background: black; padding: 5px"
+      use:qr={{
+        data: "https://krausest.github.io/js-framework-benchmark/current.html",
+        
+      }}
+    />
+  </section>
   <section data-background-image={jsBenchImgDemo}></section>
   <section data-background-image={jsBenchComp}></section>
 

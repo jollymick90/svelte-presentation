@@ -175,15 +175,28 @@
       SolidJS, che permette aggiornamenti molto più efficienti e "granulari".
     </aside>
   </section>
-  <section data-background-gradient={bgSvelteLinear}>
+  <section data-auto-animate data-background-gradient={bgSvelteLinear}>
     <h3>Svelte 5 - Runes</h3>
+    <blockquote class="fragment">
+      <p class="fragment"> 
+        <strong>rune</strong> /ruːn/ <em>noun</em>
+      </p>
+    <p class="fragment">A letter or mark used as a mystical or magic symbol.</p>
+    </blockquote>
+    <p class="fragment">into components: .svelte</p>
+    <p class="fragment">outside components: .svelte.js/.svelte.ts</p>
  
     <aside class="notes">
       da adesso farò sempre riferimento a svelte 5. La sintassi di svelte 3 ha
       senso conoscerla solo per - quel poco che c'è di codice legacy - codice
       generato da AI spesso è automaticamente in svelte 3
+
+      Runes are symbols that you use in .svelte and .svelte.js / .svelte.ts 
+      
+      files to control the Svelte compiler. If you think of Svelte as a language, runes are part of the syntax — they are keywords.
     </aside>
   </section>
+  
   <section data-background-gradient={bgSvelteLinear}>
 <h3>Svelte 5 - Deep Reactivity</h3>
      <pre><code data-trim data-noescape data-line-numbers="1-12 | 12-17">

@@ -10,9 +10,11 @@
   import react from "$lib/assets/img/react.webp";
   import { bglightBackgroundRadial, bacaroBackground } from "../common.svelte";
   import bacarologo from "$lib/assets/img/BacaroLogo.webp";
+  import RThanksIntro from "./RThanksIntro.svelte";
 </script>
 
 <section>
+  
   <section data-auto-animate data-background-gradient={bglightBackgroundRadial}>
     <div class="c-flex">
       <div class="">
@@ -64,6 +66,7 @@
     </div>
     <aside class="notes">sono appassionato del mondo web e non solo</aside>
   </section>
+  <RThanksIntro />
   <section data-auto-animate data-background-color={bacaroBackground}>
     <div class="myHeading">
       <h1>BacaroTech</h1>

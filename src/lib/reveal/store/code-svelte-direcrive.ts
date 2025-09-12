@@ -1,3 +1,73 @@
+export const codeDirectiveIfElse = `
+<!-- {@if} / {:else} -->
+<button onclick={() => (showIf = !showIf)}>Toggle</button>
+{#if showIf}
+  <p in:fade>Visibile</p>
+{:else}
+  <p in:fade>Alternativa</p>
+{/if}
+`;
+export const codeDirectiveEach = `
+<!-- {@each} (con {:else} e key) -->
+  <button onclick={() => (items = [...items, items.length + 1])}>Aggiungi</button>
+  <ul>
+    {#each items as n (n)}
+      <li animate:flip>Elemento {n}</li>
+    {:else}
+      <li>Nessun elemento</li>
+    {/each}
+  </ul>
+`;
+
+export const codeDirectiveAwait = `
+  <button disabled={promiseState === 'loading'} onclick={startPromise}>
+    {promiseState === 'loading' ? 'Loading…' : 'Load'}
+  </button>
+  {#await p}
+    <p in:fade>Caricamento…</p>
+  {:then result}
+    <p in:fade>{result}</p>
+  {:catch err}
+    <p in:fade>Errore: {err?.message}</p>
+  {/await}
+`;
+
+export const codeDirectiveSnippet = `
+{#snippet figure(image)}
+	<figure>
+		<img src={image.src} alt={image.caption} width={image.width} height={image.height} />
+		<figcaption>{image.caption}</figcaption>
+	</figure>
+{/snippet}
+
+{#each images as image}
+	{#if image.href}
+		<a href={image.href}>
+			{@render figure(image)}
+		</a>
+	{:else}
+		{@render figure(image)}
+	{/if}
+{/each}
+`;
+
+export const codeDirectiveUseful = `
+<!-- {@render} -->
+{#if children}
+	{@render children()}
+{:else}
+	<p>fallback content</p>
+{/if}
+<!-- {@html} -->
+  <p>{@html raw}</p>ì
+
+
+<!-- {@debug} -->
+  {@debug debugVar}
+  <p>Apri la console dev.</p>
+
+  
+`;
 export const codeDirective = `
 <script lang="ts">
   import { fade, fly, slide } from 'svelte/transition';

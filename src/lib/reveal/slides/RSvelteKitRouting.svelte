@@ -2,6 +2,7 @@
   import { bgSvelteLinear } from "../common.svelte";
   import {
     routingDirectoryFolder,
+    routingDirectoryFolderEasy,
     routingLibrary,
     routingSvelteKit,
   } from "../store/code-svelte-kit";
@@ -18,38 +19,22 @@
   {routingLibrary}
   </code></pre>
   </section>
-  <section data-audo-animate data-background-gradient={bgSvelteLinear}>
-    <h4>svelte kit is routing</h4>
-    <h3 class="fragment" data-fragment-index="0">filesystem-based router.</h3>
+   <section data-audo-animate data-background-gradient={bgSvelteLinear}>
+    <h4>svelte kit routing</h4>
+    <p class="fragment" data-fragment-index="0">Filesystem-based router</p>
     <p class="fragment" data-fragment-index="1">
-      our file structure is your routing configuration
+      file structure is routing configuration
     </p>
-    <ul class="fragment" data-fragment-index="2">
-      <li>no configuration</li>
-      <li>Intuitive and Scalable</li>
-      <li>Convention Over Configuration</li>
-      <li>Popular in Modern Frameworks</li>
-    </ul>
-    <aside class="notes">
-      Zero Configuration: This is the biggest win. You create a file, and it
-      automatically becomes a route. No more boilerplate code like
-      app.get('/users', ...) for every single endpoint or page. Intuitive &
-      Scalable: It's super easy to understand. If you want a /about page, you
-      create an about.js or about.svelte file inside a pages directory. As your
-      application grows, your routes stay organized naturally with your file
-      system. Convention Over Configuration: This approach relies on clear
-      naming conventions. For instance, pages/products/index.js might map to
-      /products, and pages/products/[id].js would handle dynamic routes like
-      /products/123. Popular in Modern Frameworks: You'll find this pattern
-      central to many popular modern web frameworks like Next.js, SvelteKit,
-      Nuxt.js, and Remix, which leverage it to simplify development
-      significantly.
-    </aside>
+    <pre class="fragment"><code data-trim data-noescape>
+    {routingDirectoryFolderEasy}
+  </code></pre>
+  <p class="fragment">https://bacarosvelte/about</p>
+  <p class="fragment">https://bacarosvelte/products</p>
   </section>
-  <section data-audo-animate data-background-gradient={bgSvelteLinear}>
-    <pre class="code-height"><code data-trim data-noescape>
-  
 
+  <section data-audo-animate data-background-gradient={bgSvelteLinear}>
+    <h4>svelte kit routing</h4>
+    <pre class="code-height"><code data-trim data-noescape>
     {routingDirectoryFolder}
   </code></pre>
     <aside class="notes">The routes of your app</aside>

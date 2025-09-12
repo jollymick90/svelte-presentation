@@ -2,12 +2,19 @@
   import { bgSvelteLinear } from "../common.svelte";
 
   import { codeBinding } from "$lib/reveal/store/code-slide-sintassi";
-  import { codeDirective } from "../store/code-svelte-direcrive";
+  import { codeDirective, codeDirectiveAwait, codeDirectiveEach, codeDirectiveIfElse, codeDirectiveSnippet, codeDirectiveUseful } from "../store/code-svelte-direcrive";
 </script>
 
 <section>
   <section data-auto-animate data-background-gradient={bgSvelteLinear}>
-    <h3>Binding & Directive</h3>
+    <h3 >Binding & Directive</h3>
+    <p class="fragment">One Way Binding: From Parent to Child</p>
+    <p class="fragment">Two Way Binding: From Child to Parent</p>
+    <aside class="notes">
+      Svelte creates an event listener that updates the bound value. If an element already has a listener for the same event, that listener will be fired before the bound value is updated.
+
+Most bindings are two-way, meaning that changes to the value will affect the element and vice versa. A few bindings are readonly, meaning that changing their value will have no effect on the element.
+    </aside>
   </section>
 
   <section data-auto-animate data-background-gradient={bgSvelteLinear}>
@@ -24,32 +31,42 @@
     </aside>
   </section>
   <section data-auto-animate data-background-gradient={bgSvelteLinear}>
-    <h3>Binding & Directive</h3>
+    <h3>Template syntax: Logic if else blocks</h3>
 
     <pre><code data-trim data-noescape data-line-numbers="1-5 | 8-14 | 18-26 | 28-38 | 41-44 |46-49 | 51-52 | 54-62 | 64-66">
-  {codeDirective}
+  {codeDirectiveIfElse}
   </code></pre>
-      <aside class="notes">
-        ifelse Rendering condizionale pulito: niente ternari criptici nel markup.
-
-        each Itero con key stabile: diff efficiente e animazioni senza sforzo
-
-        await Gestisco pending/success/error direttamente nel template.
-
-        @key Forzo il remount di un subtree quando cambia l'espressione
-
-        class e style reattivi, senza stringhe concatenate.
-      
-        use: collega piccoli comportamenti riutilizzabili ai nodi.
-
-        Transizioni pronte all'uso, composte come LEGO.
-
-        @html inietta markup: potente, da usare con contenuti sanificati
-
-        @debug stampa variabili in console durante lo sviluppo.
-      </aside>
-
   </section>
+  <section data-auto-animate data-background-gradient={bgSvelteLinear}>
+    <h3>Template syntax: each blocks</h3>
+
+    <pre><code data-trim data-noescape data-line-numbers="1-5 | 8-14 | 18-26 | 28-38 | 41-44 |46-49 | 51-52 | 54-62 | 64-66">
+  {codeDirectiveEach}
+  </code></pre>
+  </section>
+<section data-auto-animate data-background-gradient={bgSvelteLinear}>
+    <h3>Template syntax: await blocks</h3>
+
+    <pre><code data-trim data-noescape data-line-numbers="1-5 | 8-14 | 18-26 | 28-38 | 41-44 |46-49 | 51-52 | 54-62 | 64-66">
+  {codeDirectiveAwait}
+  </code></pre>
+  </section>
+  <section data-auto-animate data-background-gradient={bgSvelteLinear}>
+    <h3>Template syntax: snippet</h3>
+
+    <pre><code data-trim data-noescape data-line-numbers="1-5 | 8-14 | 18-26 | 28-38 | 41-44 |46-49 | 51-52 | 54-62 | 64-66">
+  {codeDirectiveSnippet}
+  </code></pre>
+  </section>
+  <section data-auto-animate data-background-gradient={bgSvelteLinear}>
+    <h3>Template syntax: snippet</h3>
+
+    <pre><code data-trim data-noescape data-line-numbers="1-5 | 8-14 | 18-26 | 28-38 | 41-44 |46-49 | 51-52 | 54-62 | 64-66">
+  {codeDirectiveUseful}
+  </code></pre>
+  </section>
+
+
 </section>
 
 <style>

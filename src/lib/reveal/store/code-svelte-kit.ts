@@ -3,10 +3,9 @@ import { Router, Route, Link } from "svelte-routing";
 import Home from "./pages/Home.svelte";
 import About from "./pages/About.svelte";
 
-</script>
 <Router>
-<Route path="/" component={Home} />
-<Route path="/about" component={About} />
+    <Route path="/" component={Home} />
+    <Route path="/about" component={About} />
 </Router>
 `;
 
@@ -24,6 +23,12 @@ Build your API REST-like
 
 `;
 
+export const routingDirectoryFolderEasy = `
+src/
+└── routes/
+    ├── about/
+    ├── products/
+`;
 export const routingDirectoryFolder = `
 src/
 ├── app.css
@@ -44,12 +49,37 @@ src/
     ├── +page.server.js
     └── +page.svelte
 `;
+export const pageConfigurationPureCSR = `
+ export const ssr = false;
+ export const csr = true;
+ export const prerendering = false;
+`;
+
+export const pageConfigurationPureSSR = `
+ export const ssr = true;
+ export const csr = false;
+ export const prerendering = false;
+`;
+
+export const pageConfigurationPureSSG = `
+ export const ssr = false;
+ export const csr = false;
+ export const prerendering = true;
+`;
 
 export const pageConfiguration = `
  // +page.ts Hybrid Rendering
  export const ssr = true;
  export const csr = true;
  export const prerendering = false;
+
+`;
+
+export const pageConfigurationSSG = `
+ // +page.ts Hybrid Rendering
+ export const ssr = true;
+ export const csr = true;
+ export const prerendering = true;
 
 `;
 
