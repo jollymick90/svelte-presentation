@@ -45,7 +45,7 @@
       hash: true,
       controls: true,
       progress: true,
-      showNotes: showNotes ? 'separate-page' : false
+      //showNotes: showNotes ? 'separate-page' : false
     });
     // Reveal.configure({ showNotes: true });
     deck.initialize({

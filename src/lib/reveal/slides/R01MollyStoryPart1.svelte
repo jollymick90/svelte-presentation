@@ -6,40 +6,47 @@
     faBriefcase,
     faArrowRight,
     faUser,
+    faCode
   } from "@fortawesome/free-solid-svg-icons";
   import R05FrameworkComponent from "./RFrameworkComponent.svelte";
   import svelteLogoBig from "$lib/assets/img/svelte-logo-big.webp";
   import aboutme from "$lib/assets/img/aboutme.webp";
+  import mollyphoto from "$lib/assets/img/molly-2.png";
+  import mollyphoto2 from "$lib/assets/img/molly-1.png";
 </script>
 
 <section>
   <section data-background-gradient={bglightBackgroundRadial} data-auto-animate>
-    <p><Fa size="3x" icon={faDog} /></p>
-
+    <!-- <p><Fa size="3x" icon={faDog} /></p> -->
+    <img height=300 src={mollyphoto} alt="mollydog"/>
     <aside class="notes">Lei...</aside>
   </section>
   <section data-background-gradient={bglightBackgroundRadial} data-auto-animate>
     <p><Fa size="3x" icon={faDog} /></p>
+
     <h2>Molly</h2>
 
     <aside class="notes">
-      è Molly! In questa presentazione, non parleremo solo di Svelte,
+      è Molly! 
+      Mi ha sentito così tanto parlare di React, angular
+      etc... che ha preso questa decisione
     </aside>
   </section>
   <section data-background-gradient={bglightBackgroundRadial} data-auto-animate>
     <p><Fa size="3x" icon={faDog} /></p>
     <h2>Molly</h2>
-    <h4>Web Site - Frontend developer</h4>
+    <h4><Fa size="1x" icon={faCode} />Web Site - Frontend developer <Fa size="1x" icon={faCode} /></h4>
     <aside class="notes">
-      ma seguiremo il viaggio di Molly, una giovane sviluppatrice che affronta
-      le sfide del mondo del frontend
+      giovane sviluppatrice che affronta
+      le sfide del mondo del frontend.
+      
     </aside>
   </section>
 
   <section data-background-gradient={bglightBackgroundRadial} data-auto-animate>
     <p><Fa size="3x" icon={faDog} /></p>
     <h2>Molly</h2>
-    <h4>Web Site - Frontend developer</h4>
+    <h4><Fa size="1x" icon={faCode} />Web Site - Frontend developer <Fa size="1x" icon={faCode} /></h4>
     <h3>What should Molly learn first??</h3>
     <aside class="notes">
       Cosa dovrebbe imparare? Se c'è qualcuno in sala con qualche primavera alle
@@ -73,7 +80,9 @@
 
   <section data-background-gradient={bglightBackgroundRadial} data-auto-animate>
     <div class="molly-go-to-work">
-      <span><Fa size="3x" icon={faDog} /></span>
+      <img height=300 src={mollyphoto2} alt="mollydog"/>
+      <!-- <spn><Fa size="3x" icon={faDog} /></spn> -->
+      <!-- <img src={tired} alt="workgif"/> -->
     </div>
     <aside class="notes">poi che succede?</aside>
   </section>

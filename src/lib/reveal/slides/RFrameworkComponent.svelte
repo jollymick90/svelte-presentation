@@ -4,6 +4,7 @@
   import react from "$lib/assets/img/react.webp";
   import Fa from "svelte-fa";
   import spaghetticode from "$lib/assets/img/react-spaghetti-code.webp";
+  import tired from "$lib/assets/img/tired.gif";
 
   import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
   import {
@@ -67,8 +68,8 @@
 </script>
 
 <section data-background-gradient={bglightBackgroundRadial} data-auto-animate>
-  <span><Fa size="3x" icon={faBriefcase} /></span>
-
+  <!-- <span><Fa size="3x" icon={faBriefcase} /></span> -->
+  <img src={tired} alt="workgif"/>
   <aside class="notes">La prima webapp</aside>
 </section>
 <section data-background-gradient={bglightBackgroundRadial} data-auto-animate>
