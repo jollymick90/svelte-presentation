@@ -3,6 +3,8 @@
 
   import { svelteKitLoadData01 } from "$lib/reveal/store/code-slide-sintassi";
   import {
+  pageConfiguration,
+    pageConfigurationHybrid,
     pageConfigurationPureCSR,
     pageConfigurationPureSSG,
     pageConfigurationPureSSR,
@@ -13,7 +15,13 @@
   <section data-auto-animate data-background-gradient={bgSvelteLinear}>
     <h3>Svelte Kit Page Configuration</h3>
   </section>
+  <section data-auto-animate data-background-gradient={bgSvelteLinear}>
+    <h3>Easy</h3>
 
+    <pre><code data-trim data-noescape data-line-numbers="1-5 | 5-16">
+  {pageConfiguration}
+  </code></pre>
+  </section>
   <section data-auto-animate data-background-gradient={bgSvelteLinear}>
     <h3>Client-Side Rendering (CSR) Only</h3>
 
@@ -31,6 +39,14 @@
     <h3>SSG</h3>
     <pre><code data-trim data-noescape data-line-numbers="1-5 | 5-16">
   {pageConfigurationPureSSG}
+  </code></pre>
+  </section>
+
+    <section data-auto-animate data-background-gradient={bgSvelteLinear}>
+    <h3>Hybrid / Hydration</h3>
+
+    <pre><code data-trim data-noescape data-line-numbers="1-5 | 5-16">
+  {pageConfigurationHybrid}
   </code></pre>
   </section>
 </section>

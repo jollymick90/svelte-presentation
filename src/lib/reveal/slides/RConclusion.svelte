@@ -8,7 +8,8 @@
     data-auto-animate
     data-background-gradient="{bgSvelteLinear}"
   >
-    <h2 style="color:#0b2a4a">Final Thoughts</h2>
+    <!-- <h2 style="color:#0b2a4a">Final Thoughts</h2> -->
+    <h2 style="color:#FFF">Key Takeaways</h2>
     <div class="grid-2x2">
       <div class="card fragment" data-fragment-index="0" data-id="component">
         <h2>Svelte VS Other</h2>

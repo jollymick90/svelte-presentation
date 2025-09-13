@@ -49,6 +49,7 @@ src/
     ├── +page.server.js
     └── +page.svelte
 `;
+
 export const pageConfigurationPureCSR = `
  export const ssr = false;
  export const csr = true;
@@ -68,18 +69,26 @@ export const pageConfigurationPureSSG = `
 `;
 
 export const pageConfiguration = `
- // +page.ts Hybrid Rendering
+
+ export const ssr = true/false;
+ export const csr = true/false;
+ export const prerendering = true/false;
+
+`;
+
+export const pageConfigurationSSG = `
+
  export const ssr = true;
  export const csr = true;
  export const prerendering = false;
 
 `;
 
-export const pageConfigurationSSG = `
- // +page.ts Hybrid Rendering
+export const pageConfigurationHybrid = `
+
  export const ssr = true;
  export const csr = true;
- export const prerendering = true;
+ export const prerendering = false;
 
 `;
 
