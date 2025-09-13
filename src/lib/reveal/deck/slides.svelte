@@ -81,3 +81,11 @@
    <RThanksOut />
   </div>
 </div>
+
+
+<style>
+    span {
+      color: #000;
+    }
+  
+</style>

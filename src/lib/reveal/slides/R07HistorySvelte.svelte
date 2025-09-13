@@ -395,7 +395,7 @@
   }
 
   .title {
-    color: var(--text);
+    color: #FFF;
   }
   section {
     margin: 0;

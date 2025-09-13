@@ -47,7 +47,7 @@
 
 <style>
   .layout {
-    color: #32325b;
+    color: #FFF;
     display: flex;
     justify-content: start;
     border-bottom: 1px solid #32325b;

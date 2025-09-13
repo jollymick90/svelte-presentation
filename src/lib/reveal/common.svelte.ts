@@ -11,10 +11,10 @@ export const bacaroBackground = "#32325b";
 
 export const backgroundGdgLecce = "#3682e6";
 
-export const bglightBackgroundRadial = "linear-gradient(to bottom, #5fa0d1, #dfeaf6)";
+export const bglightBackgroundRadial = "linear-gradient(to bottom, #283b95, #5fa0d1)";
 export const bgSvelteRadial = "linear-gradient(to bottom, #ff3e00, #ffe9d3)";
 export const bgSvelteRadialLight = "radial-gradient(circle, #ff3e00, #b32b00)";
-export const bgSvelteLinear = "linear-gradient(to bottom, #ff3e00, #ffe9d3)";
+export const bgSvelteLinear = "linear-gradient(to bottom, #b32b00, #ff3e00)";
 // linear-gradient(to bottom, #283b95, #17b2c3)"
 
 //    '50': '#fff5ec',
