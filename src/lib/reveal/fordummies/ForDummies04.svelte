@@ -26,7 +26,8 @@
   <p>
     <img class="fragment image" src={routing} alt="routing" />
   </p>
-  <aside class="notes">Additionally, 'routing' is like a GPS</aside>
+  <aside class="notes">Additionally, 'routing' is like a GPS. 
+    Like a navigator app, it shows us where we are and where we can go </aside>
 </section>
 
 <section data-auto-animate data-background-color={bg}>
@@ -35,7 +36,7 @@
     <img class="image" src={navigate1} alt="navigate1" />
   </p>
   <aside class="notes">
-    Additionally, 'routing' is like a GPS that allows you to move from one
+     'routing'  allows you to move from one
     'page' to
   </aside>
 </section>

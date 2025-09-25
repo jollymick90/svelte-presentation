@@ -26,6 +26,7 @@
       hash: true,
       controls: true,
       progress: true,
+      showNotes: true
       //showNotes: showNotes ? 'separate-page' : false
     });
     // Reveal.configure({ showNotes: true });
@@ -71,13 +72,15 @@
         Imagine all of computing
         <span class="fragment"> - as a vast universe</span>
       </p>
-      <div class="fragment">
+      <div class="fragment" style="display:flex">
         <span>We have different galaxie</span>
 
         <ul>
           <li class="fragment">- 'Operating Systems'</li>
+           <li class="fragment">- '...'</li>
           <li class="fragment">- 'Databases'</li>
-          <li class="fragment">- '...'</li>
+           <li class="fragment">- '...'</li>
+          <li class="fragment">- 'Webapplication'</li>
           <li class="fragment">- '...'</li>
           <li class="fragment">- 'Angular'</li>
         </ul>

@@ -15,7 +15,7 @@
   </h1>
   <aside class="notes">
     Hi everyone! Today I'm going to talk to you about Angular, but don't worry.
-    I know, here, nobody knows Computer Science stuff so
+    I know nobody knows Computer Science stuff
   </aside>
 </section>
 <section data-auto-animate data-background-color={bg}>
@@ -58,9 +58,8 @@
   </p>
 
   <aside class="notes">
-    which will explain what it is without getting into technical details. The
-    goal is that by the end, you'll be able to understand what it is and why
-    it's so important.
+    which will explain what it is without getting into technical details
+    and why it's so important, by some analogies, like somethings that everybody played when were young
   </aside>
 </section>
 <style>

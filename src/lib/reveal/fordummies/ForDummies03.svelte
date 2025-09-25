@@ -18,26 +18,26 @@
   <h2>The Components: The LEGO Buildings</h2>
   <div class="grid-template fragment" data-fragment-index="0">
     <span></span>
-    <span>
+    <span class="fragment" data-fragment-index="1">
       <Fa icon={faHospital} />
-      <span data-fragment-index="1"><Fa class="fragment" icon={faCode} /></span>
+      <span data-fragment-index="5" data-id="code"><Fa class="fragment" icon={faCode} /></span>
     </span>
     <span></span>
 
-    <span>
+    <span class="fragment" data-fragment-index="2">
       <Fa icon={faHouse} />
-      <span data-fragment-index="1"><Fa class="fragment" icon={faCode} /></span>
+      <span data-fragment-index="5" data-id="code"><Fa class="fragment" icon={faCode} /></span>
     </span>
     <span></span>
-    <span>
+    <span class="fragment" data-fragment-index="3">
       <Fa icon={faRoad} />
-      <span data-fragment-index="1"><Fa class="fragment" icon={faCode} /></span>
+      <span data-fragment-index="5" data-id="code"><Fa class="fragment" icon={faCode} /></span>
     </span>
 
     <span></span>
-    <span>
+    <span class="fragment" data-fragment-index="4">
       <Fa icon={faArchway} />
-      <span data-fragment-index="1"><Fa class="fragment" icon={faCode} /></span>
+      <span data-fragment-index="5" data-id="code"><Fa class="fragment" icon={faCode} /></span>
     </span>
     <span></span>
   </div>
