@@ -5,12 +5,14 @@
   import Markdown from "reveal.js/plugin/markdown/markdown";
   import Highlight from "reveal.js/plugin/highlight/highlight";
   import Notes from "reveal.js/plugin/notes/notes";
-  
+
   import "reveal.js/dist/reveal.css";
   import "reveal.js/dist/theme/black.css";
   import "reveal.js/plugin/highlight/monokai.css";
   import ForDummies01 from "$lib/reveal/fordummies/ForDummies01.svelte";
   import ForDummies02 from "$lib/reveal/fordummies/ForDummies02.svelte";
+  import ForDummies03 from "$lib/reveal/fordummies/ForDummies03.svelte";
+  import ForDummies04 from "$lib/reveal/fordummies/ForDummies04.svelte";
 
   export const bg = "oklch(47.66% .246 305.88)";
 
@@ -36,33 +38,24 @@
 <div class="reveal">
   <div class="slides">
     <ForDummies01 />
-    <ForDummies02 />
-    
-    <section data-auto-animate data-background-color={bg}>
-      <h2>The Components: "The LEGO Buildings"</h2>
 
-      <aside class="notes">
-        The city is made of buildings: a fire station, a grocery store, etc. In
-        Angular applications, these 'buildings' are the 'components'. Each
-        component has three parts: the 'blueprint' (what it looks like, HTML),
-        the 'instructions' (how it works, code), and the 'style' (how it's
-        decorated, colors and design). Separating these parts makes the app
-        easier to manage and update.
-      </aside>
-    </section>
+    <ForDummies02 />
+
+    <ForDummies03 />
+    <ForDummies04 />
+
     <section data-auto-animate data-background-color={bg}>
-      <h2>The Magic: "Real-time Connection" and "Built-in GPS"</h2>
-      <aside class="notes">
-        Components are not static. Angular uses 'data binding', which is like a
-        real-time connection between the app's data and the screen. Imagine a
-        spreadsheet that updates itself. Additionally, 'routing' is like a GPS
-        that allows you to move from one 'page' to another in the app without
-        reloading the entire page. This is why modern apps are so fast and
-        fluid.
-      </aside>
-    </section>
-    <section data-auto-animate data-background-color={bg}>
-      <h2>The Toolkit: "The Trusted Assistant" and "Hello World"</h2>
+      <h2>The Toolkit: The Trusted Assistant and Hello World</h2>
+      <p class="fragment">
+        CLI: Common Line Interface
+        <span class="fragment"> - You Say Angular DO</span>
+      </p>
+      <p class="fragment">
+        CLI: How you can use?
+        <span class="fragment">
+          - Boilerplate: prebuilt a simple and little city</span
+        >
+      </p>
       <aside class="notes">
         Developers use a special tool called the Angular CLI. Imagine it as an
         assistant who takes care of all the tedious work. To create a 'Hello
@@ -73,7 +66,37 @@
       </aside>
     </section>
     <section data-auto-animate data-background-color={bg}>
+      <h2>The Universe of Computing: Where is Angular</h2>
+      <p class="fragment">
+        Imagine all of computing
+        <span class="fragment"> - as a vast universe</span>
+      </p>
+      <div class="fragment">
+        <span>We have different galaxie</span>
+
+        <ul>
+          <li class="fragment">- 'Operating Systems'</li>
+          <li class="fragment">- 'Databases'</li>
+          <li class="fragment">- '...'</li>
+          <li class="fragment">- '...'</li>
+          <li class="fragment">- 'Angular'</li>
+        </ul>
+      </div>
+      <aside class="notes">
+        To understand where Angular fits, let's think bigger. Imagine all of
+        computing as a vast universe. We have different galaxies, like
+        'Operating Systems' or 'Databases'. Within this universe, there's a
+        vibrant galaxy called 'Web Applications'. This is where Angular truly
+        shines! It's one of the brightest stars in the constellation of tools
+        used to build interactive and dynamic websites that run right in your
+        browser."
+      </aside>
+    </section>
+    <section data-auto-animate data-background-color={bg}>
       <h2>Summary and Conclusion</h2>
+      <p class="fragment">structured approach</p>
+      <p class="fragment">intelligent building blocks of web page</p>
+      <p class="fragment">help to organize each blocks</p>
       <aside class="notes">
         In summary, Angular is not just a programming language. It is a
         structured approach that uses intelligent building blocks, magical
@@ -84,9 +107,3 @@
     </section>
   </div>
 </div>
-<style>
-  .legoimg {
-    height: 200px;
-    object-fit: scale-down;
-  }
-</style>

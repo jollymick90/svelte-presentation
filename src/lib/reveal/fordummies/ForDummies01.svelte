@@ -63,3 +63,9 @@
     it's so important.
   </aside>
 </section>
+<style>
+  .legoimg {
+    height: 200px;
+    object-fit: scale-down;
+  }
+</style>
