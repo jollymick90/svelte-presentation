@@ -4,9 +4,11 @@
 
 </script>
 
-<div class="w-full h-full flex justify-center items-center">
+<div class="w-full h-full flex flex-col justify-center items-center">
   
   <button onclick={() => {goto('/gdgdevfestlecce2025')}}> Start GDG Dev Feste Lecce 2025</button>
+
+  <button onclick={() => {goto('/angularfordummies')}}> Angular For Dummies</button>
 </div>
 
 <style>
@@ -22,6 +24,9 @@
   }
   .flex {
     display: flex;
+  }
+  .flex-col {
+    flex-direction: column;
   }
   .justify-center {
     justify-content: center;
