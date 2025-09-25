@@ -26,7 +26,7 @@
       hash: true,
       controls: true,
       progress: true,
-      showNotes: true
+      
       //showNotes: showNotes ? 'separate-page' : false
     });
     // Reveal.configure({ showNotes: true });

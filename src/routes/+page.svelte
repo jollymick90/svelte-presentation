@@ -9,6 +9,8 @@
   <button onclick={() => {goto('/gdgdevfestlecce2025')}}> Start GDG Dev Feste Lecce 2025</button>
 
   <button onclick={() => {goto('/angularfordummies')}}> Angular For Dummies</button>
+
+  <button onclick={() => {goto('/angular20reactiveperformance')}}> Angular 20 reactive performance</button>
 </div>
 
 <style>
